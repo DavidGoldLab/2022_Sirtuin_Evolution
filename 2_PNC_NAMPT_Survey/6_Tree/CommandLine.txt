@@ -1,0 +1,6 @@
+# 1. Collect all species IDs from PNC1 and NAMPT analysis and add invertebrate animal species from this study
+	# File name: 1_Taxa_List.txt 
+# 2. Submit to NCI Taxonomy Common Tree
+	# https://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi
+	# File name: 2_Taxa.NCBI_CommonTree.tree
+# 3. Open in Mesquite and arrange phyla based on current hypotheses

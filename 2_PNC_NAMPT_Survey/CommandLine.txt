@@ -1,0 +1,57 @@
+# Search NCBI with Homo NAPMPT (UniProtKB ID: P43490) and Saccharomyces PNC1 (UniProtKB ID: P53184).
+	# BLASTP, animals (taxid:33208) ; and exclude: vertebrates (taxid:7742) 
+	# Search performed 7/18/2021
+	
+# concatenate files
+cat 0_NCBI_NAMPT_Seqs.txt 0_NCBI_PNC1_Seqs.txt > 1_NCBI_Seqs.fasta
+	# Names reformatted in BBEdit using grep
+	
+################################
+# Identify domains with PfamScan
+################################
+
+	# ftp://ftp.ebi.ac.uk/pub/databases/Pfam//Tools/PfamScan.tar.gz
+
+# pfam_scan can be installed with Conda. Add conda cask to homebrew:
+conda install -c bioconda pfam_scan
+
+# You will need to download the following files from the Pfam ftp site 
+# (ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/):
+	# Pfam-A.hmm
+	# Pfam-A.hmm.dat
+
+# Generate binary files for Pfam-A.hmm by running the following commands:
+hmmpress Pfam-A.hmm
+
+# Run PfamScan
+pfam_scan.pl \
+-outfile 2_Pfam_output.txt \
+-fasta 1_NCBI_Seqs.fasta -dir /Users/davidgold/Documents/bioinformatics/HMMScan
+
+#################################
+# Extract domains with samtools #
+#################################
+
+grep '.*  NAPRTase .*' 2_Pfam_output.txt > tmp1
+# use squeeze flag (-s) in tr to replace all white spaces with a tab
+tr -s ' ' \\t < tmp1 > tmp2
+# extract envelope coordinates
+awk -v OFS='\t' '{print "\047"$1"\047"":"$4"-"$5}' tmp2 > tmp3
+# Extract domains with samtools
+xargs samtools faidx --length 100000000 1_NCBI_Seqs.fasta < tmp3 > 3_PFAM.NAPRTase.fasta
+# Cleanup
+rm tmp*
+
+
+
+# Sir domain divided into multiple fragments on some genes, concatenate 
+awk -F'\t' -v OFS='\t' '{x=$1;$1="";a[x]=a[x]$0}END{for(x in a)print x,a[x]}' tmp3 > tmp4
+tr -s '\t' \\t < tmp4 > tmp5
+# Extract name, first envelope coordinate, last envelope coordinate
+awk -v OFS='\t' '{print "\047"$1"\047"":"$2"-"$NF}' tmp5 > tmp6
+# Extract domains with samtools
+xargs samtools faidx --length 100000000 3_Sirtuin_BLAST_Hits.Annotated.fasta < tmp6 > 4_Sir2_Domains.fasta
+# Cleanup
+rm tmp*
+
+# Extract lines with NAPRTase 
