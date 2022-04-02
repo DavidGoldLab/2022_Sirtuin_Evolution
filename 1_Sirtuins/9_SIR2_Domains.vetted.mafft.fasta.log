@@ -1,0 +1,1423 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Jul 19 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    c4-87 (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s 9_SIR2_Domains.vetted.mafft.fasta -m MFP -bb 1000 -nt 16
+Seed:    467576 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jul  1 10:04:55 2021
+Kernel:  AVX+FMA - 16 threads (32 CPU cores detected)
+
+Reading alignment file 9_SIR2_Domains.vetted.mafft.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 340 sequences with 508 columns, 484 distinct patterns
+293 parsimony-informative, 81 singleton sites, 134 constant sites
+WARNING: Some sequence names are changed as follows:
+Acropora_digitifera|XP_015751984.1|SIR7_BOVIN -> Acropora_digitifera_XP_015751984.1_SIR7_BOVIN
+Acropora_digitifera|XP_015764189.1|SIR6_HUMAN -> Acropora_digitifera_XP_015764189.1_SIR6_HUMAN
+Acropora_digitifera|XP_015764941.1|SIR5_CANLF -> Acropora_digitifera_XP_015764941.1_SIR5_CANLF
+Acropora_digitifera|XP_015769634.1|SIR3_HUMAN -> Acropora_digitifera_XP_015769634.1_SIR3_HUMAN
+Acropora_digitifera|XP_015774796.1|SIR1_ARATH -> Acropora_digitifera_XP_015774796.1_SIR1_ARATH
+Acropora_digitifera|XP_015779163.1|SIR2_PONAB -> Acropora_digitifera_XP_015779163.1_SIR2_PONAB
+Acropora_digitifera|XP_015779435.1|SIR1_RAT -> Acropora_digitifera_XP_015779435.1_SIR1_RAT
+Acropora_digitifera|XP_015779547.1|SIR4_BOVIN -> Acropora_digitifera_XP_015779547.1_SIR4_BOVIN
+Acropora_millepora|XP_029180011.1|SIR7_BOVIN -> Acropora_millepora_XP_029180011.1_SIR7_BOVIN
+Acropora_millepora|XP_029181270.1|SIR6_HUMAN -> Acropora_millepora_XP_029181270.1_SIR6_HUMAN
+Acropora_millepora|XP_029189280.1|SIR2_MACFA -> Acropora_millepora_XP_029189280.1_SIR2_MACFA
+Acropora_millepora|XP_029189899.1|SIR3_HUMAN -> Acropora_millepora_XP_029189899.1_SIR3_HUMAN
+Acropora_millepora|XP_029191153.1|SIR5_CANLF -> Acropora_millepora_XP_029191153.1_SIR5_CANLF
+Acropora_millepora|XP_029212880.1|SIR1_MOUSE -> Acropora_millepora_XP_029212880.1_SIR1_MOUSE
+Acropora_millepora|XP_029213217.1|SIR4_BOVIN -> Acropora_millepora_XP_029213217.1_SIR4_BOVIN
+Acropora_millepora|XP_029214424.1|SIR1_ARATH -> Acropora_millepora_XP_029214424.1_SIR1_ARATH
+Actinia_tenebrosa|XP_031549158.1|SIR1_HUMAN -> Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN
+Actinia_tenebrosa|XP_031549214.1|SIR4_BOVIN -> Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN
+Actinia_tenebrosa|XP_031555893.1|SIR7_BOVIN -> Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN
+Actinia_tenebrosa|XP_031557593.1|SIR3_HUMAN -> Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN
+Actinia_tenebrosa|XP_031561543.1|SIR6_HUMAN -> Actinia_tenebrosa_XP_031561543.1_SIR6_HUMAN
+Actinia_tenebrosa|XP_031565089.1|SIR5_CANLF -> Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF
+Actinia_tenebrosa|XP_031565139.1|SIR1_ARATH -> Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH
+Actinia_tenebrosa|XP_031565494.1|SIR1_ARATH -> Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH
+Actinia_tenebrosa|XP_031571475.1|SIR2_DANRE -> Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_003382458.1|SIR5_CANLF -> Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF
+Amphimedon_queenslandica|XP_003383581.1|SIR1_ARATH -> Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH
+Amphimedon_queenslandica|XP_003385596.1|SIR1_ARATH -> Amphimedon_queenslandica_XP_003385596.1_SIR1_ARATH
+Amphimedon_queenslandica|XP_003388355.1|SIR1_ORYSI -> Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI
+Amphimedon_queenslandica|XP_003389737.2|SIR6_HUMAN -> Amphimedon_queenslandica_XP_003389737.2_SIR6_HUMAN
+Amphimedon_queenslandica|XP_011403504.2|SIR4_BOVIN -> Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN
+Amphimedon_queenslandica|XP_011404349.2|SIR1_MOUSE -> Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE
+Amphimedon_queenslandica|XP_011406188.1|SIR1_ARATH -> Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH
+Amphimedon_queenslandica|XP_019851125.1|SIR3_HUMAN -> Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN
+Amphimedon_queenslandica|XP_019851847.1|SIR2_DANRE -> Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_019864326.1|SIR2_DANRE-Domain_1 -> Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain_1
+Amphimedon_queenslandica|XP_019864326.1|SIR2_DANRE-Domain_2 -> Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain_2
+Aurelia_coerulea|XLOC_005945|TCONS_00008273|Seg12214.1.p1|SIR3_HUMAN -> Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN
+Aurelia_coerulea|XLOC_010146|TCONS_00014081|Seg1390.7.p1|SIR7_MOUSE -> Aurelia_coerulea_XLOC_010146_TCONS_00014081_Seg1390.7.p1_SIR7_MOUSE
+Aurelia_coerulea|XLOC_021578|TCONS_00030503|Seg1865.9.p1|SIR1_HUMAN -> Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN
+Aurelia_coerulea|XLOC_021960|TCONS_00031013|Seg1882.3.p1|SIR2_DANRE -> Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE
+Aurelia_coerulea|XLOC_034300|TCONS_00048726|Seg2682.3.p1|SIR6_HUMAN -> Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_HUMAN
+Aurelia_coerulea|XLOC_057165|TCONS_00080094|Seg5705.2.p1|SIR3_MOUSE -> Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE
+Aurelia_coerulea|XLOC_058163|TCONS_00081427|Seg589.7.p1|SIR1_ARATH -> Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH
+Aurelia_coerulea|XLOC_073218|TCONS_00101516|Seg992.8.p1|SIR4_BOVIN -> Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN
+Caenorhabditis_elegans|NP_001255484.1|SIR2_CAEEL -> Caenorhabditis_elegans_NP_001255484.1_SIR2_CAEEL
+Caenorhabditis_elegans|NP_001367072.1|SIR41_CAEEL -> Caenorhabditis_elegans_NP_001367072.1_SIR41_CAEEL
+Caenorhabditis_elegans|NP_491733.2|SIR24_CAEEL -> Caenorhabditis_elegans_NP_491733.2_SIR24_CAEEL
+Caenorhabditis_elegans|NP_510220.1|SIR42_CAEEL -> Caenorhabditis_elegans_NP_510220.1_SIR42_CAEEL
+Capitella_teleta|ELT89185.1|SIR3_HUMAN -> Capitella_teleta_ELT89185.1_SIR3_HUMAN
+Capitella_teleta|ELT89708.1|SIR3_HUMAN -> Capitella_teleta_ELT89708.1_SIR3_HUMAN
+Capitella_teleta|ELT93675.1|SIR6_HUMAN -> Capitella_teleta_ELT93675.1_SIR6_HUMAN
+Capitella_teleta|ELT94099.1|SIR2_DANRE -> Capitella_teleta_ELT94099.1_SIR2_DANRE
+Capitella_teleta|ELT98667.1|SIR5_CANLF -> Capitella_teleta_ELT98667.1_SIR5_CANLF
+Capitella_teleta|ELU02773.1|SIR7_HUMAN -> Capitella_teleta_ELU02773.1_SIR7_HUMAN
+Capitella_teleta|ELU05314.1|SIR1_ORYSI -> Capitella_teleta_ELU05314.1_SIR1_ORYSI
+Capitella_teleta|ELU08256.1|SIR6_MOUSE -> Capitella_teleta_ELU08256.1_SIR6_MOUSE
+Capitella_teleta|ELU13851.1|SIR4_MOUSE -> Capitella_teleta_ELU13851.1_SIR4_MOUSE
+Capitella_teleta|ELU15226.1|SIR1_MOUSE -> Capitella_teleta_ELU15226.1_SIR1_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|KJE90862.1|SIR4_MOUSE -> Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|XP_004343843.2|SIR6_HUMAN -> Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_HUMAN
+Capsaspora_owczarzaki_ATCC_30864|XP_004344427.2|SIR7_HUMAN -> Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN
+Capsaspora_owczarzaki_ATCC_30864|XP_004346801.2|SIR1_MOUSE -> Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|XP_004348413.1|SIR2_DANRE -> Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE
+Ciona_intestinalis|BAE93336.1|SIR4_MOUSE -> Ciona_intestinalis_BAE93336.1_SIR4_MOUSE
+Ciona_intestinalis|BAE93342.1|SIR1_HUMAN -> Ciona_intestinalis_BAE93342.1_SIR1_HUMAN
+Ciona_intestinalis|FAA00194.1|SIR3_HUMAN -> Ciona_intestinalis_FAA00194.1_SIR3_HUMAN
+Ciona_intestinalis|FAA00213.1|SIR6_MOUSE -> Ciona_intestinalis_FAA00213.1_SIR6_MOUSE
+Ciona_intestinalis|FAA00231.1|SIR2_DANRE -> Ciona_intestinalis_FAA00231.1_SIR2_DANRE
+Ciona_intestinalis|XP_002121470.1|SIR7_RAT -> Ciona_intestinalis_XP_002121470.1_SIR7_RAT
+Ciona_intestinalis|XP_002129772.2|SIR5_MOUSE -> Ciona_intestinalis_XP_002129772.2_SIR5_MOUSE
+Clytia_hemisphaerica|TCONS_00017752|SIR4_MOUSE -> Clytia_hemisphaerica_TCONS_00017752_SIR4_MOUSE
+Clytia_hemisphaerica|TCONS_00023571|SIR1_HUMAN -> Clytia_hemisphaerica_TCONS_00023571_SIR1_HUMAN
+Clytia_hemisphaerica|TCONS_00029362|SIR2_DANRE -> Clytia_hemisphaerica_TCONS_00029362_SIR2_DANRE
+Clytia_hemisphaerica|TCONS_00045855|SIR1_ORYSI -> Clytia_hemisphaerica_TCONS_00045855_SIR1_ORYSI
+Clytia_hemisphaerica|TCONS_00056393|SIR6_HUMAN -> Clytia_hemisphaerica_TCONS_00056393_SIR6_HUMAN
+Daphnia_magna|KZS14613.1|SIR5_DAPPU -> Daphnia_magna_KZS14613.1_SIR5_DAPPU
+Daphnia_magna|KZS21532.1|SIR6_DROME -> Daphnia_magna_KZS21532.1_SIR6_DROME
+Daphnia_magna|XP_032777598.1|SIR2_MOUSE -> Daphnia_magna_XP_032777598.1_SIR2_MOUSE
+Daphnia_magna|XP_032792754.1|SIR1_HUMAN -> Daphnia_magna_XP_032792754.1_SIR1_HUMAN
+Daphnia_magna|XP_032795411.1|SIR4_DROME -> Daphnia_magna_XP_032795411.1_SIR4_DROME
+Dendronephthya_gigantea|XP_028392003.1|SIR5_CANLF -> Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF
+Dendronephthya_gigantea|XP_028398492.1|SIR2_DANRE -> Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE
+Dendronephthya_gigantea|XP_028400421.1|SIR4_MOUSE -> Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE
+Dendronephthya_gigantea|XP_028408359.1|SIR1_HUMAN -> Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN
+Dendronephthya_gigantea|XP_028412260.1|SIR6_HUMAN -> Dendronephthya_gigantea_XP_028412260.1_SIR6_HUMAN
+Dendronephthya_gigantea|XP_028415928.1|SIR7_BOVIN -> Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN
+Drosophila_melanogaster|AAC79684.1|SIRT1_DROME -> Drosophila_melanogaster_AAC79684.1_SIRT1_DROME
+Drosophila_melanogaster|AAL28953.1|SIR7_DROME -> Drosophila_melanogaster_AAL28953.1_SIR7_DROME
+Drosophila_melanogaster|AAL48850.1|SIRT2_DROME -> Drosophila_melanogaster_AAL48850.1_SIRT2_DROME
+Drosophila_melanogaster|AEB33520.1|SIR6_DROME -> Drosophila_melanogaster_AEB33520.1_SIR6_DROME
+Drosophila_melanogaster|NP_572241.2|SIR4_DROME -> Drosophila_melanogaster_NP_572241.2_SIR4_DROME
+Ephydatia_muelleri|m.26778_g.26778|SIR4_MOUSE -> Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE
+Ephydatia_muelleri|m.286671_g.286671|SIR1_ARATH -> Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH
+Ephydatia_muelleri|m.41112_g.41112|SIR6_HUMAN -> Ephydatia_muelleri_m.41112_g.41112_SIR6_HUMAN
+Ephydatia_muelleri|m.42840_g.42840|SIR5_CANLF -> Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF
+Ephydatia_muelleri|m.44725_g.44725|SIR1_ARATH -> Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH
+Ephydatia_muelleri|m.56358_g.56358|SIR3_MOUSE -> Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE
+Ephydatia_muelleri|m.68701_g.68701|SIR1_HUMAN -> Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN
+Ephydatia_muelleri|m.97546_g.97546|SIR2_DANRE -> Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE
+Exaiptasia_diaphana|KXJ12134.1|SIR3_HUMAN -> Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN
+Exaiptasia_diaphana|KXJ28567.1|SIR7_BOVIN -> Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN
+Exaiptasia_diaphana|XP_020892771.1|SIR1_HUMAN -> Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN
+Exaiptasia_diaphana|XP_020893572.1|SIR4_BOVIN -> Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN
+Exaiptasia_diaphana|XP_020897758.1|SIR5_CHICK -> Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK
+Exaiptasia_diaphana|XP_020912061.1|SIR1_ARATH -> Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH
+Exaiptasia_diaphana|XP_020915333.1|SIR2_DANRE -> Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE
+Exaiptasia_diaphana|XP_020916137.1|SIR6_HUMAN -> Exaiptasia_diaphana_XP_020916137.1_SIR6_HUMAN
+Fonticula_alba|XP_009493409.1|SIR1_RAT -> Fonticula_alba_XP_009493409.1_SIR1_RAT
+Fonticula_alba|XP_009494611.1|HST3_YEAST -> Fonticula_alba_XP_009494611.1_HST3_YEAST
+Fonticula_alba|XP_009494998.1|SIR2_RAT -> Fonticula_alba_XP_009494998.1_SIR2_RAT
+Haliclona_amboinensis|c27278_g1_i2|m.5375|SIR1_ARATH -> Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH
+Haliclona_amboinensis|c33180_g1_i1|m.7512|SIR4_MOUSE -> Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE
+Haliclona_amboinensis|c45780_g1_i1|m.19520|SIR2_DANRE -> Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE
+Haliclona_amboinensis|c47378_g1_i1|m.22237|SIR3_HUMAN -> Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN
+Haliclona_amboinensis|c48062_g1_i4|mm.2497|SIR5_CANLF -> Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF
+Haliclona_amboinensis|c50309_g1_i11|mm.3444|SIR1_MOUSE -> Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE
+Haliclona_tubifera|c17806_g1_i1|m.1263|SIR4_BOVIN -> Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN
+Haliclona_tubifera|c27515_g1_i1|m.3231|SIR5_XENTR -> Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR
+Haliclona_tubifera|c40065_g1_i1|m.9948|SIR1_ARATH -> Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH
+Haliclona_tubifera|c40894_g1_i1|m.10778|SIR1_HUMAN -> Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN
+Haliclona_tubifera|c42791_g1_i4|mm.1297|SIR2_DANRE -> Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE
+Haliclona_tubifera|c47108_g1_i2|m.19397|SIR3_MOUSE -> Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE
+Haliclona_tubifera|c49726_g5_i2|m.24434|SIR6_HUMAN -> Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_HUMAN
+Haliclona_tubifera|c53653_g1_i1|m.34064|SIR1_ARATH -> Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH
+Henneguya_salminicola|KAF0992715.1|SIR2_DANRE -> Henneguya_salminicola_KAF0992715.1_SIR2_DANRE
+Homo_sapiens|1J8F_A|SIR2_HUMAN -> Homo_sapiens_1J8F_A_SIR2_HUMAN
+Homo_sapiens|2B4Y_A|SIR5_HUMAN -> Homo_sapiens_2B4Y_A_SIR5_HUMAN
+Homo_sapiens|3GLR_A|SIR3_HUMAN -> Homo_sapiens_3GLR_A_SIR3_HUMAN
+Homo_sapiens|4I5I_A|SIR1_HUMAN -> Homo_sapiens_4I5I_A_SIR1_HUMAN
+Homo_sapiens|AAB95634.1|SIR4_HUMAN -> Homo_sapiens_AAB95634.1_SIR4_HUMAN
+Homo_sapiens|AAD15478.1|SIR6_HUMAN -> Homo_sapiens_AAD15478.1_SIR6_HUMAN
+Homo_sapiens|AAF67015.1|SIR2_HUMAN -> Homo_sapiens_AAF67015.1_SIR2_HUMAN
+Homo_sapiens|BAF82954.1|SIR7_HUMAN -> Homo_sapiens_BAF82954.1_SIR7_HUMAN
+Homo_sapiens|NP_001307988.1|SIR6_HUMAN -> Homo_sapiens_NP_001307988.1_SIR6_HUMAN
+Hydra_vulgaris|XP_002163018.1|SIR4_MOUSE -> Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE
+Hydra_vulgaris|XP_012555795.1|SIR1_RAT -> Hydra_vulgaris_XP_012555795.1_SIR1_RAT
+Hydra_vulgaris|XP_012563212.1|SIR6_HUMAN -> Hydra_vulgaris_XP_012563212.1_SIR6_HUMAN
+Latimeria_chalumnae|XP_005987227.1|SIR4_MOUSE -> Latimeria_chalumnae_XP_005987227.1_SIR4_MOUSE
+Latimeria_chalumnae|XP_005989117.1|SIR7_BOVIN -> Latimeria_chalumnae_XP_005989117.1_SIR7_BOVIN
+Latimeria_chalumnae|XP_005995267.1|SIR5_XENTR -> Latimeria_chalumnae_XP_005995267.1_SIR5_XENTR
+Latimeria_chalumnae|XP_005999101.1|SIR6_MOUSE -> Latimeria_chalumnae_XP_005999101.1_SIR6_MOUSE
+Latimeria_chalumnae|XP_005999102.1|SIR6_MOUSE -> Latimeria_chalumnae_XP_005999102.1_SIR6_MOUSE
+Latimeria_chalumnae|XP_006009775.1|SIR3_HUMAN -> Latimeria_chalumnae_XP_006009775.1_SIR3_HUMAN
+Latimeria_chalumnae|XP_014340979.1|SIR3_HUMAN -> Latimeria_chalumnae_XP_014340979.1_SIR3_HUMAN
+Latimeria_chalumnae|XP_014348996.1|SIR2_DANRE -> Latimeria_chalumnae_XP_014348996.1_SIR2_DANRE
+Latimeria_chalumnae|XP_014352742.1|SIR1_HUMAN -> Latimeria_chalumnae_XP_014352742.1_SIR1_HUMAN
+Leucosolenia_complicata|lcpid102077|lcgid36957|SIRT1_DROME -> Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME
+Leucosolenia_complicata|lcpid103158|lcgid58614|SIR2_DANRE -> Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE
+Leucosolenia_complicata|lcpid110268|lcgid61006|SIR1_ARATH -> Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH
+Leucosolenia_complicata|lcpid135799|lcgid5960|SIR7_BOVIN -> Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN
+Leucosolenia_complicata|lcpid16602|lcgid57329|SIR3_MOUSE -> Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE
+Leucosolenia_complicata|lcpid182756|lcgid10070|SIR1_ARATH -> Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH
+Leucosolenia_complicata|lcpid57906|lcgid55101|SIR4_BOVIN -> Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN
+Leucosolenia_complicata|lcpid75339|lcgid20684|SIR6_HUMAN -> Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_HUMAN
+Loxodonta_africana|XP_003419372.1|SIR4_HUMAN -> Loxodonta_africana_XP_003419372.1_SIR4_HUMAN
+Loxodonta_africana|XP_003420816.1|SIR2_MOUSE -> Loxodonta_africana_XP_003420816.1_SIR2_MOUSE
+Loxodonta_africana|XP_003421943.1|SIR6_HUMAN -> Loxodonta_africana_XP_003421943.1_SIR6_HUMAN
+Loxodonta_africana|XP_010595345.1|SIR7_BOVIN -> Loxodonta_africana_XP_010595345.1_SIR7_BOVIN
+Loxodonta_africana|XP_010600552.2|SIR3_HUMAN -> Loxodonta_africana_XP_010600552.2_SIR3_HUMAN
+Loxodonta_africana|XP_023402757.1|SIR1_HUMAN -> Loxodonta_africana_XP_023402757.1_SIR1_HUMAN
+Loxodonta_africana|XP_023411467.1|SIR5_PONAB -> Loxodonta_africana_XP_023411467.1_SIR5_PONAB
+Mnemiopsis_leidyi|ML002614a-PA|SIR6_HUMAN -> Mnemiopsis_leidyi_ML002614a-PA_SIR6_HUMAN
+Mnemiopsis_leidyi|ML002624a-PA|OSB10_HUMAN -> Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN
+Mnemiopsis_leidyi|ML074235a-PA|SIR2_MOUSE -> Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE
+Mnemiopsis_leidyi|ML07823a-PA|SIR1_HUMAN -> Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN
+Mnemiopsis_leidyi|ML145823a-PA|SIR3_MOUSE -> Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE
+Mnemiopsis_leidyi|ML200240a-PA|SIR1_ARATH -> Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH
+Mnemiopsis_leidyi|ML20759a-PA|SIR2_DANRE -> Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE
+Mnemiopsis_leidyi|ML41824a-PA|SIR4_MOUSE -> Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE
+Monosiga_brevicollis_MX1|XP_001742130.1|SIR1_RAT -> Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT
+Monosiga_brevicollis_MX1|XP_001744705.1|SIR4_MONBE -> Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE
+Monosiga_brevicollis_MX1|XP_001746923.1|SIR1_ARATH -> Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH
+Monosiga_brevicollis_MX1|XP_001749314.1|SIRT2_DROME -> Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME
+Monosiga_brevicollis_MX1|XP_001749356.1|SIR7_BOVIN -> Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN
+Mus_musculus|AAG32038.1|SIR2_MOUSE -> Mus_musculus_AAG32038.1_SIR2_MOUSE
+Mus_musculus|AAG33227.1|SIR3_MOUSE -> Mus_musculus_AAG33227.1_SIR3_MOUSE
+Mus_musculus|AAH22653.1|SIR4_MOUSE -> Mus_musculus_AAH22653.1_SIR4_MOUSE
+Mus_musculus|AAI52315.1|SIR1_MOUSE -> Mus_musculus_AAI52315.1_SIR1_MOUSE
+Mus_musculus|AAP83960.1|SIR7_MOUSE -> Mus_musculus_AAP83960.1_SIR7_MOUSE
+Mus_musculus|NP_001156902.1|SIR6_MOUSE -> Mus_musculus_NP_001156902.1_SIR6_MOUSE
+Mus_musculus|NP_849179.1|SIR5_MOUSE -> Mus_musculus_NP_849179.1_SIR5_MOUSE
+Myxobolus_squamalis|KAF1743723.1|SIR2_MOUSE -> Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE
+Nematostella_vectensis|EDO29747.1|SIR7_BOVIN -> Nematostella_vectensis_EDO29747.1_SIR7_BOVIN
+Nematostella_vectensis|EDO31684.1|SIR1_RAT -> Nematostella_vectensis_EDO31684.1_SIR1_RAT
+Nematostella_vectensis|EDO32517.1|SIR6_HUMAN -> Nematostella_vectensis_EDO32517.1_SIR6_HUMAN
+Nematostella_vectensis|EDO46813.1|SIR2_DANRE -> Nematostella_vectensis_EDO46813.1_SIR2_DANRE
+Nematostella_vectensis|EDO47672.1|SIR3_HUMAN -> Nematostella_vectensis_EDO47672.1_SIR3_HUMAN
+Nematostella_vectensis|EDO48459.1|SIR2_DANRE -> Nematostella_vectensis_EDO48459.1_SIR2_DANRE
+Nematostella_vectensis|XP_001627929.1|SIR4_MOUSE -> Nematostella_vectensis_XP_001627929.1_SIR4_MOUSE
+Nematostella_vectensis|XP_032220213.1|SIR5_CANLF -> Nematostella_vectensis_XP_032220213.1_SIR5_CANLF
+Octopus_bimaculoides|KOF67188.1|SIR1_MOUSE -> Octopus_bimaculoides_KOF67188.1_SIR1_MOUSE
+Octopus_bimaculoides|KOF89850.1|SIR4_BOVIN -> Octopus_bimaculoides_KOF89850.1_SIR4_BOVIN
+Octopus_bimaculoides|XP_014773199.1|SIR7_BOVIN -> Octopus_bimaculoides_XP_014773199.1_SIR7_BOVIN
+Octopus_bimaculoides|XP_014781166.1|SIR2_DANRE -> Octopus_bimaculoides_XP_014781166.1_SIR2_DANRE
+Octopus_bimaculoides|XP_014781174.1|SIR2_DANRE -> Octopus_bimaculoides_XP_014781174.1_SIR2_DANRE
+Octopus_bimaculoides|XP_014786464.1|SIR6_MOUSE -> Octopus_bimaculoides_XP_014786464.1_SIR6_MOUSE
+Octopus_bimaculoides|XP_014786523.1|SIR3_MOUSE -> Octopus_bimaculoides_XP_014786523.1_SIR3_MOUSE
+Octopus_bimaculoides|XP_014789318.1|SIR5_DANRE -> Octopus_bimaculoides_XP_014789318.1_SIR5_DANRE
+Orbicella_faveolata|XP_020602659.1|SIR4_BOVIN -> Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN
+Orbicella_faveolata|XP_020603299.1|SIR5_CANLF -> Orbicella_faveolata_XP_020603299.1_SIR5_CANLF
+Orbicella_faveolata|XP_020604327.1|SIR1_ARATH -> Orbicella_faveolata_XP_020604327.1_SIR1_ARATH
+Orbicella_faveolata|XP_020605701.1|SIR3_HUMAN -> Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN
+Orbicella_faveolata|XP_020605893.1|SIR2_DANRE -> Orbicella_faveolata_XP_020605893.1_SIR2_DANRE
+Orbicella_faveolata|XP_020607353.1|SIR7_BOVIN -> Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN
+Orbicella_faveolata|XP_020608150.1|SIR6_MOUSE -> Orbicella_faveolata_XP_020608150.1_SIR6_MOUSE
+Orbicella_faveolata|XP_020629309.1|SIR1_HUMAN -> Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN
+Orbicella_faveolata|XP_020631316.1|SIR1_ARATH -> Orbicella_faveolata_XP_020631316.1_SIR1_ARATH
+Orbicella_faveolata|XP_020631320.1|SIR1_ARATH -> Orbicella_faveolata_XP_020631320.1_SIR1_ARATH
+Oscarella_carmela|m.102278_g.102278|SIR5_CANLF -> Oscarella_carmela_m.102278_g.102278_SIR5_CANLF
+Oscarella_carmela|m.10296_g.10296|SIR4_MOUSE -> Oscarella_carmela_m.10296_g.10296_SIR4_MOUSE
+Oscarella_carmela|m.16056_g.16056|SIR7_MOUSE -> Oscarella_carmela_m.16056_g.16056_SIR7_MOUSE
+Oscarella_carmela|m.20604_g.20604|SIR2_DANRE -> Oscarella_carmela_m.20604_g.20604_SIR2_DANRE
+Oscarella_carmela|m.214358_g.214358|SIR1_ARATH -> Oscarella_carmela_m.214358_g.214358_SIR1_ARATH
+Oscarella_carmela|m.310769_g.310769|SIR1_HUMAN -> Oscarella_carmela_m.310769_g.310769_SIR1_HUMAN
+Oscarella_carmela|m.58799_g.58799|SIR1_ARATH -> Oscarella_carmela_m.58799_g.58799_SIR1_ARATH
+Oscarella_carmela|m.66298_g.66298|SIR3_MOUSE -> Oscarella_carmela_m.66298_g.66298_SIR3_MOUSE
+Oscarella_carmela|m.9609_g.9609|SIR1_ARATH -> Oscarella_carmela_m.9609_g.9609_SIR1_ARATH
+Physeter_catodon|XP_007114637.1|SIR2_HUMAN -> Physeter_catodon_XP_007114637.1_SIR2_HUMAN
+Physeter_catodon|XP_007125686.2|SIR7_BOVIN -> Physeter_catodon_XP_007125686.2_SIR7_BOVIN
+Physeter_catodon|XP_007130056.1|SIR4_BOVIN -> Physeter_catodon_XP_007130056.1_SIR4_BOVIN
+Physeter_catodon|XP_023987866.1|SIR1_HUMAN -> Physeter_catodon_XP_023987866.1_SIR1_HUMAN
+Physeter_catodon|XP_023990199.1|SIR6_HUMAN -> Physeter_catodon_XP_023990199.1_SIR6_HUMAN
+Physeter_catodon|XP_028333445.1|SIR2_HUMAN -> Physeter_catodon_XP_028333445.1_SIR2_HUMAN
+Physeter_catodon|XP_028335533.1|SIR3_MOUSE -> Physeter_catodon_XP_028335533.1_SIR3_MOUSE
+Physeter_catodon|XP_028335621.1|NOL7_HUMAN -> Physeter_catodon_XP_028335621.1_NOL7_HUMAN
+Pleurobrachia_bachei|sb|2643951||SIR2_DANRE -> Pleurobrachia_bachei_sb_2643951__SIR2_DANRE
+Pleurobrachia_bachei|sb|2650883||SIR2_RAT -> Pleurobrachia_bachei_sb_2650883__SIR2_RAT
+Pleurobrachia_bachei|sb|2653035||SIR1_RAT -> Pleurobrachia_bachei_sb_2653035__SIR1_RAT
+Pleurobrachia_bachei|sb|2657812||SIR6_MOUSE -> Pleurobrachia_bachei_sb_2657812__SIR6_MOUSE
+Pleurobrachia_bachei|sb|2658796||SIR3_MOUSE -> Pleurobrachia_bachei_sb_2658796__SIR3_MOUSE
+Pleurobrachia_bachei|sb|2664049||SIRT2_DROME -> Pleurobrachia_bachei_sb_2664049__SIRT2_DROME
+Pleurobrachia_bachei|sb|2669295||CNX2_ARATH -> Pleurobrachia_bachei_sb_2669295__CNX2_ARATH
+Pocillopora_damicornis|RMX44192.1|SIR1_ORYSI -> Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI
+Pocillopora_damicornis|RMX45954.1|SIR2_MACFA -> Pocillopora_damicornis_RMX45954.1_SIR2_MACFA
+Pocillopora_damicornis|RMX57446.1|SIR4_BOVIN -> Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN
+Pocillopora_damicornis|XP_027036956.1|SIR3_HUMAN -> Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN
+Pocillopora_damicornis|XP_027046210.1|SIR1_ARATH -> Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH
+Pocillopora_damicornis|XP_027050255.1|SIR6_MOUSE -> Pocillopora_damicornis_XP_027050255.1_SIR6_MOUSE
+Pocillopora_damicornis|XP_027050465.1|SIR1_HUMAN -> Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN
+Pocillopora_damicornis|XP_027051970.1|SIR5_CANLF -> Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF
+Pocillopora_damicornis|XP_027058842.1|SIR7_BOVIN -> Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN
+Puccinia_graminis_f._sp._tritici|KAA1089320.1|SIR4_BATDJ -> Puccinia_graminis_f._sp._tritici_KAA1089320.1_SIR4_BATDJ
+Puccinia_graminis_f._sp._tritici|KAA1105247.1|HST1_EMENI -> Puccinia_graminis_f._sp._tritici_KAA1105247.1_HST1_EMENI
+Puccinia_graminis_f._sp._tritici|KAA1106496.1|HST4_SCHPO -> Puccinia_graminis_f._sp._tritici_KAA1106496.1_HST4_SCHPO
+Puccinia_graminis_f._sp._tritici|KAA1107068.1|SIR2_DANRE -> Puccinia_graminis_f._sp._tritici_KAA1107068.1_SIR2_DANRE
+Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3|XP_003307144.1|HST4_SCHPO -> Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003307144.1_HST4_SCHPO
+Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3|XP_003328749.2|SIR4_BATDJ -> Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003328749.2_SIR4_BATDJ
+Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3|XP_003333670.2|SIR2_DANRE -> Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003333670.2_SIR2_DANRE
+Rhizophagus_irregularis|PKC08513.1|SIR1_RAT -> Rhizophagus_irregularis_PKC08513.1_SIR1_RAT
+Rhizophagus_irregularis|PKC12084.1|HST3_CANAL -> Rhizophagus_irregularis_PKC12084.1_HST3_CANAL
+Rhizophagus_irregularis|PKC15272.1|SIR2_DANRE -> Rhizophagus_irregularis_PKC15272.1_SIR2_DANRE
+Rhizophagus_irregularis|PKC73350.1|SIR4_BATDJ -> Rhizophagus_irregularis_PKC73350.1_SIR4_BATDJ
+Rhizophagus_irregularis|PKY52607.1|SIR5_CHICK -> Rhizophagus_irregularis_PKY52607.1_SIR5_CHICK
+Rhizophagus_irregularis_DAOM_181602=DAOM_197198|GBC36979.1|HST3_CANAL -> Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC36979.1_HST3_CANAL
+Rhizophagus_irregularis_DAOM_181602=DAOM_197198|GBC37849.1|SIR2_DANRE -> Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC37849.1_SIR2_DANRE
+Rhizophagus_irregularis_DAOM_181602=DAOM_197198|XP_025167123.1|SIR5_CHICK -> Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025167123.1_SIR5_CHICK
+Rhizophagus_irregularis_DAOM_181602=DAOM_197198|XP_025174138.1|SIR4_BATDJ -> Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025174138.1_SIR4_BATDJ
+Rhizophagus_irregularis_DAOM_181602=DAOM_197198|XP_025188153.1|SIR1_RAT -> Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025188153.1_SIR1_RAT
+Rhizophagus_irregularis_DAOM_197198w|EXX56402.1|SIR4_BATDJ -> Rhizophagus_irregularis_DAOM_197198w_EXX56402.1_SIR4_BATDJ
+Rhizophagus_irregularis_DAOM_197198w|EXX77156.1|SIR1_RAT -> Rhizophagus_irregularis_DAOM_197198w_EXX77156.1_SIR1_RAT
+Rozella_allomycis_CSF55|EPZ33665.1|SIR1_HUMAN -> Rozella_allomycis_CSF55_EPZ33665.1_SIR1_HUMAN
+Rozella_allomycis_CSF55|EPZ34088.1|HST3_CANAL -> Rozella_allomycis_CSF55_EPZ34088.1_HST3_CANAL
+Saccharomyces_cerevisiae_S288C|4IAO_A|SIR2_YEAST -> Saccharomyces_cerevisiae_S288C_4IAO_A_SIR2_YEAST
+Saccharomyces_cerevisiae_S288C|NP_010477.3|HST4_YEAST -> Saccharomyces_cerevisiae_S288C_NP_010477.3_HST4_YEAST
+Saccharomyces_cerevisiae_S288C|NP_014573.1|HST1_YEAST -> Saccharomyces_cerevisiae_S288C_NP_014573.1_HST1_YEAST
+Saccharomyces_cerevisiae_S288C|NP_014668.1|HST3_YEAST -> Saccharomyces_cerevisiae_S288C_NP_014668.1_HST3_YEAST
+Saccharomyces_cerevisiae_S288C|NP_015310.1|HST2_YEAST -> Saccharomyces_cerevisiae_S288C_NP_015310.1_HST2_YEAST
+Salpingoeca_rosetta|XP_004989159.1|SIR4_MONBE -> Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE
+Salpingoeca_rosetta|XP_004991122.1|SIRT2_DROME -> Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME
+Salpingoeca_rosetta|XP_004991725.1|SIR6_HUMAN -> Salpingoeca_rosetta_XP_004991725.1_SIR6_HUMAN
+Salpingoeca_rosetta|XP_004993416.1|SIR6_HUMAN -> Salpingoeca_rosetta_XP_004993416.1_SIR6_HUMAN
+Salpingoeca_rosetta|XP_004994060.1|SIRT1_DROME -> Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME
+Schizosaccharomyces_pombe|NP_001018840.1|SIR2_SCHPO -> Schizosaccharomyces_pombe_NP_001018840.1_SIR2_SCHPO
+Schizosaccharomyces_pombe|NP_588147.1|HST2_SCHPO -> Schizosaccharomyces_pombe_NP_588147.1_HST2_SCHPO
+Schizosaccharomyces_pombe|NP_593659.1|HST4_SCHPO -> Schizosaccharomyces_pombe_NP_593659.1_HST4_SCHPO
+Schmidtea_mediterranea|augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1|SIR5A_XENLA -> Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA
+Schmidtea_mediterranea|augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1|SIR4_MOUSE -> Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE
+Schmidtea_mediterranea|augustus_masked-scaffold272-processed-gene-3.2-mRNA-1|HST21_EMENI -> Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI
+Schmidtea_mediterranea|maker-scaffold8700-snap-gene-0.18-mRNA-1|SIR6_MOUSE -> Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_MOUSE
+Schmidtea_mediterranea|maker-scaffold9062-augustus-gene-0.7-mRNA-1|SIR1_RAT -> Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT
+Sphaeroforma_arctica_JP610|XP_014151708.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE
+Sphaeroforma_arctica_JP610|XP_014152202.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE
+Sphaeroforma_arctica_JP610|XP_014157535.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE
+Spizellomyces_punctatus_DAOM_BR117|XP_016604580.1|SIR4_BATDJ -> Spizellomyces_punctatus_DAOM_BR117_XP_016604580.1_SIR4_BATDJ
+Spizellomyces_punctatus_DAOM_BR117|XP_016606345.1|SIR1_HUMAN -> Spizellomyces_punctatus_DAOM_BR117_XP_016606345.1_SIR1_HUMAN
+Spizellomyces_punctatus_DAOM_BR117|XP_016609676.1|HST4_YEAST -> Spizellomyces_punctatus_DAOM_BR117_XP_016609676.1_HST4_YEAST
+Spizellomyces_punctatus_DAOM_BR117|XP_016611057.1|SIR2_DANRE -> Spizellomyces_punctatus_DAOM_BR117_XP_016611057.1_SIR2_DANRE
+Spizellomyces_punctatus_DAOM_BR117|XP_016612800.1|HST3_CANAL -> Spizellomyces_punctatus_DAOM_BR117_XP_016612800.1_HST3_CANAL
+Strongylocentrotus_purpuratus|XP_030832371.1|SIR6_HUMAN -> Strongylocentrotus_purpuratus_XP_030832371.1_SIR6_HUMAN
+Strongylocentrotus_purpuratus|XP_030835172.1|SIR1_RAT -> Strongylocentrotus_purpuratus_XP_030835172.1_SIR1_RAT
+Strongylocentrotus_purpuratus|XP_030841024.1|SIR7_HUMAN -> Strongylocentrotus_purpuratus_XP_030841024.1_SIR7_HUMAN
+Strongylocentrotus_purpuratus|XP_030842025.1|SIR5A_XENLA -> Strongylocentrotus_purpuratus_XP_030842025.1_SIR5A_XENLA
+Strongylocentrotus_purpuratus|XP_030845121.1|SIR3_HUMAN -> Strongylocentrotus_purpuratus_XP_030845121.1_SIR3_HUMAN
+Strongylocentrotus_purpuratus|XP_030855189.1|SIR2_DANRE -> Strongylocentrotus_purpuratus_XP_030855189.1_SIR2_DANRE
+Strongylocentrotus_purpuratus|XP_793816.2|SIR4_HUMAN -> Strongylocentrotus_purpuratus_XP_793816.2_SIR4_HUMAN
+Stylissa_carteri|maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1|SIR1_ARATH-Domain_2 -> Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain_2
+Stylissa_carteri|maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1|SIR6_HUMAN -> Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_HUMAN
+Stylissa_carteri|maker-SC_scaffold2848-snap-gene-0.24-mRNA-1|SIR1_ORYSI -> Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI
+Stylissa_carteri|maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1|SIR5_CANLF -> Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF
+Stylissa_carteri|maker-SC_scaffold739-snap-gene-0.85-mRNA-1|SIR6_HUMAN -> Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_HUMAN
+Stylissa_carteri|snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1|SIR2_RAT -> Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT
+Stylophora_pistillata|PFX22126.1|SIR7_BOVIN -> Stylophora_pistillata_PFX22126.1_SIR7_BOVIN
+Stylophora_pistillata|PFX26008.1|SIR1_ARATH -> Stylophora_pistillata_PFX26008.1_SIR1_ARATH
+Stylophora_pistillata|XP_022778949.1|SIR3_HUMAN -> Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN
+Stylophora_pistillata|XP_022784120.1|SIR6_MOUSE -> Stylophora_pistillata_XP_022784120.1_SIR6_MOUSE
+Stylophora_pistillata|XP_022787591.1|SIR4_HUMAN -> Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN
+Stylophora_pistillata|XP_022790004.1|SIR1_ARATH -> Stylophora_pistillata_XP_022790004.1_SIR1_ARATH
+Stylophora_pistillata|XP_022791312.1|SIR5_CANLF -> Stylophora_pistillata_XP_022791312.1_SIR5_CANLF
+Stylophora_pistillata|XP_022798495.1|SIR1_HUMAN -> Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN
+Stylophora_pistillata|XP_022806417.1|SIR2_MACFA -> Stylophora_pistillata_XP_022806417.1_SIR2_MACFA
+Sycon_ciliatum|scpid30110|scgid23058|SIR4_BOVIN -> Sycon_ciliatum_scpid30110_scgid23058_SIR4_BOVIN
+Sycon_ciliatum|scpid34155|scgid6944|SIR6_MOUSE -> Sycon_ciliatum_scpid34155_scgid6944_SIR6_MOUSE
+Sycon_ciliatum|scpid35494|scgid1967|SIR3_MOUSE -> Sycon_ciliatum_scpid35494_scgid1967_SIR3_MOUSE
+Sycon_ciliatum|scpid54149|scgid12450|SIR7_BOVIN -> Sycon_ciliatum_scpid54149_scgid12450_SIR7_BOVIN
+Sycon_ciliatum|scpid85443|scgid2590|SIR2_DANRE -> Sycon_ciliatum_scpid85443_scgid2590_SIR2_DANRE
+Thelohanellus_kitauei|KII66353.1|SIR2_MOUSE -> Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE
+Trichoplax_adhaerens|XP_002108771.1|SIR3_MOUSE -> Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE
+Trichoplax_adhaerens|XP_002108772.1|SIR3_MOUSE -> Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE
+Trichoplax_adhaerens|XP_002109473.1|SIR7_BOVIN -> Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN
+Trichoplax_adhaerens|XP_002110277.1|SIR6_HUMAN -> Trichoplax_adhaerens_XP_002110277.1_SIR6_HUMAN
+Trichoplax_adhaerens|XP_002111996.1|SIR5_MOUSE -> Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE
+Trichoplax_adhaerens|XP_002113435.1|SIR2_DANRE -> Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE
+Trichoplax_adhaerens|XP_002113608.1|SIR2_DANRE -> Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE
+Trichoplax_adhaerens|XP_002114969.1|SIR4_MOUSE -> Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE
+Trichoplax_sp._H2|RDD40343.1|SIR2_DANRE -> Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE
+Trichoplax_sp._H2|RDD40986.1|SIR4_MOUSE -> Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE
+Trichoplax_sp._H2|RDD42035.1|SIR3_MOUSE -> Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE
+Trichoplax_sp._H2|RDD42036.1|SIR3_HUMAN -> Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN
+Trichoplax_sp._H2|RDD44172.1|SIR5_CANLF -> Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF
+Trichoplax_sp._H2|RDD44322.1|SIR2_DANRE -> Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE
+Trichoplax_sp._H2|RDD45328.1|SIR7_BOVIN -> Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN
+Xenopus_laevis|NP_001084634.1|SIR4_BOVIN -> Xenopus_laevis_NP_001084634.1_SIR4_BOVIN
+Xenopus_laevis|NP_001085592.1|SIR6_HUMAN -> Xenopus_laevis_NP_001085592.1_SIR6_HUMAN
+Xenopus_laevis|NP_001087484.1|SIR5B_XENLA -> Xenopus_laevis_NP_001087484.1_SIR5B_XENLA
+Xenopus_laevis|NP_001088383.1|SIR7_HUMAN -> Xenopus_laevis_NP_001088383.1_SIR7_HUMAN
+Xenopus_laevis|NP_001088636.1|SIR2_DANRE -> Xenopus_laevis_NP_001088636.1_SIR2_DANRE
+Xenopus_laevis|NP_001089567.1|SIR3_HUMAN -> Xenopus_laevis_NP_001089567.1_SIR3_HUMAN
+Xenopus_laevis|NP_001091195.1|SIR1_HUMAN -> Xenopus_laevis_NP_001091195.1_SIR1_HUMAN
+Xenopus_laevis|XP_018115596.1|SIR3_MOUSE -> Xenopus_laevis_XP_018115596.1_SIR3_MOUSE
+
+                                                                                            Gap/Ambiguity  Composition  p-value
+   1  Acropora_digitifera_XP_015751984.1_SIR7_BOVIN                                                73.43%    passed     66.13%
+   2  Acropora_digitifera_XP_015764189.1_SIR6_HUMAN                                                68.50%    passed     87.40%
+   3  Acropora_digitifera_XP_015764941.1_SIR5_CANLF                                                60.83%    passed     49.81%
+   4  Acropora_digitifera_XP_015769634.1_SIR3_HUMAN                                                63.78%    passed     80.93%
+   5  Acropora_digitifera_XP_015774796.1_SIR1_ARATH                                                69.09%    passed     88.90%
+   6  Acropora_digitifera_XP_015779163.1_SIR2_PONAB                                                74.80%    passed     53.43%
+   7  Acropora_digitifera_XP_015779435.1_SIR1_RAT                                                  63.58%    failed      1.42%
+   8  Acropora_digitifera_XP_015779547.1_SIR4_BOVIN                                                59.45%    passed     53.20%
+   9  Acropora_millepora_XP_029180011.1_SIR7_BOVIN                                                 73.43%    passed     66.13%
+  10  Acropora_millepora_XP_029181270.1_SIR6_HUMAN                                                 68.50%    passed     87.40%
+  11  Acropora_millepora_XP_029189280.1_SIR2_MACFA                                                 63.98%    passed     79.33%
+  12  Acropora_millepora_XP_029189899.1_SIR3_HUMAN                                                 63.78%    passed     83.17%
+  13  Acropora_millepora_XP_029191153.1_SIR5_CANLF                                                 60.83%    passed     83.03%
+  14  Acropora_millepora_XP_029212880.1_SIR1_MOUSE                                                 62.99%    failed      2.80%
+  15  Acropora_millepora_XP_029213217.1_SIR4_BOVIN                                                 59.45%    passed     34.75%
+  16  Acropora_millepora_XP_029214424.1_SIR1_ARATH                                                 64.76%    passed     99.33%
+  17  Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN                                                  62.80%    passed     34.39%
+  18  Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN                                                  59.65%    passed     59.50%
+  19  Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN                                                  68.70%    passed     96.27%
+  20  Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN                                                  63.78%    failed      2.25%
+  21  Actinia_tenebrosa_XP_031561543.1_SIR6_HUMAN                                                  69.49%    passed     74.29%
+  22  Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF                                                  60.83%    passed     71.95%
+  23  Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH                                                  65.16%    passed     53.76%
+  24  Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH                                                  68.50%    passed     46.27%
+  25  Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE                                                  63.98%    passed     96.97%
+  26  Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF                                           61.22%    passed     99.28%
+  27  Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH                                           64.76%    passed     31.78%
+  28  Amphimedon_queenslandica_XP_003385596.1_SIR1_ARATH                                           63.39%    passed     38.17%
+  29  Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI                                           64.76%    passed     35.90%
+  30  Amphimedon_queenslandica_XP_003389737.2_SIR6_HUMAN                                           68.50%    passed     36.37%
+  31  Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN                                           59.65%    passed     73.56%
+  32  Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE                                           61.02%    passed     15.81%
+  33  Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH                                           65.16%    passed     78.95%
+  34  Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN                                           63.58%    passed     97.74%
+  35  Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE                                           61.42%    passed     58.32%
+  36  Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain_1                                  62.60%    passed     85.99%
+  37  Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain_2                                  61.61%    passed     56.68%
+  38  Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN                         82.09%    passed     15.47%
+  39  Aurelia_coerulea_XLOC_010146_TCONS_00014081_Seg1390.7.p1_SIR7_MOUSE                          68.90%    passed     91.25%
+  40  Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN                          62.99%    passed     10.02%
+  41  Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE                          63.98%    passed     66.82%
+  42  Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_HUMAN                          69.09%    passed     97.67%
+  43  Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE                          81.89%    passed     28.18%
+  44  Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH                           64.76%    passed     84.29%
+  45  Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN                           59.84%    passed     66.49%
+  46  Caenorhabditis_elegans_NP_001255484.1_SIR2_CAEEL                                             64.17%    passed     67.51%
+  47  Caenorhabditis_elegans_NP_001367072.1_SIR41_CAEEL                                            58.66%    passed     99.59%
+  48  Caenorhabditis_elegans_NP_491733.2_SIR24_CAEEL                                               73.82%    passed     74.39%
+  49  Caenorhabditis_elegans_NP_510220.1_SIR42_CAEEL                                               59.06%    passed     45.06%
+  50  Capitella_teleta_ELT89185.1_SIR3_HUMAN                                                       63.78%    passed     43.86%
+  51  Capitella_teleta_ELT89708.1_SIR3_HUMAN                                                       63.58%    passed     85.42%
+  52  Capitella_teleta_ELT93675.1_SIR6_HUMAN                                                       63.98%    passed     49.62%
+  53  Capitella_teleta_ELT94099.1_SIR2_DANRE                                                       63.58%    passed     67.57%
+  54  Capitella_teleta_ELT98667.1_SIR5_CANLF                                                       60.83%    passed     80.16%
+  55  Capitella_teleta_ELU02773.1_SIR7_HUMAN                                                       73.82%    passed     92.51%
+  56  Capitella_teleta_ELU05314.1_SIR1_ORYSI                                                       58.27%    failed      4.73%
+  57  Capitella_teleta_ELU08256.1_SIR6_MOUSE                                                       68.31%    passed     69.72%
+  58  Capitella_teleta_ELU13851.1_SIR4_MOUSE                                                       59.45%    passed     94.45%
+  59  Capitella_teleta_ELU15226.1_SIR1_MOUSE                                                       61.42%    passed     33.90%
+  60  Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE                                       59.25%    passed     53.88%
+  61  Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_HUMAN                                   68.31%    passed     23.71%
+  62  Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN                                   72.64%    passed     39.81%
+  63  Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE                                   63.19%    failed      0.83%
+  64  Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE                                   63.58%    passed     93.38%
+  65  Ciona_intestinalis_BAE93336.1_SIR4_MOUSE                                                     59.65%    failed      0.75%
+  66  Ciona_intestinalis_BAE93342.1_SIR1_HUMAN                                                     63.39%    passed     52.58%
+  67  Ciona_intestinalis_FAA00194.1_SIR3_HUMAN                                                     63.39%    passed     18.75%
+  68  Ciona_intestinalis_FAA00213.1_SIR6_MOUSE                                                     69.29%    passed     86.83%
+  69  Ciona_intestinalis_FAA00231.1_SIR2_DANRE                                                     63.98%    passed     87.12%
+  70  Ciona_intestinalis_XP_002121470.1_SIR7_RAT                                                   67.32%    passed     42.18%
+  71  Ciona_intestinalis_XP_002129772.2_SIR5_MOUSE                                                 61.22%    passed     79.63%
+  72  Clytia_hemisphaerica_TCONS_00017752_SIR4_MOUSE                                               59.45%    passed     38.22%
+  73  Clytia_hemisphaerica_TCONS_00023571_SIR1_HUMAN                                               62.40%    passed     57.53%
+  74  Clytia_hemisphaerica_TCONS_00029362_SIR2_DANRE                                               63.98%    passed     93.36%
+  75  Clytia_hemisphaerica_TCONS_00045855_SIR1_ORYSI                                               64.96%    passed     38.50%
+  76  Clytia_hemisphaerica_TCONS_00056393_SIR6_HUMAN                                               68.90%    passed     90.07%
+  77  Daphnia_magna_KZS14613.1_SIR5_DAPPU                                                          60.83%    passed     51.89%
+  78  Daphnia_magna_KZS21532.1_SIR6_DROME                                                          69.09%    passed     94.98%
+  79  Daphnia_magna_XP_032777598.1_SIR2_MOUSE                                                      63.78%    passed     48.39%
+  80  Daphnia_magna_XP_032792754.1_SIR1_HUMAN                                                      60.04%    passed     49.41%
+  81  Daphnia_magna_XP_032795411.1_SIR4_DROME                                                      58.66%    passed     40.81%
+  82  Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF                                            60.83%    passed     96.74%
+  83  Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE                                            63.78%    passed     96.80%
+  84  Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE                                            59.45%    passed     28.55%
+  85  Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN                                            62.99%    passed     74.62%
+  86  Dendronephthya_gigantea_XP_028412260.1_SIR6_HUMAN                                            68.50%    passed     96.35%
+  87  Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN                                            68.11%    passed     75.95%
+  88  Drosophila_melanogaster_AAC79684.1_SIRT1_DROME                                               59.06%    passed     82.67%
+  89  Drosophila_melanogaster_AAL28953.1_SIR7_DROME                                                73.82%    failed      4.17%
+  90  Drosophila_melanogaster_AAL48850.1_SIRT2_DROME                                               63.98%    passed     77.06%
+  91  Drosophila_melanogaster_AEB33520.1_SIR6_DROME                                                68.70%    passed     96.70%
+  92  Drosophila_melanogaster_NP_572241.2_SIR4_DROME                                               59.65%    passed     68.26%
+  93  Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE                                                59.65%    passed     88.63%
+  94  Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH                                              56.69%    passed     29.10%
+  95  Ephydatia_muelleri_m.41112_g.41112_SIR6_HUMAN                                                67.91%    passed     76.12%
+  96  Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF                                                60.83%    passed     33.66%
+  97  Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH                                                65.35%    passed     80.16%
+  98  Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE                                                63.58%    passed     86.46%
+  99  Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN                                                62.99%    passed     80.87%
+ 100  Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE                                                61.42%    passed     82.66%
+ 101  Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN                                                    71.06%    passed     29.49%
+ 102  Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN                                                    68.70%    passed     95.69%
+ 103  Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN                                                62.99%    passed     35.75%
+ 104  Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN                                                59.84%    passed     18.23%
+ 105  Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK                                                60.83%    passed     89.85%
+ 106  Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH                                                64.96%    passed     16.43%
+ 107  Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE                                                64.17%    passed     90.78%
+ 108  Exaiptasia_diaphana_XP_020916137.1_SIR6_HUMAN                                                69.88%    passed     70.67%
+ 109  Fonticula_alba_XP_009493409.1_SIR1_RAT                                                       63.39%    passed     47.20%
+ 110  Fonticula_alba_XP_009494611.1_HST3_YEAST                                                     57.09%    passed     13.57%
+ 111  Fonticula_alba_XP_009494998.1_SIR2_RAT                                                       60.43%    failed      0.33%
+ 112  Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH                                         74.61%    passed     17.00%
+ 113  Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE                                         59.65%    passed     63.49%
+ 114  Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE                                        61.42%    passed     53.90%
+ 115  Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN                                        63.58%    passed     91.13%
+ 116  Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF                                        61.22%    passed     97.12%
+ 117  Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE                                       61.61%    passed     19.24%
+ 118  Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN                                            59.65%    passed     61.81%
+ 119  Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR                                            61.22%    passed     88.26%
+ 120  Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH                                            60.63%    failed      3.19%
+ 121  Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN                                           60.04%    passed     70.20%
+ 122  Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE                                           60.43%    passed     90.66%
+ 123  Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE                                           63.58%    passed     78.99%
+ 124  Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_HUMAN                                           68.31%    passed     96.88%
+ 125  Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH                                           65.16%    passed     15.08%
+ 126  Henneguya_salminicola_KAF0992715.1_SIR2_DANRE                                                63.78%    passed     36.11%
+ 127  Homo_sapiens_1J8F_A_SIR2_HUMAN                                                               63.58%    passed     65.50%
+ 128  Homo_sapiens_2B4Y_A_SIR5_HUMAN                                                               61.02%    passed     13.73%
+ 129  Homo_sapiens_3GLR_A_SIR3_HUMAN                                                               64.17%    passed     27.42%
+ 130  Homo_sapiens_4I5I_A_SIR1_HUMAN                                                               63.19%    passed     26.94%
+ 131  Homo_sapiens_AAB95634.1_SIR4_HUMAN                                                           57.09%    passed      5.09%
+ 132  Homo_sapiens_AAD15478.1_SIR6_HUMAN                                                           65.35%    passed     25.74%
+ 133  Homo_sapiens_AAF67015.1_SIR2_HUMAN                                                           63.58%    passed     41.61%
+ 134  Homo_sapiens_BAF82954.1_SIR7_HUMAN                                                           73.43%    passed      8.06%
+ 135  Homo_sapiens_NP_001307988.1_SIR6_HUMAN                                                       81.50%    passed     24.41%
+ 136  Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE                                                     59.06%    passed     21.21%
+ 137  Hydra_vulgaris_XP_012555795.1_SIR1_RAT                                                       63.19%    passed     23.26%
+ 138  Hydra_vulgaris_XP_012563212.1_SIR6_HUMAN                                                     68.90%    passed     95.16%
+ 139  Latimeria_chalumnae_XP_005987227.1_SIR4_MOUSE                                                59.45%    passed      9.33%
+ 140  Latimeria_chalumnae_XP_005989117.1_SIR7_BOVIN                                                73.43%    passed     30.94%
+ 141  Latimeria_chalumnae_XP_005995267.1_SIR5_XENTR                                                60.83%    passed     74.58%
+ 142  Latimeria_chalumnae_XP_005999101.1_SIR6_MOUSE                                                68.90%    passed     77.64%
+ 143  Latimeria_chalumnae_XP_005999102.1_SIR6_MOUSE                                                70.47%    passed     58.25%
+ 144  Latimeria_chalumnae_XP_006009775.1_SIR3_HUMAN                                                64.17%    passed     20.89%
+ 145  Latimeria_chalumnae_XP_014340979.1_SIR3_HUMAN                                                64.17%    passed     35.91%
+ 146  Latimeria_chalumnae_XP_014348996.1_SIR2_DANRE                                                63.58%    passed     46.20%
+ 147  Latimeria_chalumnae_XP_014352742.1_SIR1_HUMAN                                                74.41%    passed     16.32%
+ 148  Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME                                   72.64%    passed     73.57%
+ 149  Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE                                    63.98%    passed     83.61%
+ 150  Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH                                    70.28%    passed     23.20%
+ 151  Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN                                     74.41%    passed     48.74%
+ 152  Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE                                     63.98%    passed     80.32%
+ 153  Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH                                    77.17%    passed     41.01%
+ 154  Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN                                     58.86%    passed     67.33%
+ 155  Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_HUMAN                                     67.91%    passed     86.64%
+ 156  Loxodonta_africana_XP_003419372.1_SIR4_HUMAN                                                 59.45%    failed      1.87%
+ 157  Loxodonta_africana_XP_003420816.1_SIR2_MOUSE                                                 63.58%    passed     43.61%
+ 158  Loxodonta_africana_XP_003421943.1_SIR6_HUMAN                                                 68.90%    passed     38.24%
+ 159  Loxodonta_africana_XP_010595345.1_SIR7_BOVIN                                                 73.62%    passed      9.86%
+ 160  Loxodonta_africana_XP_010600552.2_SIR3_HUMAN                                                 64.17%    passed     41.22%
+ 161  Loxodonta_africana_XP_023402757.1_SIR1_HUMAN                                                 63.19%    passed     26.94%
+ 162  Loxodonta_africana_XP_023411467.1_SIR5_PONAB                                                 67.32%    passed     14.76%
+ 163  Mnemiopsis_leidyi_ML002614a-PA_SIR6_HUMAN                                                    69.69%    passed     55.98%
+ 164  Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN                                                   61.61%    passed     62.94%
+ 165  Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE                                                    63.19%    passed     24.57%
+ 166  Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN                                                     63.19%    passed     48.50%
+ 167  Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE                                                    63.78%    passed     29.61%
+ 168  Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH                                                    59.25%    failed      1.93%
+ 169  Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE                                                     62.80%    passed     82.57%
+ 170  Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE                                                     73.23%    passed     50.64%
+ 171  Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT                                             62.20%    passed     65.92%
+ 172  Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE                                           60.04%    passed     15.99%
+ 173  Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH                                           74.41%    passed     10.90%
+ 174  Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME                                          63.98%    passed     93.73%
+ 175  Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN                                           63.98%    failed      0.17%
+ 176  Mus_musculus_AAG32038.1_SIR2_MOUSE                                                           63.58%    passed     81.24%
+ 177  Mus_musculus_AAG33227.1_SIR3_MOUSE                                                           64.17%    passed     67.24%
+ 178  Mus_musculus_AAH22653.1_SIR4_MOUSE                                                           59.45%    failed      1.17%
+ 179  Mus_musculus_AAI52315.1_SIR1_MOUSE                                                           63.19%    passed     33.51%
+ 180  Mus_musculus_AAP83960.1_SIR7_MOUSE                                                           73.62%    passed     15.19%
+ 181  Mus_musculus_NP_001156902.1_SIR6_MOUSE                                                       68.50%    passed     24.85%
+ 182  Mus_musculus_NP_849179.1_SIR5_MOUSE                                                          60.83%    passed     14.21%
+ 183  Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE                                                  63.58%    passed     46.85%
+ 184  Nematostella_vectensis_EDO29747.1_SIR7_BOVIN                                                 68.70%    passed     96.65%
+ 185  Nematostella_vectensis_EDO31684.1_SIR1_RAT                                                   62.99%    passed     67.65%
+ 186  Nematostella_vectensis_EDO32517.1_SIR6_HUMAN                                                 69.29%    passed     97.61%
+ 187  Nematostella_vectensis_EDO46813.1_SIR2_DANRE                                                 63.98%    passed     92.52%
+ 188  Nematostella_vectensis_EDO47672.1_SIR3_HUMAN                                                 63.78%    passed     68.61%
+ 189  Nematostella_vectensis_EDO48459.1_SIR2_DANRE                                                 63.98%    passed     64.29%
+ 190  Nematostella_vectensis_XP_001627929.1_SIR4_MOUSE                                             59.45%    passed     90.12%
+ 191  Nematostella_vectensis_XP_032220213.1_SIR5_CANLF                                             60.83%    passed     79.01%
+ 192  Octopus_bimaculoides_KOF67188.1_SIR1_MOUSE                                                   63.19%    passed     33.58%
+ 193  Octopus_bimaculoides_KOF89850.1_SIR4_BOVIN                                                   59.84%    passed     63.58%
+ 194  Octopus_bimaculoides_XP_014773199.1_SIR7_BOVIN                                               73.43%    passed     11.86%
+ 195  Octopus_bimaculoides_XP_014781166.1_SIR2_DANRE                                               64.17%    passed     43.51%
+ 196  Octopus_bimaculoides_XP_014781174.1_SIR2_DANRE                                               69.29%    passed     40.28%
+ 197  Octopus_bimaculoides_XP_014786464.1_SIR6_MOUSE                                               69.29%    passed     94.65%
+ 198  Octopus_bimaculoides_XP_014786523.1_SIR3_MOUSE                                               63.98%    passed     33.60%
+ 199  Octopus_bimaculoides_XP_014789318.1_SIR5_DANRE                                               60.83%    passed     56.05%
+ 200  Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN                                                59.45%    passed     61.43%
+ 201  Orbicella_faveolata_XP_020603299.1_SIR5_CANLF                                                67.91%    passed     87.60%
+ 202  Orbicella_faveolata_XP_020604327.1_SIR1_ARATH                                                53.54%    passed      6.27%
+ 203  Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN                                                63.78%    passed     54.93%
+ 204  Orbicella_faveolata_XP_020605893.1_SIR2_DANRE                                                63.98%    passed     75.98%
+ 205  Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN                                                73.43%    passed     73.03%
+ 206  Orbicella_faveolata_XP_020608150.1_SIR6_MOUSE                                                67.32%    passed     64.82%
+ 207  Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN                                                62.99%    passed      6.64%
+ 208  Orbicella_faveolata_XP_020631316.1_SIR1_ARATH                                                64.96%    passed     93.90%
+ 209  Orbicella_faveolata_XP_020631320.1_SIR1_ARATH                                                64.76%    passed     99.15%
+ 210  Oscarella_carmela_m.102278_g.102278_SIR5_CANLF                                               60.83%    passed     82.43%
+ 211  Oscarella_carmela_m.10296_g.10296_SIR4_MOUSE                                                 59.45%    passed     85.16%
+ 212  Oscarella_carmela_m.16056_g.16056_SIR7_MOUSE                                                 68.70%    passed     77.77%
+ 213  Oscarella_carmela_m.20604_g.20604_SIR2_DANRE                                                 63.98%    passed     90.77%
+ 214  Oscarella_carmela_m.214358_g.214358_SIR1_ARATH                                               68.70%    passed     24.99%
+ 215  Oscarella_carmela_m.310769_g.310769_SIR1_HUMAN                                               62.99%    passed     46.24%
+ 216  Oscarella_carmela_m.58799_g.58799_SIR1_ARATH                                                 64.96%    passed     15.34%
+ 217  Oscarella_carmela_m.66298_g.66298_SIR3_MOUSE                                                 63.78%    passed     72.54%
+ 218  Oscarella_carmela_m.9609_g.9609_SIR1_ARATH                                                   64.96%    passed     56.42%
+ 219  Physeter_catodon_XP_007114637.1_SIR2_HUMAN                                                   63.58%    passed     74.33%
+ 220  Physeter_catodon_XP_007125686.2_SIR7_BOVIN                                                   73.62%    passed      5.89%
+ 221  Physeter_catodon_XP_007130056.1_SIR4_BOVIN                                                   59.45%    passed      7.11%
+ 222  Physeter_catodon_XP_023987866.1_SIR1_HUMAN                                                   63.19%    passed     26.94%
+ 223  Physeter_catodon_XP_023990199.1_SIR6_HUMAN                                                   68.70%    passed     38.84%
+ 224  Physeter_catodon_XP_028333445.1_SIR2_HUMAN                                                   67.52%    passed     73.03%
+ 225  Physeter_catodon_XP_028335533.1_SIR3_MOUSE                                                   74.61%    passed     43.71%
+ 226  Physeter_catodon_XP_028335621.1_NOL7_HUMAN                                                   79.53%    failed      4.78%
+ 227  Pleurobrachia_bachei_sb_2643951__SIR2_DANRE                                                  69.88%    passed     96.71%
+ 228  Pleurobrachia_bachei_sb_2650883__SIR2_RAT                                                    64.37%    passed     33.22%
+ 229  Pleurobrachia_bachei_sb_2653035__SIR1_RAT                                                    73.23%    passed     80.97%
+ 230  Pleurobrachia_bachei_sb_2657812__SIR6_MOUSE                                                  81.50%    passed     48.36%
+ 231  Pleurobrachia_bachei_sb_2658796__SIR3_MOUSE                                                  63.78%    passed     65.29%
+ 232  Pleurobrachia_bachei_sb_2664049__SIRT2_DROME                                                 62.40%    passed     60.34%
+ 233  Pleurobrachia_bachei_sb_2669295__CNX2_ARATH                                                  75.98%    passed     98.88%
+ 234  Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI                                                 64.76%    passed     94.27%
+ 235  Pocillopora_damicornis_RMX45954.1_SIR2_MACFA                                                 62.40%    passed     83.79%
+ 236  Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN                                                 59.45%    passed     93.02%
+ 237  Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN                                             63.78%    passed     86.21%
+ 238  Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH                                             65.16%    passed     90.23%
+ 239  Pocillopora_damicornis_XP_027050255.1_SIR6_MOUSE                                             73.23%    passed     97.20%
+ 240  Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN                                             62.99%    passed     17.90%
+ 241  Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF                                             62.40%    passed     30.49%
+ 242  Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN                                             73.43%    passed     82.69%
+ 243  Puccinia_graminis_f._sp._tritici_KAA1089320.1_SIR4_BATDJ                                     54.92%    passed     91.44%
+ 244  Puccinia_graminis_f._sp._tritici_KAA1105247.1_HST1_EMENI                                     54.53%    passed     27.27%
+ 245  Puccinia_graminis_f._sp._tritici_KAA1106496.1_HST4_SCHPO                                     59.25%    passed     69.29%
+ 246  Puccinia_graminis_f._sp._tritici_KAA1107068.1_SIR2_DANRE                                     62.01%    passed     57.11%
+ 247  Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003307144.1_HST4_SCHPO                   59.25%    passed     69.29%
+ 248  Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003328749.2_SIR4_BATDJ                   54.92%    passed     94.38%
+ 249  Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003333670.2_SIR2_DANRE                   62.01%    passed     70.40%
+ 250  Rhizophagus_irregularis_PKC08513.1_SIR1_RAT                                                  62.20%    passed     30.14%
+ 251  Rhizophagus_irregularis_PKC12084.1_HST3_CANAL                                                56.50%    passed     88.22%
+ 252  Rhizophagus_irregularis_PKC15272.1_SIR2_DANRE                                                63.98%    passed     51.99%
+ 253  Rhizophagus_irregularis_PKC73350.1_SIR4_BATDJ                                                57.48%    passed     14.53%
+ 254  Rhizophagus_irregularis_PKY52607.1_SIR5_CHICK                                                61.61%    passed     31.86%
+ 255  Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC36979.1_HST3_CANAL                        56.50%    passed     88.22%
+ 256  Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC37849.1_SIR2_DANRE                        63.98%    passed     51.99%
+ 257  Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025167123.1_SIR5_CHICK                    61.61%    passed     48.91%
+ 258  Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025174138.1_SIR4_BATDJ                    57.48%    passed     20.49%
+ 259  Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025188153.1_SIR1_RAT                      62.60%    passed     20.57%
+ 260  Rhizophagus_irregularis_DAOM_197198w_EXX56402.1_SIR4_BATDJ                                   57.48%    passed     20.49%
+ 261  Rhizophagus_irregularis_DAOM_197198w_EXX77156.1_SIR1_RAT                                     68.70%    passed     62.25%
+ 262  Rozella_allomycis_CSF55_EPZ33665.1_SIR1_HUMAN                                                64.17%    passed     53.79%
+ 263  Rozella_allomycis_CSF55_EPZ34088.1_HST3_CANAL                                                59.06%    passed     24.00%
+ 264  Saccharomyces_cerevisiae_S288C_4IAO_A_SIR2_YEAST                                             57.28%    passed     48.01%
+ 265  Saccharomyces_cerevisiae_S288C_NP_010477.3_HST4_YEAST                                        57.48%    passed     89.39%
+ 266  Saccharomyces_cerevisiae_S288C_NP_014573.1_HST1_YEAST                                        58.27%    passed     51.67%
+ 267  Saccharomyces_cerevisiae_S288C_NP_014668.1_HST3_YEAST                                        55.12%    passed     15.47%
+ 268  Saccharomyces_cerevisiae_S288C_NP_015310.1_HST2_YEAST                                        60.83%    passed     74.11%
+ 269  Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE                                                59.45%    passed      5.08%
+ 270  Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME                                               63.98%    passed     86.64%
+ 271  Salpingoeca_rosetta_XP_004991725.1_SIR6_HUMAN                                                71.26%    passed     21.84%
+ 272  Salpingoeca_rosetta_XP_004993416.1_SIR6_HUMAN                                                69.49%    passed     76.72%
+ 273  Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME                                               54.92%    passed     50.73%
+ 274  Schizosaccharomyces_pombe_NP_001018840.1_SIR2_SCHPO                                          57.28%    passed     53.77%
+ 275  Schizosaccharomyces_pombe_NP_588147.1_HST2_SCHPO                                             63.98%    passed     34.70%
+ 276  Schizosaccharomyces_pombe_NP_593659.1_HST4_SCHPO                                             57.87%    passed     81.42%
+ 277  Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA   61.22%    passed     26.47%
+ 278  Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE    75.00%    passed     67.39%
+ 279  Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI     63.78%    failed      4.61%
+ 280  Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_MOUSE                   64.37%    passed     16.34%
+ 281  Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT                  59.45%    passed     38.76%
+ 282  Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE                                         63.78%    passed     57.23%
+ 283  Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE                                         63.98%    passed     91.61%
+ 284  Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE                                         57.87%    passed     59.54%
+ 285  Spizellomyces_punctatus_DAOM_BR117_XP_016604580.1_SIR4_BATDJ                                 57.68%    passed     20.05%
+ 286  Spizellomyces_punctatus_DAOM_BR117_XP_016606345.1_SIR1_HUMAN                                 63.78%    passed     44.56%
+ 287  Spizellomyces_punctatus_DAOM_BR117_XP_016609676.1_HST4_YEAST                                 59.06%    passed     46.66%
+ 288  Spizellomyces_punctatus_DAOM_BR117_XP_016611057.1_SIR2_DANRE                                 64.17%    passed     59.53%
+ 289  Spizellomyces_punctatus_DAOM_BR117_XP_016612800.1_HST3_CANAL                                 57.68%    passed     85.62%
+ 290  Strongylocentrotus_purpuratus_XP_030832371.1_SIR6_HUMAN                                      68.50%    passed     48.76%
+ 291  Strongylocentrotus_purpuratus_XP_030835172.1_SIR1_RAT                                        62.99%    passed     66.82%
+ 292  Strongylocentrotus_purpuratus_XP_030841024.1_SIR7_HUMAN                                      66.54%    passed     96.77%
+ 293  Strongylocentrotus_purpuratus_XP_030842025.1_SIR5A_XENLA                                     60.83%    passed     66.68%
+ 294  Strongylocentrotus_purpuratus_XP_030845121.1_SIR3_HUMAN                                      63.58%    passed     10.28%
+ 295  Strongylocentrotus_purpuratus_XP_030855189.1_SIR2_DANRE                                      63.58%    passed     40.33%
+ 296  Strongylocentrotus_purpuratus_XP_793816.2_SIR4_HUMAN                                         59.25%    passed     92.56%
+ 297  Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain_2       57.09%    passed     60.79%
+ 298  Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_HUMAN                 81.50%    passed     35.18%
+ 299  Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI                      64.76%    passed     61.26%
+ 300  Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF                  60.63%    passed     46.34%
+ 301  Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_HUMAN                       64.96%    passed     38.81%
+ 302  Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT             65.94%    passed     18.03%
+ 303  Stylophora_pistillata_PFX22126.1_SIR7_BOVIN                                                  73.43%    passed     83.63%
+ 304  Stylophora_pistillata_PFX26008.1_SIR1_ARATH                                                  64.76%    passed     88.65%
+ 305  Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN                                              63.78%    passed     80.36%
+ 306  Stylophora_pistillata_XP_022784120.1_SIR6_MOUSE                                              73.23%    passed     96.49%
+ 307  Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN                                              59.45%    passed     74.73%
+ 308  Stylophora_pistillata_XP_022790004.1_SIR1_ARATH                                              65.16%    passed     87.84%
+ 309  Stylophora_pistillata_XP_022791312.1_SIR5_CANLF                                              60.83%    passed     37.75%
+ 310  Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN                                              62.99%    passed     11.69%
+ 311  Stylophora_pistillata_XP_022806417.1_SIR2_MACFA                                              63.98%    passed     85.70%
+ 312  Sycon_ciliatum_scpid30110_scgid23058_SIR4_BOVIN                                              58.86%    passed     45.98%
+ 313  Sycon_ciliatum_scpid34155_scgid6944_SIR6_MOUSE                                               68.31%    passed     97.95%
+ 314  Sycon_ciliatum_scpid35494_scgid1967_SIR3_MOUSE                                               63.98%    passed     93.24%
+ 315  Sycon_ciliatum_scpid54149_scgid12450_SIR7_BOVIN                                              73.82%    passed     12.24%
+ 316  Sycon_ciliatum_scpid85443_scgid2590_SIR2_DANRE                                               63.98%    passed     87.80%
+ 317  Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE                                                  77.56%    passed     79.25%
+ 318  Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE                                               63.98%    passed     12.35%
+ 319  Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE                                               63.58%    passed     93.13%
+ 320  Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN                                               73.82%    passed     48.11%
+ 321  Trichoplax_adhaerens_XP_002110277.1_SIR6_HUMAN                                               69.69%    passed     82.17%
+ 322  Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE                                               61.22%    passed     51.02%
+ 323  Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE                                               62.80%    passed     47.03%
+ 324  Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE                                               63.58%    passed     80.89%
+ 325  Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE                                               59.84%    passed     62.44%
+ 326  Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE                                                      62.80%    passed     47.03%
+ 327  Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE                                                      59.84%    passed     62.14%
+ 328  Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE                                                      63.98%    passed     12.35%
+ 329  Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN                                                      63.58%    passed     93.13%
+ 330  Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF                                                      59.25%    passed     58.49%
+ 331  Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE                                                      63.58%    passed     80.89%
+ 332  Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN                                                      73.82%    passed     48.11%
+ 333  Xenopus_laevis_NP_001084634.1_SIR4_BOVIN                                                     59.45%    passed     10.71%
+ 334  Xenopus_laevis_NP_001085592.1_SIR6_HUMAN                                                     69.09%    passed     91.91%
+ 335  Xenopus_laevis_NP_001087484.1_SIR5B_XENLA                                                    60.83%    passed     46.65%
+ 336  Xenopus_laevis_NP_001088383.1_SIR7_HUMAN                                                     73.62%    passed     34.82%
+ 337  Xenopus_laevis_NP_001088636.1_SIR2_DANRE                                                     63.58%    passed     64.67%
+ 338  Xenopus_laevis_NP_001089567.1_SIR3_HUMAN                                                     64.17%    passed     31.60%
+ 339  Xenopus_laevis_NP_001091195.1_SIR1_HUMAN                                                     63.19%    passed     21.69%
+ 340  Xenopus_laevis_XP_018115596.1_SIR3_MOUSE                                                     64.17%    passed     46.10%
+WARNING: 340 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                                        64.46%  15 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Acropora_millepora_XP_029180011.1_SIR7_BOVIN is identical to Acropora_digitifera_XP_015751984.1_SIR7_BOVIN but kept for subsequent analysis
+NOTE: Acropora_millepora_XP_029181270.1_SIR6_HUMAN is identical to Acropora_digitifera_XP_015764189.1_SIR6_HUMAN but kept for subsequent analysis
+NOTE: Loxodonta_africana_XP_023402757.1_SIR1_HUMAN is identical to Homo_sapiens_4I5I_A_SIR1_HUMAN but kept for subsequent analysis
+NOTE: Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003307144.1_HST4_SCHPO is identical to Puccinia_graminis_f._sp._tritici_KAA1106496.1_HST4_SCHPO but kept for subsequent analysis
+NOTE: Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC36979.1_HST3_CANAL is identical to Rhizophagus_irregularis_PKC12084.1_HST3_CANAL but kept for subsequent analysis
+NOTE: Rhizophagus_irregularis_DAOM_181602_DAOM_197198_GBC37849.1_SIR2_DANRE is identical to Rhizophagus_irregularis_PKC15272.1_SIR2_DANRE but kept for subsequent analysis
+NOTE: Rhizophagus_irregularis_DAOM_197198w_EXX56402.1_SIR4_BATDJ is identical to Rhizophagus_irregularis_DAOM_181602_DAOM_197198_XP_025174138.1_SIR4_BATDJ but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE is identical to Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN is identical to Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN is identical to Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE is identical to Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE is identical to Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Physeter_catodon_XP_023987866.1_SIR1_HUMAN (identical to Homo_sapiens_4I5I_A_SIR1_HUMAN) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to 9_SIR2_Domains.vetted.mafft.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.207 seconds
+NOTE: ModelFinder requires 265 MB RAM!
+ModelFinder will test 546 protein models (sample size: 508) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  Dayhoff       68647.607    675 138645.214   1051245.214  141500.789
+  2  Dayhoff+I     68429.254    676 138210.508   1053514.508  141070.314
+  3  Dayhoff+G4    64331.594    676 130015.189   1045319.189  132874.994
+  4  Dayhoff+I+G4  64312.292    677 129978.584   1047990.584  132842.620
+  5  Dayhoff+R2    65349.550    677 132053.100   1050065.100  134917.136
+  6  Dayhoff+R3    64477.310    679 130312.620   1053752.620  133185.116
+  7  Dayhoff+R4    64289.729    681 129941.457   1058825.457  132822.415
+  8  Dayhoff+R5    64187.933    683 129741.866   1064085.866  132631.285
+  9  Dayhoff+R6    64123.735    685 129617.470   1069437.470  132515.349
+ 10  Dayhoff+R7    64084.813    687 129543.625   1074855.625  132449.966
+ 11  Dayhoff+R8    64062.684    689 129503.368   1080323.368  132418.169
+ 12  Dayhoff+R9    64052.259    691 129486.519   1085830.519  132409.781
+ 13  Dayhoff+R10   64049.974    693 129485.949   1091369.949  132417.672
+ 14  Dayhoff+F     68459.520    694 138307.040   1102967.040  141242.995
+ 15  Dayhoff+F+I   68258.001    695 137906.002   1105346.002  140846.187
+ 16  Dayhoff+F+G4  64186.078    695 129762.155   1097202.155  132702.340
+ 17  Dayhoff+F+I+G4 64162.268    696 129716.537   1099940.537  132660.952
+ 18  Dayhoff+F+R2  65207.510    696 131807.021   1102031.021  134751.436
+ 19  Dayhoff+F+R3  64305.147    698 130006.295   1105810.295  132959.171
+ 20  Dayhoff+F+R4  64130.683    700 129661.365   1111061.365  132622.702
+ 21  Dayhoff+F+R5  64040.159    702 129484.317   1116496.317  132454.115
+ 22  Dayhoff+F+R6  63983.027    704 129374.054   1122014.054  132352.313
+ 23  Dayhoff+F+R7  63943.830    706 129299.661   1127583.661  132286.380
+ 24  Dayhoff+F+R8  63917.534    708 129251.068   1133195.068  132246.249
+ 25  Dayhoff+F+R9  63908.201    710 129236.403   1138856.403  132240.045
+ 26  Dayhoff+F+R10 63905.994    712 129235.989   1144547.989  132248.091
+ 27  mtMAM         77279.490    675 155908.980   1068508.980  158764.555
+ 28  mtMAM+I       76982.083    676 155316.165   1070620.165  158175.971
+ 29  mtMAM+G4      69250.535    676 139853.071   1055157.071  142712.876
+ 30  mtMAM+I+G4    69223.194    677 139800.388   1057812.388  142664.424
+ 31  mtMAM+R2      70968.527    677 143291.053   1061303.053  146155.089
+ 32  mtMAM+R3      69884.127    679 141126.253   1064566.253  143998.750
+ 33  mtMAM+R4      69514.913    681 140391.826   1069275.826  143272.784
+ 34  mtMAM+R5      69277.682    683 139921.365   1074265.365  142810.784
+ 35  mtMAM+R6      69125.168    685 139620.335   1079440.335  142518.215
+ 36  mtMAM+R7      69072.240    687 139518.481   1084830.481  142424.822
+ 37  mtMAM+R8      69014.433    689 139406.866   1090226.866  142321.667
+ 38  mtMAM+R9      68968.727    691 139319.454   1095663.454  142242.717
+ 39  mtMAM+R10     68960.622    693 139307.243   1101191.243  142238.967
+ 40  mtMAM+F       73053.947    694 147495.894   1112155.894  150431.848
+ 41  mtMAM+F+I     72772.550    695 146935.099   1114375.099  149875.284
+ 42  mtMAM+F+G4    66600.825    695 134591.651   1102031.651  137531.835
+ 43  mtMAM+F+I+G4  66575.601    696 134543.203   1104767.203  137487.618
+ 44  mtMAM+F+R2    68168.051    696 137728.102   1107952.102  140672.518
+ 45  mtMAM+F+R3    67026.536    698 135449.072   1111253.072  138401.948
+ 46  mtMAM+F+R4    66734.364    700 134868.729   1116268.729  137830.066
+ 47  mtMAM+F+R5    66561.791    702 134527.582   1121539.582  137497.380
+ 48  mtMAM+F+R6    66451.954    704 134311.907   1126951.907  137290.166
+ 49  mtMAM+F+R7    66380.674    706 134173.348   1132457.348  137160.068
+ 50  mtMAM+F+R8    66337.794    708 134091.588   1138035.588  137086.769
+ 51  mtMAM+F+R9    66312.699    710 134045.398   1143665.398  137049.040
+ 52  mtMAM+F+R10   66308.120    712 134040.239   1149352.239  137052.342
+ 53  JTT           68356.727    675 138063.454   1050663.454  140919.029
+ 54  JTT+I         68121.287    676 137594.575   1052898.575  140454.380
+ 55  JTT+G4        63918.429    676 129188.859   1044492.859  132048.664
+ 56  JTT+I+G4      63898.387    677 129150.775   1047162.775  132014.811
+ 57  JTT+R2        65045.620    677 131445.239   1049457.239  134309.275
+ 58  JTT+R3        64029.182    679 129416.364   1052856.364  132288.860
+ 59  JTT+R4        63859.204    681 129080.409   1057964.409  131961.366
+ 60  JTT+R5        63778.834    683 128923.668   1063267.668  131813.087
+ 61  JTT+R6        63711.669    685 128793.338   1068613.338  131691.218
+ 62  JTT+R7        63680.930    687 128735.859   1074047.859  131642.200
+ 63  JTT+R8        63653.220    689 128684.439   1079504.439  131599.241
+ 64  JTT+R9        63642.617    691 128667.235   1085011.235  131590.498
+ 65  JTT+R10       63640.839    693 128667.678   1090551.678  131599.402
+ 66  JTT+F         68349.656    694 138087.312   1102747.312  141023.266
+ 67  JTT+F+I       68119.080    695 137628.160   1105068.160  140568.344
+ 68  JTT+F+G4      64002.380    695 129394.761   1096834.761  132334.945
+ 69  JTT+F+I+G4    63983.101    696 129358.203   1099582.203  132302.618
+ 70  JTT+F+R2      65115.595    696 131623.190   1101847.190  134567.605
+ 71  JTT+F+R3      64109.146    698 129614.292   1105418.292  132567.168
+ 72  JTT+F+R4      63946.182    700 129292.363   1110692.363  132253.700
+ 73  JTT+F+R5      63854.368    702 129112.736   1116124.736  132082.534
+ 74  JTT+F+R6      63783.239    704 128974.479   1121614.479  131952.738
+ 75  JTT+F+R7      63766.904    706 128945.808   1127229.808  131932.528
+ 76  JTT+F+R8      63743.489    708 128902.979   1132846.979  131898.160
+ 77  JTT+F+R9      63733.910    710 128887.819   1138507.819  131891.461
+ 78  JTT+F+R10     63732.190    712 128888.381   1144200.381  131900.483
+ 79  WAG           67074.496    675 135498.992   1048098.992  138354.567
+ 80  WAG+I         66875.635    676 135103.270   1050407.270  137963.076
+ 81  WAG+G4        63332.472    676 128016.943   1043320.943  130876.749
+ 82  WAG+I+G4      63305.241    677 127964.483   1045976.483  130828.519
+ 83  WAG+R2        64235.404    677 129824.808   1047836.808  132688.844
+ 84  WAG+R3        63423.702    679 128205.404   1051645.404  131077.901
+ 85  WAG+R4        63256.970    681 127875.940   1056759.940  130756.898
+ 86  WAG+R5        63149.606    683 127665.212   1062009.212  130554.631
+ 87  WAG+R6        63104.044    685 127578.088   1067398.088  130475.967
+ 88  WAG+R7        63090.253    687 127554.505   1072866.505  130460.846
+ 89  WAG+R8        63080.509    689 127539.018   1078359.018  130453.820
+ 90  WAG+R9        63076.289    691 127534.577   1083878.577  130457.840
+ 92  WAG+F         66934.816    694 135257.633   1099917.633  138193.587
+ 93  WAG+F+I       66747.801    695 134885.601   1102325.601  137825.786
+ 94  WAG+F+G4      63264.565    695 127919.130   1095359.130  130859.315
+ 95  WAG+F+I+G4    63238.991    696 127869.983   1098093.983  130814.398
+ 96  WAG+F+R2      64168.528    696 129729.057   1099953.057  132673.472
+ 97  WAG+F+R3      63358.276    698 128112.552   1103916.552  131065.428
+ 98  WAG+F+R4      63195.304    700 127790.607   1109190.607  130751.944
+ 99  WAG+F+R5      63084.093    702 127572.186   1114584.186  130541.984
+100  WAG+F+R6      63039.113    704 127486.226   1120126.226  130464.485
+101  WAG+F+R7      63022.770    706 127457.540   1125741.540  130444.260
+102  WAG+F+R8      63016.573    708 127449.145   1131393.145  130444.326
+105  cpREV         67754.899    675 136859.798   1049459.798  139715.373
+106  cpREV+I       67502.721    676 136357.442   1051661.442  139217.247
+107  cpREV+G4      63942.277    676 129236.553   1044540.553  132096.359
+108  cpREV+I+G4    63901.675    677 129157.351   1047169.351  132021.387
+109  cpREV+R2      64869.034    677 131092.067   1049104.067  133956.103
+110  cpREV+R3      64086.993    679 129531.987   1052971.987  132404.484
+111  cpREV+R4      63868.598    681 129099.197   1057983.197  131980.155
+112  cpREV+R5      63742.598    683 128851.196   1063195.196  131740.614
+113  cpREV+R6      63708.206    685 128786.411   1068606.411  131684.291
+114  cpREV+R7      63701.631    687 128777.262   1074089.262  131683.603
+115  cpREV+R8      63692.211    689 128762.422   1079582.422  131677.224
+116  cpREV+R9      63687.384    691 128756.768   1085100.768  131680.031
+118  cpREV+F       67674.048    694 136736.097   1101396.097  139672.051
+119  cpREV+F+I     67423.214    695 136236.429   1103676.429  139176.613
+120  cpREV+F+G4    63923.313    695 129236.626   1096676.626  132176.811
+121  cpREV+F+I+G4  63886.405    696 129164.810   1099388.810  132109.225
+122  cpREV+F+R2    64820.728    696 131033.456   1101257.456  133977.871
+123  cpREV+F+R3    64059.906    698 129515.811   1105319.811  132468.687
+124  cpREV+F+R4    63851.223    700 129102.446   1110502.446  132063.783
+125  cpREV+F+R5    63716.630    702 128837.259   1115849.259  131807.057
+126  cpREV+F+R6    63684.375    704 128776.749   1121416.749  131755.008
+127  cpREV+F+R7    63675.347    706 128762.694   1127046.694  131749.414
+128  cpREV+F+R8    63668.350    708 128752.700   1132696.700  131747.881
+129  cpREV+F+R9    63663.622    710 128747.245   1138367.245  131750.886
+131  mtREV         73064.074    675 147478.147   1060078.147  150333.722
+132  mtREV+I       72802.034    676 146956.068   1062260.068  149815.874
+133  mtREV+G4      67349.750    676 136051.500   1051355.500  138911.305
+134  mtREV+I+G4    67327.361    677 136008.721   1054020.721  138872.757
+135  mtREV+R2      68677.916    677 138709.833   1056721.833  141573.869
+136  mtREV+R3      67700.957    679 136759.913   1060199.913  139632.410
+137  mtREV+R4      67424.222    681 136210.444   1065094.444  139091.401
+138  mtREV+R5      67228.598    683 135823.195   1070167.195  138712.614
+139  mtREV+R6      67165.314    685 135700.628   1075520.628  138598.508
+140  mtREV+R7      67135.985    687 135645.969   1080957.969  138552.310
+141  mtREV+R8      67116.571    689 135611.143   1086431.143  138525.944
+142  mtREV+R9      67109.248    691 135600.497   1091944.497  138523.759
+143  mtREV+R10     67088.623    693 135563.245   1097447.245  138494.969
+144  mtREV+F       69613.001    694 140614.001   1105274.001  143549.955
+145  mtREV+F+I     69370.099    695 140130.197   1107570.197  143070.382
+146  mtREV+F+G4    64829.236    695 131048.472   1098488.472  133988.656
+147  mtREV+F+I+G4  64793.991    696 130979.983   1101203.983  133924.398
+148  mtREV+F+R2    66063.287    696 133518.574   1103742.574  136462.989
+149  mtREV+F+R3    65015.213    698 131426.427   1107230.427  134379.303
+150  mtREV+F+R4    64780.609    700 130961.217   1112361.217  133922.554
+151  mtREV+F+R5    64642.004    702 130688.007   1117700.007  133657.805
+152  mtREV+F+R6    64584.091    704 130576.181   1123216.181  133554.440
+153  mtREV+F+R7    64571.837    706 130555.673   1128839.673  133542.393
+154  mtREV+F+R8    64553.438    708 130522.876   1134466.876  133518.057
+155  mtREV+F+R9    64546.163    710 130512.326   1140132.326  133515.968
+156  mtREV+F+R10   64533.951    712 130491.902   1145803.902  133504.005
+157  rtREV         68003.465    675 137356.929   1049956.929  140212.504
+158  rtREV+I       67722.829    676 136797.658   1052101.658  139657.464
+159  rtREV+G4      63586.031    676 128524.062   1043828.062  131383.868
+160  rtREV+I+G4    63539.438    677 128432.876   1046444.876  131296.912
+161  rtREV+R2      64690.915    677 130735.830   1048747.830  133599.866
+162  rtREV+R3      63718.896    679 128795.791   1052235.791  131668.288
+163  rtREV+R4      63503.102    681 128368.203   1057252.203  131249.161
+164  rtREV+R5      63377.556    683 128121.112   1062465.112  131010.531
+165  rtREV+R6      63347.777    685 128065.555   1067885.555  130963.435
+166  rtREV+R7      63329.913    687 128033.825   1073345.825  130940.166
+167  rtREV+R8      63312.872    689 128003.743   1078823.743  130918.545
+168  rtREV+R9      63306.388    691 127994.776   1084338.776  130918.039
+169  rtREV+R10     63292.385    693 127970.769   1089854.769  130902.493
+170  rtREV+F       67830.996    694 137049.991   1101709.991  139985.945
+171  rtREV+F+I     67563.036    695 136516.072   1103956.072  139456.257
+172  rtREV+F+G4    63417.261    695 128224.523   1095664.523  131164.707
+173  rtREV+F+I+G4  63388.820    696 128169.639   1098393.639  131114.054
+174  rtREV+F+R2    64551.050    696 130494.101   1100718.101  133438.516
+175  rtREV+F+R3    63549.212    698 128494.424   1104298.424  131447.300
+176  rtREV+F+R4    63352.857    700 128105.713   1109505.713  131067.050
+177  rtREV+F+R5    63236.416    702 127876.833   1114888.833  130846.631
+178  rtREV+F+R6    63199.777    704 127807.553   1120447.553  130785.812
+179  rtREV+F+R7    63175.075    706 127762.151   1126046.151  130748.871
+180  rtREV+F+R8    63156.947    708 127729.894   1131673.894  130725.075
+181  rtREV+F+R9    63150.918    710 127721.837   1137341.837  130725.479
+183  mtART         76209.565    675 153769.129   1066369.129  156624.704
+184  mtART+I       75835.237    676 153022.475   1068326.475  155882.280
+185  mtART+G4      68358.899    676 138069.799   1053373.799  140929.604
+186  mtART+I+G4    68337.277    677 138028.553   1056040.553  140892.589
+187  mtART+R2      69954.587    677 141263.174   1059275.174  144127.210
+188  mtART+R3      68941.416    679 139240.833   1062680.833  142113.330
+189  mtART+R4      68582.234    681 138526.469   1067410.469  141407.427
+190  mtART+R5      68265.240    683 137896.480   1072240.480  140785.898
+191  mtART+R6      68209.274    685 137788.548   1077608.548  140686.428
+192  mtART+R7      68185.120    687 137744.239   1083056.239  140650.580
+193  mtART+R8      68155.243    689 137688.485   1088508.485  140603.287
+194  mtART+R9      68140.017    691 137662.034   1094006.034  140585.297
+195  mtART+R10     68109.496    693 137604.991   1099488.991  140536.715
+196  mtART+F       71966.530    694 145321.061   1109981.061  148257.015
+197  mtART+F+I     71604.484    695 144598.969   1112038.969  147539.153
+198  mtART+F+G4    65572.477    695 132534.954   1099974.954  135475.138
+199  mtART+F+I+G4  65542.190    696 132476.380   1102700.380  135420.795
+200  mtART+F+R2    67025.781    696 135443.563   1105667.563  138387.978
+201  mtART+F+R3    66032.461    698 133460.922   1109264.922  136413.798
+202  mtART+F+R4    65703.812    700 132807.625   1114207.625  135768.962
+203  mtART+F+R5    65442.077    702 132288.154   1119300.154  135257.952
+204  mtART+F+R6    65407.410    704 132222.820   1124862.820  135201.079
+205  mtART+F+R7    65382.957    706 132177.914   1130461.914  135164.634
+206  mtART+F+R8    65356.755    708 132129.510   1136073.510  135124.691
+207  mtART+F+R9    65345.424    710 132110.847   1141730.847  135114.489
+208  mtART+F+R10   65316.536    712 132057.072   1147369.072  135069.175
+209  mtZOA         73643.549    675 148637.099   1061237.099  151492.674
+210  mtZOA+I       73274.236    676 147900.473   1063204.473  150760.278
+211  mtZOA+G4      66534.104    676 134420.208   1049724.208  137280.013
+212  mtZOA+I+G4    66507.780    677 134369.560   1052381.560  137233.596
+213  mtZOA+R2      67967.539    677 137289.077   1055301.077  140153.113
+214  mtZOA+R3      67103.751    679 135565.503   1059005.503  138438.000
+215  mtZOA+R4      66702.271    681 134766.542   1063650.542  137647.500
+216  mtZOA+R5      66423.017    683 134212.033   1068556.033  137101.452
+217  mtZOA+R6      66372.055    685 134114.110   1073934.110  137011.990
+218  mtZOA+R7      66358.838    687 134091.677   1079403.677  136998.018
+219  mtZOA+R8      66340.063    689 134058.127   1084878.127  136972.928
+220  mtZOA+R9      66329.862    691 134041.724   1090385.724  136964.987
+221  mtZOA+R10     66307.213    693 134000.426   1095884.426  136932.150
+222  mtZOA+F       70433.710    694 142255.419   1106915.419  145191.374
+223  mtZOA+F+I     70089.174    695 141568.348   1109008.348  144508.533
+224  mtZOA+F+G4    64689.716    695 130769.432   1098209.432  133709.617
+225  mtZOA+F+I+G4  64649.142    696 130690.284   1100914.284  133634.699
+226  mtZOA+F+R2    66035.694    696 133463.387   1103687.387  136407.802
+227  mtZOA+F+R3    65054.583    698 131505.167   1107309.167  134458.043
+228  mtZOA+F+R4    64719.593    700 130839.185   1112239.185  133800.522
+229  mtZOA+F+R5    64544.893    702 130493.786   1117505.786  133463.584
+230  mtZOA+F+R6    64512.532    704 130433.064   1123073.064  133411.323
+231  mtZOA+F+R7    64480.150    706 130372.299   1128656.299  133359.019
+232  mtZOA+F+R8    64462.317    708 130340.635   1134284.635  133335.816
+233  mtZOA+F+R9    64456.214    710 130332.428   1139952.428  133336.070
+235  VT            67294.341    675 135938.681   1048538.681  138794.256
+236  VT+I          67077.080    676 135506.160   1050810.160  138365.965
+237  VT+G4         63440.901    676 128233.801   1043537.801  131093.607
+238  VT+I+G4       63411.773    677 128177.545   1046189.545  131041.581
+239  VT+R2         64387.532    677 130129.064   1048141.064  132993.099
+240  VT+R3         63509.562    679 128377.123   1051817.123  131249.620
+241  VT+R4         63360.088    681 128082.176   1056966.176  130963.134
+242  VT+R5         63240.170    683 127846.339   1062190.339  130735.758
+243  VT+R6         63195.197    685 127760.394   1067580.394  130658.274
+244  VT+R7         63181.018    687 127736.036   1073048.036  130642.377
+245  VT+R8         63176.665    689 127731.330   1078551.330  130646.132
+248  VT+F          67292.847    694 135973.695   1100633.695  138909.649
+249  VT+F+I        67080.248    695 135550.496   1102990.496  138490.681
+250  VT+F+G4       63525.858    695 128441.716   1095881.716  131381.901
+251  VT+F+I+G4     63497.215    696 128386.430   1098610.430  131330.845
+252  VT+F+R2       64455.236    696 130302.471   1100526.471  133246.886
+253  VT+F+R3       63590.424    698 128576.848   1104380.848  131529.724
+254  VT+F+R4       63448.414    700 128296.828   1109696.828  131258.165
+255  VT+F+R5       63323.015    702 128050.030   1115062.030  131019.828
+256  VT+F+R6       63282.777    704 127973.555   1120613.555  130951.814
+257  VT+F+R7       63262.753    706 127937.506   1126221.506  130924.226
+258  VT+F+R8       63261.009    708 127938.017   1131882.017  130933.198
+261  LG            67629.496    675 136608.991   1049208.991  139464.566
+262  LG+I          67375.410    676 136102.819   1051406.819  138962.625
+263  LG+G4         63115.418    676 127582.835   1042886.835  130442.641
+264  LG+I+G4       63081.570    677 127517.140   1045529.140  130381.176
+265  LG+R2         64286.772    677 129927.544   1047939.544  132791.580
+266  LG+R3         63277.287    679 127912.574   1051352.574  130785.070
+267  LG+R4         63061.123    681 127484.246   1056368.246  130365.204
+268  LG+R5         62945.813    683 127257.626   1061601.626  130147.045
+269  LG+R6         62886.554    685 127143.109   1066963.109  130040.988
+270  LG+R7         62871.660    687 127117.320   1072429.320  130023.661
+271  LG+R8         62864.726    689 127107.453   1077927.453  130022.255
+272  LG+R9         62864.588    691 127111.177   1083455.177  130034.440
+274  LG+F          67615.067    694 136618.134   1101278.134  139554.088
+275  LG+F+I        67365.687    695 136121.375   1103561.375  139061.559
+276  LG+F+G4       63209.391    695 127808.782   1095248.782  130748.967
+277  LG+F+I+G4     63177.848    696 127747.696   1097971.696  130692.111
+278  LG+F+R2       64354.565    696 130101.130   1100325.130  133045.545
+279  LG+F+R3       63350.181    698 128096.362   1103900.362  131049.238
+280  LG+F+R4       63145.856    700 127691.713   1109091.713  130653.050
+281  LG+F+R5       63030.987    702 127465.975   1114477.975  130435.773
+282  LG+F+R6       62977.534    704 127363.068   1120003.068  130341.327
+283  LG+F+R7       62958.318    706 127328.635   1125612.635  130315.355
+284  LG+F+R8       62950.776    708 127317.553   1131261.553  130312.734
+285  LG+F+R9       62950.773    710 127321.547   1136941.547  130325.189
+287  DCMut         68639.379    675 138628.758   1051228.758  141484.333
+288  DCMut+I       68421.360    676 138194.720   1053498.720  141054.525
+289  DCMut+G4      64329.587    676 130011.175   1045315.175  132870.980
+290  DCMut+I+G4    64304.914    677 129963.828   1047975.828  132827.864
+291  DCMut+R2      65345.172    677 132044.344   1050056.344  134908.380
+292  DCMut+R3      64451.971    679 130261.941   1053701.941  133134.438
+293  DCMut+R4      64270.125    681 129902.249   1058786.249  132783.207
+294  DCMut+R5      64149.137    683 129664.274   1064008.274  132553.693
+295  DCMut+R6      64082.980    685 129535.959   1069355.959  132433.839
+296  DCMut+R7      64069.781    687 129513.562   1074825.562  132419.902
+297  DCMut+R8      64063.235    689 129504.469   1080324.469  132419.271
+298  DCMut+R9      64063.221    691 129508.442   1085852.442  132431.705
+300  DCMut+F       68451.378    694 138290.756   1102950.756  141226.710
+301  DCMut+F+I     68250.097    695 137890.195   1105330.195  140830.380
+302  DCMut+F+G4    64184.420    695 129758.839   1097198.839  132699.024
+303  DCMut+F+I+G4  64160.622    696 129713.244   1099937.244  132657.659
+304  DCMut+F+R2    65204.843    696 131801.687   1102025.687  134746.102
+305  DCMut+F+R3    64302.165    698 130000.329   1105804.329  132953.205
+306  DCMut+F+R4    64123.153    700 129646.306   1111046.306  132607.643
+307  DCMut+F+R5    64011.554    702 129427.107   1116439.107  132396.905
+308  DCMut+F+R6    63939.435    704 129286.870   1121926.870  132265.129
+309  DCMut+F+R7    63928.650    706 129269.300   1127553.300  132256.020
+310  DCMut+F+R8    63920.013    708 129256.026   1133200.026  132251.206
+311  DCMut+F+R9    63919.996    710 129259.992   1138879.992  132263.633
+313  PMB           67453.973    675 136257.947   1048857.947  139113.522
+314  PMB+I         67267.700    676 135887.399   1051191.399  138747.205
+315  PMB+G4        63804.299    676 128960.598   1044264.598  131820.403
+316  PMB+I+G4      63772.288    677 128898.575   1046910.575  131762.611
+317  PMB+R2        64698.628    677 130751.256   1048763.256  133615.292
+318  PMB+R3        63878.649    679 129115.297   1052555.297  131987.794
+319  PMB+R4        63717.882    681 128797.765   1057681.765  131678.723
+320  PMB+R5        63609.784    683 128585.568   1062929.568  131474.987
+321  PMB+R6        63572.091    685 128514.182   1068334.182  131412.062
+322  PMB+R7        63550.622    687 128475.243   1073787.243  131381.584
+323  PMB+R8        63545.595    689 128469.189   1079289.189  131383.991
+326  PMB+F         67340.173    694 136068.346   1100728.346  139004.301
+327  PMB+F+I       67158.270    695 135706.539   1103146.539  138646.724
+328  PMB+F+G4      63784.238    695 128958.476   1096398.476  131898.661
+329  PMB+F+I+G4    63752.259    696 128896.519   1099120.519  131840.934
+330  PMB+F+R2      64656.705    696 130705.410   1100929.410  133649.825
+331  PMB+F+R3      63849.851    698 129095.703   1104899.703  132048.579
+332  PMB+F+R4      63696.254    700 128792.508   1110192.508  131753.845
+333  PMB+F+R5      63587.625    702 128579.250   1115591.250  131549.048
+334  PMB+F+R6      63552.374    704 128512.747   1121152.747  131491.006
+335  PMB+F+R7      63529.113    706 128470.226   1126754.226  131456.946
+336  PMB+F+R8      63525.873    708 128467.746   1132411.746  131462.927
+339  HIVb          70767.424    675 142884.847   1055484.847  145740.422
+340  HIVb+I        70522.220    676 142396.441   1057700.441  145256.246
+341  HIVb+G4       65756.624    676 132865.248   1048169.248  135725.054
+342  HIVb+I+G4     65737.777    677 132829.555   1050841.555  135693.591
+343  HIVb+R2       67027.828    677 135409.656   1053421.656  138273.692
+344  HIVb+R3       65925.360    679 133208.721   1056648.721  136081.218
+345  HIVb+R4       65724.043    681 132810.086   1061694.086  135691.043
+346  HIVb+R5       65541.023    683 132448.046   1066792.046  135337.465
+347  HIVb+R6       65500.865    685 132371.730   1072191.730  135269.610
+348  HIVb+R7       65466.097    687 132306.194   1077618.194  135212.535
+349  HIVb+R8       65460.496    689 132298.992   1083118.992  135213.794
+352  HIVb+F        70803.515    694 142995.031   1107655.031  145930.985
+353  HIVb+F+I      70548.555    695 142487.109   1109927.109  145427.294
+354  HIVb+F+G4     65699.725    695 132789.449   1100229.449  135729.634
+355  HIVb+F+I+G4   65683.639    696 132759.278   1102983.278  135703.693
+356  HIVb+F+R2     67033.825    696 135459.650   1105683.650  138404.065
+357  HIVb+F+R3     65889.936    698 133175.872   1108979.872  136128.748
+358  HIVb+F+R4     65679.799    700 132759.598   1114159.598  135720.935
+359  HIVb+F+R5     65503.692    702 132411.385   1119423.385  135381.183
+360  HIVb+F+R6     65463.832    704 132335.663   1124975.663  135313.922
+361  HIVb+F+R7     65429.667    706 132271.335   1130555.335  135258.055
+362  HIVb+F+R8     65423.197    708 132262.394   1136206.394  135257.574
+363  HIVb+F+R9     65423.155    710 132266.309   1141886.309  135269.951
+365  HIVw          73372.202    675 148094.403   1060694.403  150949.978
+366  HIVw+I        73146.445    676 147644.890   1062948.890  150504.696
+367  HIVw+G4       68769.901    676 138891.801   1054195.801  141751.607
+368  HIVw+I+G4     68750.057    677 138854.114   1056866.114  141718.150
+369  HIVw+R2       69930.932    677 141215.865   1059227.865  144079.901
+370  HIVw+R3       68910.542    679 139179.085   1062619.085  142051.582
+371  HIVw+R4       68699.304    681 138760.607   1067644.607  141641.565
+372  HIVw+R5       68564.345    683 138494.691   1072838.691  141384.110
+373  HIVw+R6       68478.178    685 138326.355   1078146.355  141224.235
+374  HIVw+R7       68440.879    687 138255.757   1083567.757  141162.098
+375  HIVw+R8       68434.673    689 138247.345   1089067.345  141162.147
+378  HIVw+F        72482.863    694 146353.726   1111013.726  149289.680
+379  HIVw+F+I      72251.255    695 145892.510   1113332.510  148832.694
+380  HIVw+F+G4     67763.100    695 136916.200   1104356.200  139856.385
+381  HIVw+F+I+G4   67735.137    696 136862.274   1107086.274  139806.689
+382  HIVw+F+R2     68978.837    696 139349.673   1109573.673  142294.088
+383  HIVw+F+R3     67886.254    698 137168.509   1112972.509  140121.385
+384  HIVw+F+R4     67680.815    700 136761.630   1118161.630  139722.967
+385  HIVw+F+R5     67556.243    702 136516.485   1123528.485  139486.283
+386  HIVw+F+R6     67476.229    704 136360.457   1129000.457  139338.716
+387  HIVw+F+R7     67432.160    706 136276.320   1134560.320  139263.040
+388  HIVw+F+R8     67425.116    708 136266.232   1140210.232  139261.413
+389  HIVw+F+R9     67425.092    710 136270.184   1145890.184  139273.826
+391  JTTDCMut      68317.299    675 137984.599   1050584.599  140840.174
+392  JTTDCMut+I    68085.239    676 137522.477   1052826.477  140382.283
+393  JTTDCMut+G4   63907.024    676 129166.048   1044470.048  132025.854
+394  JTTDCMut+I+G4 63886.477    677 129126.954   1047138.954  131990.990
+395  JTTDCMut+R2   65025.293    677 131404.587   1049416.587  134268.623
+396  JTTDCMut+R3   64017.055    679 129392.110   1052832.110  132264.607
+397  JTTDCMut+R4   63846.120    681 129054.241   1057938.241  131935.198
+398  JTTDCMut+R5   63740.796    683 128847.592   1063191.592  131737.011
+399  JTTDCMut+R6   63680.074    685 128730.147   1068550.147  131628.027
+400  JTTDCMut+R7   63645.242    687 128664.484   1073976.484  131570.824
+401  JTTDCMut+R8   63636.411    689 128650.823   1079470.823  131565.625
+402  JTTDCMut+R9   63636.406    691 128654.813   1084998.813  131578.075
+404  JTTDCMut+F    68308.605    694 138005.210   1102665.210  140941.164
+405  JTTDCMut+F+I  68082.033    695 137554.066   1104994.066  140494.251
+406  JTTDCMut+F+G4 63983.810    695 129357.621   1096797.621  132297.805
+407  JTTDCMut+F+I+G4 63964.100    696 129320.199   1099544.199  132264.615
+408  JTTDCMut+F+R2 65090.789    696 131573.578   1101797.578  134517.993
+409  JTTDCMut+F+R3 64090.355    698 129576.710   1105380.710  132529.586
+410  JTTDCMut+F+R4 63926.025    700 129252.050   1110652.050  132213.387
+411  JTTDCMut+F+R5 63815.261    702 129034.523   1116046.523  132004.321
+412  JTTDCMut+F+R6 63763.782    704 128935.564   1121575.564  131913.823
+413  JTTDCMut+F+R7 63724.355    706 128860.710   1127144.710  131847.430
+414  JTTDCMut+F+R8 63717.984    708 128851.967   1132795.967  131847.148
+415  JTTDCMut+F+R9 63717.983    710 128855.967   1138475.967  131859.608
+417  FLU           69672.698    675 140695.396   1053295.396  143550.971
+418  FLU+I         69509.349    676 140370.698   1055674.698  143230.503
+419  FLU+G4        65308.046    676 131968.091   1047272.091  134827.897
+420  FLU+I+G4      65286.342    677 131926.683   1049938.683  134790.719
+421  FLU+R2        66382.217    677 134118.435   1052130.435  136982.471
+422  FLU+R3        65497.454    679 132352.908   1055792.908  135225.404
+423  FLU+R4        65273.916    681 131909.833   1060793.833  134790.791
+424  FLU+R5        65163.880    683 131693.759   1066037.759  134583.178
+425  FLU+R6        65097.048    685 131564.096   1071384.096  134461.976
+426  FLU+R7        65064.692    687 131503.384   1076815.384  134409.724
+427  FLU+R8        65055.391    689 131488.781   1082308.781  134403.583
+428  FLU+R9        65055.383    691 131492.765   1087836.765  134416.028
+430  FLU+F         69247.095    694 139882.189   1104542.189  142818.143
+431  FLU+F+I       69087.075    695 139564.151   1107004.151  142504.335
+432  FLU+F+G4      64944.134    695 131278.268   1098718.268  134218.453
+433  FLU+F+I+G4    64923.403    696 131238.806   1101462.806  134183.221
+434  FLU+F+R2      66029.194    696 133450.388   1103674.388  136394.803
+435  FLU+F+R3      65144.969    698 131685.939   1107489.939  134638.815
+436  FLU+F+R4      64912.969    700 131225.938   1112625.938  134187.275
+437  FLU+F+R5      64807.711    702 131019.422   1118031.422  133989.220
+438  FLU+F+R6      64745.489    704 130898.978   1123538.978  133877.237
+439  FLU+F+R7      64715.006    706 130842.013   1129126.013  133828.733
+440  FLU+F+R8      64707.091    708 130830.182   1134774.182  133825.363
+441  FLU+F+R9      64707.084    710 130834.169   1140454.169  133837.811
+443  Blosum62      67324.682    675 135999.364   1048599.364  138854.939
+444  Blosum62+I    67120.628    676 135593.256   1050897.256  138453.061
+445  Blosum62+G4   63682.573    676 128717.146   1044021.146  131576.951
+446  Blosum62+I+G4 63653.854    677 128661.708   1046673.708  131525.744
+447  Blosum62+R2   64583.008    677 130520.017   1048532.017  133384.053
+448  Blosum62+R3   63753.410    679 128864.821   1052304.821  131737.318
+449  Blosum62+R4   63600.228    681 128562.457   1057446.457  131443.415
+450  Blosum62+R5   63491.705    683 128349.411   1062693.411  131238.829
+451  Blosum62+R6   63450.068    685 128270.137   1068090.137  131168.017
+452  Blosum62+R7   63431.561    687 128237.122   1073549.122  131143.463
+453  Blosum62+R8   63424.234    689 128226.469   1079046.469  131141.270
+454  Blosum62+R9   63424.139    691 128230.278   1084574.278  131153.540
+456  Blosum62+F    67204.933    694 135797.866   1100457.866  138733.820
+457  Blosum62+F+I  67005.067    695 135400.133   1102840.133  138340.318
+458  Blosum62+F+G4 63660.995    695 128711.989   1096151.989  131652.174
+459  Blosum62+F+I+G4 63627.535    696 128647.070   1098871.070  131591.485
+460  Blosum62+F+R2 64536.143    696 130464.285   1100688.285  133408.700
+461  Blosum62+F+R3 63722.763    698 128841.525   1104645.525  131794.401
+462  Blosum62+F+R4 63579.015    700 128558.031   1109958.031  131519.368
+463  Blosum62+F+R5 63467.928    702 128339.857   1115351.857  131309.655
+464  Blosum62+F+R6 63425.079    704 128258.159   1120898.159  131236.418
+465  Blosum62+F+R7 63407.989    706 128227.977   1126511.977  131214.697
+466  Blosum62+F+R8 63403.997    708 128223.994   1132167.994  131219.175
+469  mtMet         73790.212    675 148930.423   1061530.423  151785.998
+470  mtMet+I       73502.901    676 148357.803   1063661.803  151217.608
+471  mtMet+G4      67345.778    676 136043.555   1051347.555  138903.361
+472  mtMet+I+G4    67320.558    677 135995.115   1054007.115  138859.151
+473  mtMet+R2      68734.322    677 138822.643   1056834.643  141686.679
+474  mtMet+R3      67755.735    679 136869.471   1060309.471  139741.968
+475  mtMet+R4      67561.123    681 136484.246   1065368.246  139365.204
+476  mtMet+R5      67212.908    683 135791.817   1070135.817  138681.235
+477  mtMet+R6      67178.196    685 135726.391   1075546.391  138624.271
+478  mtMet+R7      67138.723    687 135651.446   1080963.446  138557.787
+479  mtMet+R8      67130.292    689 135638.584   1086458.584  138553.385
+480  mtMet+R9      67119.297    691 135620.595   1091964.595  138543.858
+481  mtMet+R10     67104.600    693 135595.200   1097479.200  138526.924
+482  mtMet+F       70410.403    694 142208.806   1106868.806  145144.760
+483  mtMet+F+I     70116.835    695 141623.671   1109063.671  144563.856
+484  mtMet+F+G4    64987.005    695 131364.010   1098804.010  134304.195
+485  mtMet+F+I+G4  64953.835    696 131299.669   1101523.669  134244.084
+486  mtMet+F+R2    66354.536    696 134101.073   1104325.073  137045.488
+487  mtMet+F+R3    65234.431    698 131864.862   1107668.862  134817.738
+488  mtMet+F+R4    64998.353    700 131396.706   1112796.706  134358.043
+489  mtMet+F+R5    64860.033    702 131124.065   1118136.065  134093.863
+490  mtMet+F+R6    64769.818    704 130947.637   1123587.637  133925.896
+491  mtMet+F+R7    64745.046    706 130902.092   1129186.092  133888.812
+492  mtMet+F+R8    64739.154    708 130894.308   1134838.308  133889.488
+495  mtVer         75272.475    675 151894.950   1064494.950  154750.525
+496  mtVer+I       74981.295    676 151314.590   1066618.590  154174.396
+497  mtVer+G4      68247.118    676 137846.235   1053150.235  140706.041
+498  mtVer+I+G4    68222.968    677 137799.936   1055811.936  140663.972
+499  mtVer+R2      69724.151    677 140802.302   1058814.302  143666.338
+500  mtVer+R3      68642.945    679 138643.889   1062083.889  141516.386
+501  mtVer+R4      68405.322    681 138172.643   1067056.643  141053.601
+502  mtVer+R5      68122.570    683 137611.140   1071955.140  140500.559
+503  mtVer+R6      68066.914    685 137503.828   1077323.828  140401.707
+504  mtVer+R7      68037.338    687 137448.676   1082760.676  140355.017
+505  mtVer+R8      68024.327    689 137426.653   1088246.653  140341.455
+506  mtVer+R9      68010.393    691 137402.786   1093746.786  140326.049
+507  mtVer+R10     67998.220    693 137382.440   1099266.440  140314.164
+508  mtVer+F       72084.980    694 145557.959   1110217.959  148493.913
+509  mtVer+F+I     71789.681    695 144969.362   1112409.362  147909.547
+510  mtVer+F+G4    66172.226    695 133734.452   1101174.452  136674.636
+511  mtVer+F+I+G4  66140.889    696 133673.777   1103897.777  136618.193
+512  mtVer+F+R2    67684.567    696 136761.134   1106985.134  139705.549
+513  mtVer+F+R3    66419.447    698 134234.894   1110038.894  137187.770
+514  mtVer+F+R4    66225.279    700 133850.558   1115250.558  136811.895
+515  mtVer+F+R5    66024.924    702 133453.849   1120465.849  136423.647
+516  mtVer+F+R6    65951.192    704 133310.384   1125950.384  136288.643
+517  mtVer+F+R7    65921.862    706 133255.723   1131539.723  136242.443
+518  mtVer+F+R8    65913.017    708 133242.034   1137186.034  136237.215
+519  mtVer+F+R9    65905.820    710 133231.640   1142851.640  136235.282
+520  mtVer+F+R10   65905.781    712 133235.561   1148547.561  136247.664
+521  mtInv         73343.265    675 148036.530   1060636.530  150892.104
+522  mtInv+I       73059.397    676 147470.793   1062774.793  150330.599
+523  mtInv+G4      67397.109    676 136146.217   1051450.217  139006.023
+524  mtInv+I+G4    67370.473    677 136094.945   1054106.945  138958.981
+525  mtInv+R2      68708.796    677 138771.592   1056783.592  141635.628
+526  mtInv+R3      67723.048    679 136804.096   1060244.096  139676.593
+527  mtInv+R4      67445.820    681 136253.641   1065137.641  139134.599
+528  mtInv+R5      67267.331    683 135900.662   1070244.662  138790.081
+529  mtInv+R6      67213.999    685 135797.998   1075617.998  138695.878
+530  mtInv+R7      67183.825    687 135741.651   1081053.651  138647.992
+531  mtInv+R8      67176.118    689 135730.235   1086550.235  138645.037
+532  mtInv+R9      67169.680    691 135721.360   1092065.360  138644.623
+533  mtInv+R10     67169.666    693 135725.331   1097609.331  138657.055
+534  mtInv+F       69439.536    694 140267.071   1104927.071  143203.026
+535  mtInv+F+I     69139.558    695 139669.117   1107109.117  142609.301
+536  mtInv+F+G4    64420.189    695 130230.378   1097670.378  133170.562
+537  mtInv+F+I+G4  64377.636    696 130147.271   1100371.271  133091.686
+538  mtInv+F+R2    65701.712    696 132795.424   1103019.424  135739.839
+539  mtInv+F+R3    64601.136    698 130598.273   1106402.273  133551.149
+540  mtInv+F+R4    64365.708    700 130131.416   1111531.416  133092.753
+541  mtInv+F+R5    64275.082    702 129954.163   1116966.163  132923.961
+542  mtInv+F+R6    64202.508    704 129813.016   1122453.016  132791.275
+543  mtInv+F+R7    64181.326    706 129774.651   1128058.651  132761.371
+544  mtInv+F+R8    64171.733    708 129759.466   1133703.466  132754.647
+545  mtInv+F+R9    64163.656    710 129747.311   1139367.311  132750.953
+546  mtInv+F+R10   64163.641    712 129751.282   1145063.282  132763.385
+Akaike Information Criterion:           LG+R8
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+R8
+Best-fit model: LG+R8 chosen according to BIC
+
+All model information printed to 9_SIR2_Domains.vetted.mafft.fasta.model.gz
+CPU time for ModelFinder: 33150.218 seconds (9h:12m:30s)
+Wall-clock time for ModelFinder: 2210.325 seconds (0h:36m:50s)
+Generating 1000 samples for ultrafast bootstrap (seed: 467576)...
+
+NOTE: 213 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -62885.522
+2. Current log-likelihood: -62860.507
+3. Current log-likelihood: -62855.628
+4. Current log-likelihood: -62853.790
+5. Current log-likelihood: -62852.936
+6. Current log-likelihood: -62852.592
+7. Current log-likelihood: -62852.472
+Optimal log-likelihood: -62852.353
+Site proportion and rates:  (0.116,0.055) (0.079,0.174) (0.083,0.348) (0.156,0.540) (0.139,0.802) (0.116,1.124) (0.144,1.610) (0.167,2.350)
+Parameters optimization took 7 rounds (17.428 sec)
+Computing ML distances based on estimated model parameters... 85.553 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.118 seconds
+Log-likelihood of BIONJ tree: -63517.916
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 19.681 second
+Computing log-likelihood of 98 initial trees ... 36.718 seconds
+Current best score: -62852.353
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -62594.653
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -62579.229
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -62575.578
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -62546.565
+Iteration 10 / LogL: -62636.140 / Time: 0h:2m:36s
+Iteration 20 / LogL: -62587.652 / Time: 0h:3m:36s
+Finish initializing candidate tree set (20)
+Current best tree score: -62546.565 / CPU time: 191.180
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -62527.368
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -62503.955
+Iteration 30 / LogL: -62506.044 / Time: 0h:4m:32s (0h:15m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 38: -62501.204
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 39: -62493.202
+Iteration 40 / LogL: -62527.016 / Time: 0h:5m:29s (0h:13m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 47: -62478.753
+Iteration 50 / LogL: -62503.748 / Time: 0h:6m:24s (0h:12m:42s left)
+Log-likelihood cutoff on original alignment: -62641.381
+Iteration 60 / LogL: -62483.763 / Time: 0h:7m:14s (0h:10m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 62: -62474.007
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 66: -62472.007
+Iteration 70 / LogL: -62488.735 / Time: 0h:8m:12s (0h:11m:24s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 75: -62466.647
+Iteration 80 / LogL: -62483.958 / Time: 0h:9m:5s (0h:10m:55s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 81: -62465.773
+Iteration 90 / LogL: -62501.618 / Time: 0h:9m:54s (0h:10m:7s left)
+Iteration 100 / LogL: -62478.078 / Time: 0h:10m:42s (0h:8m:46s left)
+Log-likelihood cutoff on original alignment: -62625.635
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.967
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 110: -62462.159
+Iteration 110 / LogL: -62462.159 / Time: 0h:11m:35s (0h:10m:38s left)
+Iteration 120 / LogL: -62471.515 / Time: 0h:12m:25s (0h:9m:23s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 129: -62456.408
+Iteration 130 / LogL: -62471.497 / Time: 0h:13m:18s (0h:10m:12s left)
+Iteration 140 / LogL: -62507.498 / Time: 0h:14m:7s (0h:9m:2s left)
+Iteration 150 / LogL: -62502.545 / Time: 0h:14m:53s (0h:7m:53s left)
+Log-likelihood cutoff on original alignment: -62625.635
+Iteration 160 / LogL: -62473.501 / Time: 0h:15m:43s (0h:6m:49s left)
+Iteration 170 / LogL: -62484.248 / Time: 0h:16m:33s (0h:5m:46s left)
+Iteration 180 / LogL: -62478.530 / Time: 0h:17m:21s (0h:4m:45s left)
+Iteration 190 / LogL: -62489.507 / Time: 0h:18m:12s (0h:3m:45s left)
+Iteration 200 / LogL: -62465.918 / Time: 0h:19m:0s (0h:2m:46s left)
+Log-likelihood cutoff on original alignment: -62625.635
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.986
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 203: -62448.885
+Iteration 210 / LogL: -62476.585 / Time: 0h:19m:52s (0h:8m:50s left)
+Iteration 220 / LogL: -62471.860 / Time: 0h:20m:39s (0h:7m:49s left)
+Iteration 230 / LogL: -62455.168 / Time: 0h:21m:26s (0h:6m:50s left)
+Iteration 240 / LogL: -62459.639 / Time: 0h:22m:14s (0h:5m:51s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 249: -62447.156
+Iteration 250 / LogL: -62452.156 / Time: 0h:23m:4s (0h:9m:10s left)
+Log-likelihood cutoff on original alignment: -62625.635
+Iteration 260 / LogL: -62451.456 / Time: 0h:23m:54s (0h:8m:12s left)
+Iteration 270 / LogL: -62475.852 / Time: 0h:24m:46s (0h:7m:16s left)
+Iteration 280 / LogL: -62470.309 / Time: 0h:25m:35s (0h:6m:19s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 289: -62444.293
+Iteration 290 / LogL: -62498.971 / Time: 0h:26m:29s (0h:9m:4s left)
+Iteration 300 / LogL: -62466.003 / Time: 0h:27m:19s (0h:8m:8s left)
+Log-likelihood cutoff on original alignment: -62606.221
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.974
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 307: -62443.830
+Iteration 310 / LogL: -62470.788 / Time: 0h:28m:17s (0h:8m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 313: -62442.511
+Iteration 320 / LogL: -62446.432 / Time: 0h:29m:7s (0h:8m:29s left)
+Iteration 330 / LogL: -62458.234 / Time: 0h:29m:55s (0h:7m:32s left)
+Iteration 340 / LogL: -62450.372 / Time: 0h:30m:45s (0h:6m:37s left)
+Iteration 350 / LogL: -62471.027 / Time: 0h:31m:34s (0h:5m:42s left)
+Log-likelihood cutoff on original alignment: -62606.221
+Iteration 360 / LogL: -62452.974 / Time: 0h:32m:25s (0h:4m:47s left)
+Iteration 370 / LogL: -62455.282 / Time: 0h:33m:13s (0h:3m:52s left)
+Iteration 380 / LogL: -62450.517 / Time: 0h:34m:4s (0h:2m:57s left)
+Iteration 390 / LogL: -62456.507 / Time: 0h:34m:52s (0h:2m:3s left)
+Iteration 400 / LogL: -62450.116 / Time: 0h:35m:42s (0h:1m:9s left)
+Log-likelihood cutoff on original alignment: -62606.221
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.977
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -62513.141 / Time: 0h:36m:32s (0h:8m:2s left)
+Iteration 420 / LogL: -62463.336 / Time: 0h:37m:21s (0h:7m:7s left)
+Iteration 430 / LogL: -62456.818 / Time: 0h:38m:12s (0h:6m:14s left)
+Iteration 440 / LogL: -62447.591 / Time: 0h:39m:4s (0h:5m:20s left)
+Iteration 450 / LogL: -62460.668 / Time: 0h:39m:55s (0h:4m:26s left)
+Log-likelihood cutoff on original alignment: -62606.221
+Iteration 460 / LogL: -62480.795 / Time: 0h:40m:45s (0h:3m:33s left)
+Iteration 470 / LogL: -62468.753 / Time: 0h:41m:35s (0h:2m:39s left)
+Iteration 480 / LogL: -62690.055 / Time: 0h:42m:24s (0h:1m:46s left)
+Iteration 490 / LogL: -62446.910 / Time: 0h:43m:16s (0h:0m:53s left)
+Iteration 500 / LogL: -62444.868 / Time: 0h:44m:14s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -62606.221
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+TREE SEARCH COMPLETED AFTER 500 ITERATIONS / Time: 0h:44m:16s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -62442.511
+Optimal log-likelihood: -62442.504
+Site proportion and rates:  (0.112,0.053) (0.085,0.169) (0.088,0.358) (0.188,0.584) (0.106,0.856) (0.106,1.119) (0.138,1.631) (0.177,2.278)
+Parameters optimization took 1 rounds (2.207 sec)
+BEST SCORE FOUND : -62442.504
+Creating bootstrap support values...
+Split supports printed to NEXUS file 9_SIR2_Domains.vetted.mafft.fasta.splits.nex
+Total tree length: 162.174
+
+Total number of iterations: 500
+CPU time used for tree search: 40777.958 sec (11h:19m:37s)
+Wall-clock time used for tree search: 2631.149 sec (0h:43m:51s)
+Total CPU time used: 41192.642 sec (11h:26m:32s)
+Total wall-clock time used: 2660.002 sec (0h:44m:20s)
+
+Computing bootstrap consensus tree...
+Reading input file 9_SIR2_Domains.vetted.mafft.fasta.splits.nex...
+339 taxa and 2397 splits.
+Consensus tree written to 9_SIR2_Domains.vetted.mafft.fasta.contree
+Reading input trees file 9_SIR2_Domains.vetted.mafft.fasta.contree
+Log-likelihood of consensus tree: -62440.039
+
+Analysis results written to: 
+  IQ-TREE report:                9_SIR2_Domains.vetted.mafft.fasta.iqtree
+  Maximum-likelihood tree:       9_SIR2_Domains.vetted.mafft.fasta.treefile
+  Likelihood distances:          9_SIR2_Domains.vetted.mafft.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          9_SIR2_Domains.vetted.mafft.fasta.splits.nex
+  Consensus tree:                9_SIR2_Domains.vetted.mafft.fasta.contree
+  Screen log file:               9_SIR2_Domains.vetted.mafft.fasta.log
+
+Date and Time: Thu Jul  1 11:26:08 2021
