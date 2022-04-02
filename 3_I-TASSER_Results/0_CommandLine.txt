@@ -1,0 +1,122 @@
+#############################################################
+#############################################################
+# David Gold
+# Code executed in Open-Source PyMOL (https://pymol.org/2/)
+#############################################################
+#############################################################
+
+########
+# Setup
+########
+
+# extract model1.pdb from Saccharomyces_SIR2_S633402_results.tar.bz2
+	# rename SIR2_model1.pdb
+# extract CH_TM_2h4hA_BS03_NAD.pdb from Amphimedon_Sir6b_S631219_results.tar.bz2
+	# rename SIR6b_NAD.pdb
+# extract model1.pdb from Amphimedon_Sir6b_S631219_results.tar.bz2
+	# rename SIR6b_model1.pdb
+# Download colorbyrmsd.py script
+	# https://pymolwiki.org/index.php/ColorByRMSD
+
+##################
+# Visualize SIR6b
+##################
+
+pymol
+
+# load SIR6b
+cmd.load("SIR6b_model1.pdb")
+
+# Orient protein
+set_view (\
+     0.376807928,   -0.255238473,   -0.890429556,\
+     0.840363443,    0.498530835,    0.212722614,\
+     0.389611751,   -0.828446269,    0.402345836,\
+     0.000000000,    0.000000000, -286.905822754,\
+    86.094635010,   86.092849731,   86.087234497,\
+   226.198745728,  347.612915039,  -20.000000000 )
+# Zoom to fit
+zoom complete=1
+
+# Adjust colors
+bg_color white
+# Color by spectrum
+spectrum count, rainbow, chain A, byres=1
+# Export image
+png Figure_4A, 0, 0, -1, ray=1, dpi=300
+# Color by domains
+color grey
+color yellow, (resi 304-512)
+color red, (resi 27-158)
+# Export image
+png Figure_4B, 0, 0, -1, ray=1, dpi=300
+
+##################
+# Align with SIR2
+##################
+
+# load SIR2
+cmd.load("SIR2_model1.pdb")
+
+# Compar Align vs Super functions
+align SIR2_model1, SIR6b_model1, cycles=50
+	# RMSD =    1.466
+super SIR2_model1, SIR6b_model1, cycles=50
+	# RMSD =    1.412
+	
+# Recolor proteins
+color purple, SIR2_model1
+color cyan, SIR6b_model1
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_4C, 0, 0, -1, ray=1, dpi=300
+
+# Color by RMSD
+import colorbyrmsd
+colorbyrmsd SIR2_model1, SIR6b_model1, doAlign=0, doPretty=1
+# Orient protein
+set_view (\
+     0.376807928,   -0.255238473,   -0.890429556,\
+     0.840363443,    0.498530835,    0.212722614,\
+     0.389611751,   -0.828446269,    0.402345836,\
+     0.000000000,    0.000000000, -286.905822754,\
+    86.094635010,   86.092849731,   86.087234497,\
+   226.198745728,  347.612915039,  -20.000000000 )
+# Hide SIR2
+hide cartoon, SIR2_model1
+# Zoom to fit
+zoom complete=1
+# Export image
+png Figure_4D, 0, 0, -1, ray=1, dpi=300
+# quit the program
+quit
+
+#############################
+# Color ligand binding sites
+#############################
+
+# restart the program
+pymol
+
+cmd.load("SIR6b_NAD.pdb")
+
+# Adjust background color
+bg_color white
+# Recolor protein
+color grey70, rep cartoon
+color orange, rep sticks
+# Color NAD ligand binding site residues
+color green, (resi 311,312,313,315,316,317,320,321,322,323,324,382,383,384,385,402,480,481,482,485,506,507,508,524,525,526)
+# Zoom in
+zoom 311-526/
+# Orient protein
+set_view (\
+     0.769604564,   -0.116791338,   -0.627745330,\
+     0.311158985,    0.927090526,    0.208990172,\
+     0.557570875,   -0.356168479,    0.749836743,\
+     0.000000000,    0.000000000, -142.581924438,\
+    94.725090027,   75.457008362,  104.563804626,\
+  -489.433013916,  774.597045898,  -20.000000000 )
+# Export image
+png Figure_4E, 0, 0, -1, ray=1, dpi=300
