@@ -1,0 +1,38 @@
+# Extract SIR2 sequences from full dataset
+	# Add SIR1 and SIR3 sequences as outgroups
+
+xargs samtools faidx ../3_Sirtuin_BLAST_Hits.Annotated.fasta \
+< 0_SIR2_Sequence_List.txt > 1_SIR2_Hits.Annotated.fasta
+
+# Align sequences
+einsi 1_SIR2_Hits.Annotated.fasta > 2_SIR2_Hits.Annotated.mafft.fasta
+
+# Clean alignment with trimal
+trimal -gappyout -in 2_SIR2_Hits.Annotated.mafft.fasta -out 3_SIR2_Hits.Annotated.trimal.fasta
+
+# Generate phylogeny with IQTREE
+iqtree -s 3_SIR2_Hits.Annotated.trimal.fasta -m MFP -bc 100 -nt 16
+mv 3_SIR2_Hits.Annotated.trimal.fasta.contree 3_SIR2_Hits.Annotated.trimal.fasta.contree.tree
+
+# Perform NOTUNG species tree reconciliation
+
+	# 3_SIR2_Hits.Annotated.trimal.fasta.contree.tree rooted using Fistulifera in Geneious v.9 (file: 4_NOTUNG-CtenoFirst-Gene_Tree.tree)
+
+
+java -jar /Users/davidgold/Documents/bioinformatics/Notung-2/Notung-2.9.1.5.jar \
+-g 4_NOTUNG-CtenoFirst-Gene_Tree.tree  -s ../9b_Notung_Species_Tree.newick \
+--edgeweights name --rearrange --threshold 90% --speciestag prefix \
+--nolosses --log  --events --treeoutput newick
+
+cp 4_NOTUNG_Gene_Tree.tree.rearrange.0 4_NOTUNG-CtenoFirst-Final_Tree.tree
+
+# Repeat with "sponge first" topology
+
+cp 4_NOTUNG-CtenoFirst-Gene_Tree.tree 4_NOTUNG-SpongeFirst-Gene_Tree.tree
+
+java -jar /Users/davidgold/Documents/bioinformatics/Notung-2/Notung-2.9.1.5.jar \
+-g 4_NOTUNG_Gene_Tree.tree  -s ../9c_Notung_Species_Tree.SpongeFirst.newick \
+--edgeweights name --rearrange --threshold 90% --speciestag prefix \
+--nolosses --log  --events --treeoutput newick
+
+cp 4_NOTUNG-SpongeFirst-Gene_Tree.tree.rearrange.0 4_NOTUNG-SpongeFirst-Final_Tree.tree

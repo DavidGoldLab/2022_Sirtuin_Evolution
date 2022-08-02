@@ -1,0 +1,352 @@
+COST: 624.0
+
+
+Duplications
+Gene                L. Bound                       U. Bound                       
+=================== ============================== ============================== 
+n704                n1526                          N/A
+r707                n1526                          N/A
+n74                 n1526                          N/A
+n66                 n1526                          N/A
+n59                 Galerina_marginata             n1425
+n57                 Galerina_marginata             n1425
+n54                 n1519                          n1520
+n36                 n1519                          n1520
+n35                 n1519                          n1520
+n25                 n1448                          n1450
+r764                n1478                          n1490
+n15                 n1467                          n1477
+n8                  n1476                          n1477
+r740                n1515                          n1516
+n45                 n1510                          n1512
+n72                 Sphaeroforma_arctica_JP610     n1524
+n491                n1526                          N/A
+n395                n1526                          N/A
+r782                n1526                          N/A
+n139                n1526                          N/A
+n96                 n1448                          n1450
+r863                n1477                          n1478
+r874                n1515                          n1516
+r884                n1510                          n1512
+n373                n1526                          N/A
+n371                n1526                          N/A
+n341                n1525                          n1526
+n328                Saccharomyces_cerevisiae       n1428
+r904                n1520                          n1522
+r907                n1519                          n1520
+n299                n1519                          n1520
+n297                n1519                          n1520
+n293                n1519                          n1520
+n275                n1516                          n1517
+n261                n1476                          n1477
+n266                n1467                          n1477
+r932                n1516                          n1517
+n308                n1448                          n1450
+r956                n1429                          n1430
+r793                n1430                          n1432
+r808                n1519                          n1520
+n174                n1519                          n1520
+n148                n1476                          n1477
+n173                n1519                          n1520
+n172                n1452                          n1453
+n170                n1452                          n1453
+r993                n1448                          n1450
+n165                Amphimedon_queenslandica       n1448
+n163                Amphimedon_queenslandica       n1448
+r814                n1518                          n1519
+r815                n1518                          n1519
+r819                n1516                          n1517
+n199                n1516                          n1517
+n189                Sphaeroforma_arctica_JP610     n1524
+n490                n1526                          N/A
+n478                n1526                          N/A
+r1009               n1519                          n1520
+n464                n1519                          n1520
+n404                n1476                          n1477
+r1038               n1515                          n1516
+n461                Caenorhabditis_elegans         n1500
+n488                n1430                          n1432
+n702                n1526                          N/A
+n701                n1526                          N/A
+r1070               n1526                          N/A
+n565                n1526                          N/A
+r1098               n1519                          n1520
+n556                n1515                          n1516
+n554                n1515                          n1516
+n546                n1508                          n1510
+r1146               n1452                          n1453
+n516                n1467                          n1477
+n503                n1476                          n1477
+r1076               Chara_braunii                  n1415
+r1080               n1522                          n1524
+r1155               n1520                          n1522
+n698                n1519                          n1520
+n696                n1519                          n1520
+r1169               n1515                          n1516
+r1178               n1510                          n1512
+n695                n1490                          n1516
+n694                n1490                          n1516
+n682                n1467                          n1477
+r1191               n1476                          n1477
+r1082               n1520                          n1522
+n635                n1520                          n1522
+n633                n1520                          n1522
+n631                n1520                          n1522
+n630                n1520                          n1522
+n629                n1452                          n1453
+r1234               n1453                          n1519
+n595                n1448                          n1450
+n598                Stylissa_carteri               n1450
+r1248               n1490                          n1516
+r1267               n1477                          n1478
+n576                n1476                          n1477
+Duplications: 96 
+
+
+Losses
+Species                        No. of Losses  
+============================== ============== 
+n1438                          13
+n1488                          1
+Octopus_bimaculoides           7
+Capsaspora_owczarzaki          8
+Drosophila_melanogaster        2
+Nematostella_vectensis         7
+n1508                          0
+Thelohanellus_kitauei          0
+n1470                          7
+n1456                          21
+n1525                          0
+n1519                          1
+n1443                          5
+Pocillopora_damicornis         0
+n1489                          10
+Caenorhabditis_elegans         6
+Amoeboaphelidium_occidentale   0
+Puccinia_graminis              3
+Strongylocentrotus_purpuratus  11
+n1473                          8
+Trichoplax_adhaerens           0
+n1504                          2
+Spizellomyces_punctatus        2
+Mus_musculus                   0
+n1453                          15
+Xenia_sp._Carnegie-2017        0
+Ectocarpus_siliculosus         2
+Henneguya_salminicola          0
+n1450                          0
+Ephydatia_muelleri             6
+n1441                          7
+n1452                          10
+n1517                          3
+n1465                          1
+Pleurobrachia_bachei           2
+Rhizophagus_irregularis        2
+n1506                          2
+Orbicella_faveolata            7
+Stylissa_carteri               9
+Acropora_digitifera            0
+n1516                          1
+n1429                          1
+n1498                          2
+n1493                          2
+Homo_sapiens                   0
+Stylophora_pistillata          0
+n1415                          5
+n1432                          1
+n1412                          5
+Amphimedon_queenslandica       5
+n1448                          3
+Trichoplax_sp._H2              1
+Amoeboaphelidium_protococcarum 1
+Hydra_vulgaris                 2
+n1422                          0
+Latimeria_chalumnae            4
+n1520                          0
+n1416                          6
+n1510                          6
+Sycon_coactum                  5
+n1419                          3
+Haliclona_tubifera             4
+n1512                          5
+n1425                          1
+Actinia_tenebrosa              7
+Fistulifera_solaris            0
+Sphaeroforma_arctica_JP610     11
+Mnemiopsis_leidyi              0
+n1459                          19
+n1474                          1
+n1462                          10
+Haliclona_amboinensis          6
+n1446                          4
+n1526                          0
+n1495                          5
+Salpingoeca_rosetta            1
+Rozella_allomycis              4
+Aurelia_coerulea               2
+Galerina_marginata             0
+Schizosaccharomyces_pombe      2
+Fonticula_alba                 4
+n1434                          0
+Myxobolus_squamalis            0
+Chara_braunii                  3
+Leucosolenia_complicata        0
+n1481                          0
+Schmidtea_mediterranea         11
+n1467                          3
+n1524                          4
+n1518                          6
+Chiloscyllium_punctatum        4
+n1500                          12
+n1483                          10
+Dendronephthya_gigantea        0
+Exaiptasia_diaphana            7
+Clytia_hemisphaerica           0
+n1476                          5
+n1501                          8
+Daphnia_magna                  3
+Monosiga_brevicollis_MX1       2
+n1486                          5
+Capitella_teleta               4
+Volvox_carteri                 3
+Xenopus_laevis                 1
+Saccharomyces_cerevisiae       1
+n1428                          2
+n1477                          3
+Acropora_millepora             1
+n1430                          1
+n1478                          6
+n1490                          12
+n1522                          2
+n1435                          11
+n1514                          11
+n1515                          7
+Oscarella_carmela              6
+Ciona_intestinalis             7
+
+Losses: 480
+
+
+Species                        Duplications   cD_Nodes       Transfers_from Transfers_to   Losses         
+============================== ============== ============== ============== ============== ============== 
+n1438                          0              0              0              0              13             
+n1488                          0              0              0              0              1              
+Octopus_bimaculoides           0              0              0              0              7              
+Capsaspora_owczarzaki          0              0              0              0              8              
+Drosophila_melanogaster        0              0              0              0              2              
+Nematostella_vectensis         0              0              0              0              7              
+n1508                          1              0              0              0              0              
+Thelohanellus_kitauei          0              0              0              0              0              
+n1470                          0              0              0              0              7              
+n1456                          0              0              0              0              21             
+n1525                          1              0              0              0              0              
+n1519                          15             0              0              0              1              
+n1443                          0              0              0              0              5              
+Pocillopora_damicornis         0              0              0              0              0              
+n1489                          0              0              0              0              10             
+Caenorhabditis_elegans         1              0              0              0              6              
+Amoeboaphelidium_occidentale   0              0              0              0              0              
+Puccinia_graminis              0              0              0              0              3              
+Strongylocentrotus_purpuratus  0              0              0              0              11             
+n1473                          0              0              0              0              8              
+Trichoplax_adhaerens           0              0              0              0              0              
+n1504                          0              0              0              0              2              
+Spizellomyces_punctatus        0              0              0              0              2              
+Mus_musculus                   0              0              0              0              0              
+n1453                          1              0              0              0              15             
+Xenia_sp._Carnegie-2017        0              0              0              0              0              
+Ectocarpus_siliculosus         0              0              0              0              2              
+Henneguya_salminicola          0              0              0              0              0              
+n1450                          0              0              0              0              0              
+Ephydatia_muelleri             0              0              0              0              6              
+n1441                          0              0              0              0              7              
+n1452                          4              0              0              0              10             
+n1517                          0              0              0              0              3              
+n1465                          0              0              0              0              1              
+Pleurobrachia_bachei           0              0              0              0              2              
+Rhizophagus_irregularis        0              0              0              0              2              
+n1506                          0              0              0              0              2              
+Orbicella_faveolata            0              0              0              0              7              
+Stylissa_carteri               1              0              0              0              9              
+Acropora_digitifera            0              0              0              0              0              
+n1516                          4              0              0              0              1              
+n1429                          1              0              0              0              1              
+n1498                          0              0              0              0              2              
+n1493                          0              0              0              0              2              
+Homo_sapiens                   0              0              0              0              0              
+Stylophora_pistillata          0              0              0              0              0              
+n1415                          0              0              0              0              5              
+n1432                          0              0              0              0              1              
+n1412                          0              0              0              0              5              
+Amphimedon_queenslandica       2              0              0              0              5              
+n1448                          5              0              0              0              3              
+Trichoplax_sp._H2              0              0              0              0              1              
+Amoeboaphelidium_protococcarum 0              0              0              0              1              
+Hydra_vulgaris                 0              0              0              0              2              
+n1422                          0              0              0              0              0              
+Latimeria_chalumnae            0              0              0              0              4              
+n1520                          7              0              0              0              0              
+n1416                          0              0              0              0              6              
+n1510                          3              0              0              0              6              
+Sycon_coactum                  0              0              0              0              5              
+n1419                          0              0              0              0              3              
+Haliclona_tubifera             0              0              0              0              4              
+n1512                          0              0              0              0              5              
+n1425                          0              0              0              0              1              
+Actinia_tenebrosa              0              0              0              0              7              
+Fistulifera_solaris            0              0              0              0              0              
+Sphaeroforma_arctica_JP610     2              0              0              0              11             
+Mnemiopsis_leidyi              0              0              0              0              0              
+n1459                          0              0              0              0              19             
+n1474                          0              0              0              0              1              
+n1462                          0              0              0              0              10             
+Haliclona_amboinensis          0              0              0              0              6              
+n1446                          0              0              0              0              4              
+n1526                          16             0              0              0              0              
+n1495                          0              0              0              0              5              
+Salpingoeca_rosetta            0              0              0              0              1              
+Rozella_allomycis              0              0              0              0              4              
+Aurelia_coerulea               0              0              0              0              2              
+Galerina_marginata             2              0              0              0              0              
+Schizosaccharomyces_pombe      0              0              0              0              2              
+Fonticula_alba                 0              0              0              0              4              
+n1434                          0              0              0              0              0              
+Myxobolus_squamalis            0              0              0              0              0              
+Chara_braunii                  1              0              0              0              3              
+Leucosolenia_complicata        0              0              0              0              0              
+n1481                          0              0              0              0              0              
+Schmidtea_mediterranea         0              0              0              0              11             
+n1467                          4              0              0              0              3              
+n1524                          0              0              0              0              4              
+n1518                          2              0              0              0              6              
+Chiloscyllium_punctatum        0              0              0              0              4              
+n1500                          0              0              0              0              12             
+n1483                          0              0              0              0              10             
+Dendronephthya_gigantea        0              0              0              0              0              
+Exaiptasia_diaphana            0              0              0              0              7              
+Clytia_hemisphaerica           0              0              0              0              0              
+n1476                          7              0              0              0              5              
+n1501                          0              0              0              0              8              
+Daphnia_magna                  0              0              0              0              3              
+Monosiga_brevicollis_MX1       0              0              0              0              2              
+n1486                          0              0              0              0              5              
+Capitella_teleta               0              0              0              0              4              
+Volvox_carteri                 0              0              0              0              3              
+Xenopus_laevis                 0              0              0              0              1              
+Saccharomyces_cerevisiae       1              0              0              0              1              
+n1428                          0              0              0              0              2              
+n1477                          2              0              0              0              3              
+Acropora_millepora             0              0              0              0              1              
+n1430                          2              0              0              0              1              
+n1478                          1              0              0              0              6              
+n1490                          3              0              0              0              12             
+n1522                          1              0              0              0              2              
+n1435                          0              0              0              0              11             
+n1514                          0              0              0              0              11             
+n1515                          6              0              0              0              7              
+Oscarella_carmela              0              0              0              0              6              
+Ciona_intestinalis             0              0              0              0              7              
+
+Duplications: 96
+Losses: 480
+

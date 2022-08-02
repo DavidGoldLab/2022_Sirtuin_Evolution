@@ -1,0 +1,15 @@
+Log file which was probably generated for this command:
+java -jar Notung-2.9.1.5.jar -g 4_NOTUNG_Gene_Tree.tree -s ../9c_Notung_Species_Tree.SpongeFirst.newick --edgeweights name --rearrange --threshold 90% --speciestag prefix --nolosses --log --events --treeoutput newick 
+| Reading gene tree file 4_NOTUNG_Gene_Tree.tree
+| Reading species tree file ../9c_Notung_Species_Tree.SpongeFirst.newick
+| 	Costs:   --costdup 1.5, --costloss 1.0
+| 
+| Reconciling 4_NOTUNG_Gene_Tree.tree with 9c_Notung_Species_Tree.SpongeFirst.newick
+| Rearranging gene tree
+|  With --threshold 90.0
+|  1 optimal histories found, reporting up to 1 of them.  Use --maxtrees option to output more.
+| Saving 4_NOTUNG_Gene_Tree.tree.rearrange.0
+|  Has 9 duplications and 26 losses, Event Score is 39.5
+| Saving event statistics to 4_NOTUNG_Gene_Tree.tree.rearrange.0.events.txt
+| 
+| Writing log to file 4_NOTUNG_Gene_Tree.tree.rearrange.ntglog

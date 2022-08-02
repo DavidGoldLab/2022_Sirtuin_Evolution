@@ -1,0 +1,286 @@
+#####################
+# Blast with queries 
+#####################
+
+# >sp|Q8R216|SIR4_MOUSE
+# MSGLTFRPTKGRWITHLSRPRSCGPSGLFVPPSPPLDPEKIKELQRFISLSKKLLVMTGA
+# GISTESGIPDYRSEKVGLYARTDRRPIQHIDFVRSAPVRQRYWARNFVGWPQFSSHQPNP
+# AHWALSNWERLGKLHWLVTQNVDALHSKAGSQRLTELHGCMHRVLCLNCGEQTARRVLQE
+# RFQALNPSWSAEAQGVAPDGDVFLTEEQVRSFQVPCCDRCGGPLKPDVVFFGDTVNPDKV
+# DFVHRRVKEADSLLVVGSSLQVYSGYRFILTAREQKLPIAILNIGPTRSDDLACLKLDSR
+# CGELLPLIDPRRQHSDVQRLEMNFPLSSAAQDP
+
+# >XP_001623784.3|SIR1_ANEMONE
+# MADPEPDDLPSKRLCLSPSVESSNQNYIFSTSDSKLPSGIDRDENLDSYIAFSGTFSGEFDKSRDQNGVS
+# SIFQTSSDLSEHGCEDFPSCFSVEDDLDDIDEHHFQPIAGPMGWVQRQIDLGISPRDILSYMVPHARVPP
+# NVSNSTLWKIVIDILTEPTKRQKLPNVNTLDDVVRLIKKCKNIIVLTGAGVSVSCGIPDFRSRDGIYAKL
+# SVEYPDLPDPQAMFDITYFNQNPKPFFKFAKEIYPGQFKPSLCHRFIHQLEEHGHLLRNYSQNIDTLEQV
+# AGITRVIQCHGSFSTASCMRCKHKVPCEAIKEDIFRKNIPVCSTCSPDEEFPSIMKPDIVFFGESLPSNF
+# YTHLGDDSNKADLLIVIGSSLKVRPVALIPSHISPEVPQILINREPLRHMTFDVELLGDCDAIVSELCQR
+# LGASWTHILDGYTAPPLRIPPFMDMPPDLVSCNPSIAKEHDKSMPLEKPQQTTQDAASRTKLAAREGDKE
+# RNSPSSVPDTPSDGGKEMEDFSTKKKMECVEGETVDDNLTNLLISDLISTQSTPERLSNQDATPFIFLPP
+# SRYVFYGAELCNSPLSSPREDVSHLLPSDDDLDSESDSEGSNVGSGVSYASANSNVGSGMSYCSANSNMG
+# SGILAVQPQGTPDQAGTGYSSGDGSEGYGSGVTSGVDLPFTDIKGGQGRFDCPSEENTAMSTADVLAPET
+# TPFSITDTGCPSAELDSELGLDSADPFSSVQLFPNTTETDNFEDNTAKQDFFHEVSDNVIDTREQPSTIE
+# SVEELSQ
+
+# >XP_003382458.1|SIR5_SPONGE
+# MAAIKEKDQSQQDSSGPSSDMSSFRSIFAGAKHIVVLSGAGISAESGVPTFRGAGGYWRTFQAQQLATPE
+# AFADNPSLVWEFYSYRREVMHSKQPNPAHKAIAELEKRLQPQGRKVTVITQNIDRLHHRAGSEDVIELHG
+# SLFHTRCTKCGDVRENKDSPIVPALKDKGTPNPDTEDARIPINELPQCELCGSLLRPHVIWFGEPLDEAV
+# LDRTYKEMDKCDLCLLVGTSSVVYPAAGFAPLLATRGVPVAEFNLEKTPVTGALKFHFKGKCGETLPTAI
+# AKHQSEDSQ
+
+# >XP_002950001.1|SIR6_ALGAE
+# MSLGYADRLKNKRNLGGQLGAKEYHQTFDEIKEGVKSLAKWVADAKRVFVFTGAGISTSCGIPDFRGPNG
+# IWTLRKKKIPIPTDFTPFEYAKPSFTHMAIAALVAAGKVPYVCSQNVDSLHLWSGVPRNRLAELHGNCFA
+# ERCTQCRSEYARDFQMETVDFKPSGRLCDQPACGAPLVDNILDWDTPLPEDELGEAVRHAEEADVALVLG
+# TSLQIQPANEIPTLTRDGGGKMVIVNLQKTPKDRRANLIIRSRVDLVMALLMKELGMQVPPYIRTERLVV
+# EHELSHSGGGGGGRVLTVRVRSQHGRHCPLPMVESVQISVTAEPE
+
+# Combine all proteomes into file (0_Sirtuin_BLAST_Database.fasta) and prepare database
+makeblastdb -in 0_Sirtuin_BLAST_Database.fasta -dbtype prot -out 0_Sirtuin_BLAST_Database
+
+# BLAST queries against database
+blastp -query 0_Queries.fasta \
+-db /Volumes/SAMDATA/Sirtuin_BLAST/0_Sirtuin_BLAST_Database \
+-outfmt 6 -out 1_DB_BLAST_Hits.txt
+
+# Extract IDs from BLAST results
+awk '{print $2}' 1_DB_BLAST_Hits.txt | sort -u  > tmp1
+
+# Extract sequences from BLAST results
+xargs samtools faidx  /Volumes/SAMDATA/Sirtuin_BLAST/0_Sirtuin_BLAST_Database.fasta \
+< tmp1 > 1_DB_BLAST_Hits.fasta
+
+rm tmp*
+
+#######################################
+# Combine results with NCBI BLAST hits
+#######################################
+
+cat 1_DB_BLAST_Hits.fasta 1_NCBI_BLAST_Hits.fasta > 2_Sirtuin_BLAST_Hits.fasta
+
+############################################
+# Annotate genes with Uniprot Swissprot IDs
+############################################
+
+wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+gunzip uniprot_sprot.fasta.gz
+
+# Simplify Uniprot IDs
+sed 's/>.*\|/>/g' uniprot_sprot.fasta > uniprot_sprot.newnames.fasta
+
+# Perform BLAST
+makeblastdb -dbtype prot -in uniprot_sprot.newnames.fasta -out uniprot_sprot
+
+blastp -query 2_Sirtuin_BLAST_Hits.fasta -db uniprot_sprot \
+-num_threads 32 -max_target_seqs 1 -outfmt 6 -evalue 1e-3 > 3_blastp.outfmt6
+
+# Append BLAST results to protein IDs
+awk '{print $1, $2}' OFS='\t' 3_blastp.outfmt6 > tmp0
+
+gsed s/"\(>\)\(.*\)"/"\1\2\t"/g 2_Sirtuin_BLAST_Hits.fasta > tmp1 
+tr -d '\n' < tmp1  > tmp2
+gsed 's/>/\n/g' tmp2 > tmp3
+gsed -r '/^\s*$/d' tmp3 > tmp4
+join <(sort tmp0) <(sort tmp4) > tmp5
+sort -u tmp5 > tmp6
+gsed 's/^/>/g' tmp6 > tmp7
+gsed -E 's/ ([^ ]*)$/\n\1/' tmp7 > tmp8
+gsed -E 's/^([^ ]*) /\1|/' tmp8 > 3_Sirtuin_BLAST_Hits.Annotated.fasta
+rm tmp*
+
+# cleanup
+rm uniprot_sprot*
+
+################################
+# Identify domains with hmmscan
+################################
+
+hmmscan --domtblout 4_Pfam_output.txt ~/Pfam/Pfam-A.hmm 3_Sirtuin_BLAST_Hits.Annotated.fasta
+
+# 	# ftp://ftp.ebi.ac.uk/pub/databases/Pfam//Tools/PfamScan.tar.gz
+# 
+# # pfam_scan can be installed with Conda. Add conda cask to homebrew:
+# conda install -c bioconda pfam_scan
+# 
+# # You will need to download the following files from the Pfam ftp site 
+# # (ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/):
+# 	# Pfam-A.hmm
+# 	# Pfam-A.hmm.dat
+# 
+# # Generate binary files for Pfam-A.hmm by running the following commands:
+# hmmpress Pfam-A.hmm
+# 
+# # Run PfamScan
+# pfam_scan.pl \
+# -outfile 4_Pfam_output.txt \
+# -fasta 3_Sirtuin_BLAST_Hits.Annotated.fasta -dir ~/Pfam
+
+#####################################
+# Convert PFAM output to GFF3 format
+#####################################
+
+# Convert HMMScan output to GFF3 with pfam2gff.py
+	# https://github.com/wrf/genomeGTFtools
+
+wget https://github.com/wrf/genomeGTFtools/blob/master/pfam2gff.py?raw=true
+mv pfam2gff.py?raw=true pfam2gff.py
+python pfam2gff.py \
+-i 4_Pfam_output.txt > 4_Pfam_output.gff
+
+
+# # use squeeze flag (-s) in tr to replace all white spaces with a tab
+# tr -s ' ' \\t < 4_Pfam_output.txt > tmp1
+# # remove header and empty lines
+# gsed s/^#.*//g tmp1 > tmp2
+# gsed -i '/^$/d' tmp2
+# awk -v OFS='\t' '{print $1,"hmmscan","PFAM",$2,$3,$12,".",".","ID="$6"."$7";Name="$7}' tmp2 > 4_Pfam_output.gff3
+# rm tmp*
+
+# Create GFF3 file with SIR2 domains only
+grep '.*ID=PF02146.*' 4_Pfam_output.gff > 4_Pfam_output.SIR2_Domains.gff
+
+# Extract with Geneious (file 5_SIR2_Domains.Geneious.fasta)
+	# Use "Extract Annotation" function, concatenating domains in each sequence
+	# 2 sequences broken into distinct full SIR2 domains:
+		# Amphimedon_queenslandica|XP_019864326.1
+		# Stylissa_carteri|maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1
+
+#################################
+# Clean SIR2 domains with CD-Hit
+#################################
+
+# create temp directory
+
+mkdir temp
+cd temp
+
+# Format results so each line is one sequence
+
+gsed s/"\(>\)\(.*\)"/"\1\2\t"/g ../5_SIR2_Domains.Geneious.fasta > tmp1
+tr -d '\n' < tmp1  > tmp2
+gsed 's/>/\n>/g' tmp2 > tmp3
+gsed -E 's/^([^|]*)|/\1\t/' <(sort tmp3) > 5_Sir2_Domains.txt
+rm tmp*
+
+# split into files by ID
+
+awk -F'\t' '!_[$1]++ { fn && close(fn)
+fn = $1 ".tmp"
+}
+{ print > fn } ' 5_Sir2_Domains.txt
+
+# reformat into fasta
+
+for i in *.tmp; do
+	gsed -E 's/^([^\t]*)\t/\1/;s/\t([^\t]*)$/\n\1/' $i > ${i%.tmp}.fasta;
+done
+
+for i in *.fasta; do
+	cd-hit -i $i -o ${i%.fasta}.cd-hit.txt -d 100 -c 0.90;
+done
+
+cat *.cd-hit.txt > ../6_SIR2_Domains.cd-hit.fasta
+
+cd ../
+rm -r temp
+
+######################################################
+# Remove sequences that are shorter than 90 basepairs
+######################################################
+
+awk 'BEGIN {RS = ">" ; ORS = ""} length($2) >= 90 {print ">"$0}'  6_SIR2_Domains.cd-hit.fasta \
+> 7_SIR2_Domains.cd-hit.long.fasta
+
+awk 'BEGIN {RS = ">" ; ORS = ""} length($2) <= 90 {print ">"$0}'  6_SIR2_Domains.cd-hit.fasta \
+> 7_SIR2_Domains.cd-hit.short.fasta
+
+###########################################
+# Align domain with MAFFT (E-INS-i method)
+###########################################
+
+einsi 7_SIR2_Domains.cd-hit.long.fasta > 7_SIR2_Domains.mafft.fasta
+trimal -gappyout -in 8_SIR2_Domains.mafft.fasta -out 8_SIR2_Domains.mafft.trimal.fasta
+
+##############################################################################
+# Extract remaining (vetted) sequences for a full-length alignment comparison
+##############################################################################
+
+grep '^>.*' 7_SIR2_Domains.cd-hit.long.fasta > tmp0
+sed 's/>//g' tmp0 > tmp1
+# remove 'domain2 appended to several names
+sed 's/-Domain2//g' tmp1 > tmp2
+sort -u tmp2 > tmp3
+xargs samtools faidx 3_Sirtuin_BLAST_Hits.Annotated.fasta < tmp3 > 7_Full_Seqs.long.fasta
+einsi 7_Full_Seqs.long.fasta > 7_Full_Seqs.mafft.fasta
+trimal -gappyout -in 7_Full_Seqs.mafft.fasta -out 8_Full_Seqs.mafft.trimal.fasta
+
+
+#########################
+# Make tree with IQ-TREE
+#########################
+
+iqtree -s 8_SIR2_Domains.mafft.fasta -m MFP -bb 1000 -nt 16
+iqtree -s 8_SIR2_Domains.mafft.trimal.fasta -m MFP -bb 1000 -nt 16
+iqtree -s 8_Full_Seqs.mafft.trimal.fasta -m MFP -bb 1000 -nt 16
+
+mv 8_Full_Seqs.mafft.trimal.fasta.contree 8_Full_Seqs.mafft.trimal.fasta.contree.tree
+mv 8_SIR2_Domains.mafft.fasta.contree 8_SIR2_Domains.mafft.fasta.contree.tree
+mv 8_SIR2_Domains.mafft.trimal.fasta.contree 8_SIR2_Domains.mafft.trimal.fasta.contree.tree
+
+# Remove probable contaminant/HGT sequences from 7_Full_Seqs.long.fasta (output = 9_Full_Seqs.vetted.fasta)
+	# 7_SIR2_Domains.cd-hit.long.fasta > 9_SIR2_Domains.vetted.fasta
+
+# Sycon_coactum|29914.p1|NPD1_ARCFU
+# Aurelia_coerulea|XLOC_005839_TCONS_00008113_Seg122.19.p1|NPD_AQUAE
+# Clytia_hemisphaerica|TCONS_00049926-protein|NPD_THET8
+# Capitella_teleta|R7TBQ3_CAPTE|NPD_METKA
+# Salpingoeca_rosetta|XP_004993987.1|NPD2_PYRAE
+# Leucosolenia_complicata|lcpid67440_lcgid21395|NPD_AQUAE
+# Strongylocentrotus_purpuratus|A0A7M7N1G3_STRPU|NPD2_CALS4
+
+####################################
+# Realign and create new gene tree
+####################################
+
+# prank -d=9_SIR2_Domains.vetted.fasta -t=0_Taxonomy.tree -shortnames -o=9_SIR2_Domains.PRANK.fasta
+
+einsi 9_SIR2_Domains.vetted.fasta > 9_SIR2_Domains.vetted.mafft.fasta
+
+trimal -gappyout -in 9_SIR2_Domains.vetted.mafft.fasta -out 9_SIR2_Domains.vetted.trimal.fasta
+
+iqtree -s 9_SIR2_Domains.vetted.trimal.fasta -m MFP -bc 100 -nt 16
+
+# Output tree (9_SIR2_Domains.vetted.mafft.fasta.contree.tree) visually examined and rooted in Geneious. Exported as 9b_NOTUNG_Rooted_Tree.tree
+9_SIR2_Domains.vetted.trimal.fasta.contree.tree -> 9b_Domain_NOTUNG_Rooted_Tree.tree
+9_Full_Seqs.vetted.trimal.fasta.contree.tree -> 9b_Full_NOTUNG_Rooted_Tree.tree
+
+######################################
+# Species tree correction with Notung
+######################################
+ 
+# Taxonomic tree collected from NCBI Common Tree (https://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi)
+	# Polytomies broken manually using the GUI Mesquite
+
+# Run NoTung
+ 
+java -jar /Users/davidgold/Documents/bioinformatics/Notung-2/Notung-2.9.1.5.jar \
+-g 9b_Domain_NOTUNG_Rooted_Tree.tree -s 9b_Notung_Species_Tree.newick \
+--edgeweights name --rearrange --threshold 90% --speciestag prefix \
+--nolosses --log  --events --treeoutput newick
+
+cp 9b_Domain_NOTUNG_Rooted_Tree.tree.rearrange.0 9b_Domain_NOTUNG_Final.tree
+
+	# Switch sponges and ctenophores, and then rerun
+	
+cp 9b_Domain_NOTUNG_Rooted_Tree.tree 9c_Domain_NOTUNG_Rooted_Tree.Sponge_First.tree 
+
+java -jar /Users/davidgold/Documents/bioinformatics/Notung-2/Notung-2.9.1.5.jar \
+-g 9c_Domain_NOTUNG_Rooted_Tree.Sponge_First.tree  -s 9c_Notung_Species_Tree.SpongeFirst.newick \
+--edgeweights name --rearrange --threshold 90% --speciestag prefix \
+--nolosses --log  --events --treeoutput newick
+
+cp 9c_Domain_NOTUNG_Rooted_Tree.Sponge_First.tree.rearrange.0 9c_Domain_NOTUNG_Final.Sponge_First.tree
+

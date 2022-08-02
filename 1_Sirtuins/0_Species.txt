@@ -1,0 +1,59 @@
+Acropora digitifera
+Acropora millepora
+Actinia tenebrosa
+Amoeboaphelidium occidentale
+Amoeboaphelidium protococcarum
+Amphimedon queenslandica
+Aurelia coerulea
+Caenorhabditis elegans
+Capitella teleta
+Capsaspora owczarzaki ATCC 30864
+Chara braunii
+Chiloscyllium punctatum
+Ciona intestinalis
+Clytia hemisphaerica
+Daphnia magna
+Dendronephthya gigantea
+Drosophila melanogaster
+Ectocarpus siliculosus
+Ephydatia muelleri
+Exaiptasia diaphana
+Fistulifera solaris
+Fonticula alba
+Galerina marginata
+Haliclona amboinensis
+Haliclona tubifera
+Henneguya salminicola
+Homo sapiens
+Hydra vulgaris
+Latimeria chalumnae
+Leucosolenia complicata
+Mnemiopsis leidyi
+Monosiga brevicollis MX1
+Mus musculus
+Myxobolus squamalis
+Nematostella vectensis
+Octopus bimaculoides
+Orbicella faveolata
+Oscarella carmela
+Pleurobrachia bachei
+Pocillopora damicornis
+Puccinia graminis
+Rhizophagus irregularis
+Rozella allomycis
+Saccharomyces cerevisiae
+Salpingoeca rosetta
+Schizosaccharomyces pombe
+Schmidtea mediterranea
+Sphaeroforma arctica JP610
+Spizellomyces punctatus
+Strongylocentrotus purpuratus
+Stylissa carteri
+Stylophora pistillata
+Sycon coactum
+Thelohanellus kitauei
+Trichoplax adhaerens
+Trichoplax sp. H2
+Volvox carteri
+Xenia sp. Carnegie-2017
+Xenopus laevis

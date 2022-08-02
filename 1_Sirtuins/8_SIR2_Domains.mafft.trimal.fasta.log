@@ -1,0 +1,2017 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Jul 19 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    c4-62 (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s 8_SIR2_Domains.mafft.trimal.fasta -m MFP -bb 1000 -nt 16
+Seed:    129880 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jul 17 17:39:53 2022
+Kernel:  AVX+FMA - 16 threads (32 CPU cores detected)
+
+Reading alignment file 8_SIR2_Domains.mafft.trimal.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 361 sequences with 203 columns, 203 distinct patterns
+192 parsimony-informative, 8 singleton sites, 3 constant sites
+WARNING: Some sequence names are changed as follows:
+Acropora_digitifera|XP_015751984.1|SIR7_BOVIN -> Acropora_digitifera_XP_015751984.1_SIR7_BOVIN
+Acropora_digitifera|XP_015764189.1|SIR6_CASCN -> Acropora_digitifera_XP_015764189.1_SIR6_CASCN
+Acropora_digitifera|XP_015764941.1|SIR5_CANLF -> Acropora_digitifera_XP_015764941.1_SIR5_CANLF
+Acropora_digitifera|XP_015769634.1|SIR3_HUMAN -> Acropora_digitifera_XP_015769634.1_SIR3_HUMAN
+Acropora_digitifera|XP_015774796.1|SIR1_ARATH -> Acropora_digitifera_XP_015774796.1_SIR1_ARATH
+Acropora_digitifera|XP_015779163.1|SIR2_PONAB -> Acropora_digitifera_XP_015779163.1_SIR2_PONAB
+Acropora_digitifera|XP_015779435.1|SIR1_RAT -> Acropora_digitifera_XP_015779435.1_SIR1_RAT
+Acropora_digitifera|XP_015779547.1|SIR4_BOVIN -> Acropora_digitifera_XP_015779547.1_SIR4_BOVIN
+Acropora_millepora|XP_029180011.2|SIR7_BOVIN -> Acropora_millepora_XP_029180011.2_SIR7_BOVIN
+Acropora_millepora|XP_029189899.1|SIR3_HUMAN -> Acropora_millepora_XP_029189899.1_SIR3_HUMAN
+Acropora_millepora|XP_029191153.1|SIR5_CANLF -> Acropora_millepora_XP_029191153.1_SIR5_CANLF
+Acropora_millepora|XP_029212880.2|SIR1_MOUSE -> Acropora_millepora_XP_029212880.2_SIR1_MOUSE
+Acropora_millepora|XP_029213217.2|SIR4_BOVIN -> Acropora_millepora_XP_029213217.2_SIR4_BOVIN
+Acropora_millepora|XP_029214425.2|SIR1_ARATH -> Acropora_millepora_XP_029214425.2_SIR1_ARATH
+Acropora_millepora|XP_044163473.1|SIR2_MACFA -> Acropora_millepora_XP_044163473.1_SIR2_MACFA
+Actinia_tenebrosa|XP_031549158.1|SIR1_HUMAN -> Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN
+Actinia_tenebrosa|XP_031549214.1|SIR4_BOVIN -> Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN
+Actinia_tenebrosa|XP_031555893.1|SIR7_BOVIN -> Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN
+Actinia_tenebrosa|XP_031557593.1|SIR3_HUMAN -> Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN
+Actinia_tenebrosa|XP_031561543.1|SIR6_MACFA -> Actinia_tenebrosa_XP_031561543.1_SIR6_MACFA
+Actinia_tenebrosa|XP_031565089.1|SIR5_CANLF -> Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF
+Actinia_tenebrosa|XP_031565139.1|SIR1_ARATH -> Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH
+Actinia_tenebrosa|XP_031565494.1|SIR1_ARATH -> Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH
+Actinia_tenebrosa|XP_031571475.1|SIR2_DANRE -> Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE
+Amoeboaphelidium_occidentale|KAI3658166.1|SIR2_DANRE -> Amoeboaphelidium_occidentale_KAI3658166.1_SIR2_DANRE
+Amoeboaphelidium_occidentale|KAI3659897.1|HST3_CANAL -> Amoeboaphelidium_occidentale_KAI3659897.1_HST3_CANAL
+Amoeboaphelidium_occidentale|KAI3659977.1|SIR1_HUMAN -> Amoeboaphelidium_occidentale_KAI3659977.1_SIR1_HUMAN
+Amoeboaphelidium_occidentale|KAI3661634.1|SIR4_BATDJ -> Amoeboaphelidium_occidentale_KAI3661634.1_SIR4_BATDJ
+Amoeboaphelidium_protococcarum|KAI3629610.1|HST3_CANAL -> Amoeboaphelidium_protococcarum_KAI3629610.1_HST3_CANAL
+Amoeboaphelidium_protococcarum|KAI3633096.1|SIR4_BATDJ -> Amoeboaphelidium_protococcarum_KAI3633096.1_SIR4_BATDJ
+Amoeboaphelidium_protococcarum|KAI3633495.1|SIR2_DANRE -> Amoeboaphelidium_protococcarum_KAI3633495.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_003382458.1|SIR5_CANLF -> Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF
+Amphimedon_queenslandica|XP_003383581.1|SIR1_ARATH -> Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH
+Amphimedon_queenslandica|XP_003385596.1|SIR6_CASCN -> Amphimedon_queenslandica_XP_003385596.1_SIR6_CASCN
+Amphimedon_queenslandica|XP_003388355.1|SIR1_ORYSI -> Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI
+Amphimedon_queenslandica|XP_003389737.2|SIR6_MACFA -> Amphimedon_queenslandica_XP_003389737.2_SIR6_MACFA
+Amphimedon_queenslandica|XP_011403504.2|SIR4_BOVIN -> Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN
+Amphimedon_queenslandica|XP_011404349.2|SIR1_MOUSE -> Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE
+Amphimedon_queenslandica|XP_011406188.1|SIR1_ARATH -> Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH
+Amphimedon_queenslandica|XP_019851125.1|SIR3_HUMAN -> Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN
+Amphimedon_queenslandica|XP_019851847.1|SIR2_DANRE -> Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_019861130.1|SIR2_DANRE -> Amphimedon_queenslandica_XP_019861130.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_019864326.1|SIR2_DANRE -> Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE
+Amphimedon_queenslandica|XP_019864326.1|SIR2_DANRE-Domain2 -> Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain2
+Aurelia_coerulea|XLOC_005839|TCONS_00008113|Seg122.19.p1|NPD_AQUAE -> Aurelia_coerulea_XLOC_005839_TCONS_00008113_Seg122.19.p1_NPD_AQUAE
+Aurelia_coerulea|XLOC_005945|TCONS_00008273|Seg12214.1.p1|SIR3_HUMAN -> Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN
+Aurelia_coerulea|XLOC_021578|TCONS_00030503|Seg1865.9.p1|SIR1_HUMAN -> Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN
+Aurelia_coerulea|XLOC_021960|TCONS_00031013|Seg1882.3.p1|SIR2_DANRE -> Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE
+Aurelia_coerulea|XLOC_034300|TCONS_00048726|Seg2682.3.p1|SIR6_CASCN -> Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_CASCN
+Aurelia_coerulea|XLOC_057165|TCONS_00080094|Seg5705.2.p1|SIR3_MOUSE -> Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE
+Aurelia_coerulea|XLOC_058163|TCONS_00081427|Seg589.7.p1|SIR1_ARATH -> Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH
+Aurelia_coerulea|XLOC_058355|TCONS_00081668|Seg5923.2.p1|SIR7_BOVIN -> Aurelia_coerulea_XLOC_058355_TCONS_00081668_Seg5923.2.p1_SIR7_BOVIN
+Aurelia_coerulea|XLOC_073218|TCONS_00101516|Seg992.8.p1|SIR4_BOVIN -> Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN
+Caenorhabditis_elegans|SIR24_CAEEL|SIR24_CAEEL -> Caenorhabditis_elegans_SIR24_CAEEL_SIR24_CAEEL
+Caenorhabditis_elegans|SIR2_CAEEL|SIR2_CAEEL -> Caenorhabditis_elegans_SIR2_CAEEL_SIR2_CAEEL
+Caenorhabditis_elegans|SIR41_CAEEL|SIR41_CAEEL -> Caenorhabditis_elegans_SIR41_CAEEL_SIR41_CAEEL
+Caenorhabditis_elegans|SIR42_CAEEL|SIR42_CAEEL -> Caenorhabditis_elegans_SIR42_CAEEL_SIR42_CAEEL
+Capitella_teleta|R7T6P1_CAPTE|SIR3_HUMAN -> Capitella_teleta_R7T6P1_CAPTE_SIR3_HUMAN
+Capitella_teleta|R7T8F1_CAPTE|SIR3_HUMAN -> Capitella_teleta_R7T8F1_CAPTE_SIR3_HUMAN
+Capitella_teleta|R7TBQ3_CAPTE|NPD_METKA -> Capitella_teleta_R7TBQ3_CAPTE_NPD_METKA
+Capitella_teleta|R7TK56_CAPTE|SIR2_DANRE -> Capitella_teleta_R7TK56_CAPTE_SIR2_DANRE
+Capitella_teleta|R7TRL9_CAPTE|SIR6_MACFA -> Capitella_teleta_R7TRL9_CAPTE_SIR6_MACFA
+Capitella_teleta|R7TYG4_CAPTE|SIR5_CANLF -> Capitella_teleta_R7TYG4_CAPTE_SIR5_CANLF
+Capitella_teleta|R7UFJ9_CAPTE|SIR1_ORYSI -> Capitella_teleta_R7UFJ9_CAPTE_SIR1_ORYSI
+Capitella_teleta|R7UG42_CAPTE|SIR7_HUMAN -> Capitella_teleta_R7UG42_CAPTE_SIR7_HUMAN
+Capitella_teleta|R7UXV9_CAPTE|SIR6_MOUSE -> Capitella_teleta_R7UXV9_CAPTE_SIR6_MOUSE
+Capitella_teleta|R7VC11_CAPTE|SIR4_MOUSE -> Capitella_teleta_R7VC11_CAPTE_SIR4_MOUSE
+Capitella_teleta|R7VG12_CAPTE|SIR1_MOUSE -> Capitella_teleta_R7VG12_CAPTE_SIR1_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|KJE90862.1|SIR4_MOUSE -> Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|XP_004343843.2|SIR6_MACFA -> Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_MACFA
+Capsaspora_owczarzaki_ATCC_30864|XP_004344427.2|SIR7_HUMAN -> Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN
+Capsaspora_owczarzaki_ATCC_30864|XP_004346801.2|SIR1_MOUSE -> Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE
+Capsaspora_owczarzaki_ATCC_30864|XP_004348413.1|SIR2_DANRE -> Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE
+Chara_braunii|A0A388K2V7_CHABU|TF29_SCHPO -> Chara_braunii_A0A388K2V7_CHABU_TF29_SCHPO
+Chara_braunii|A0A388K9Y1_CHABU|SIR6_DROME -> Chara_braunii_A0A388K9Y1_CHABU_SIR6_DROME
+Chara_braunii|A0A388LX92_CHABU|SIR5_CANLF -> Chara_braunii_A0A388LX92_CHABU_SIR5_CANLF
+Chara_braunii|A0A388M0E5_CHABU|SIR1_ARATH -> Chara_braunii_A0A388M0E5_CHABU_SIR1_ARATH
+Chiloscyllium_punctatum|A0A401RMI2_CHIPU|SIR4_HUMAN -> Chiloscyllium_punctatum_A0A401RMI2_CHIPU_SIR4_HUMAN
+Chiloscyllium_punctatum|A0A401S4C4_CHIPU|SIR7_HUMAN -> Chiloscyllium_punctatum_A0A401S4C4_CHIPU_SIR7_HUMAN
+Chiloscyllium_punctatum|A0A401SWK8_CHIPU|SIR2_DANRE -> Chiloscyllium_punctatum_A0A401SWK8_CHIPU_SIR2_DANRE
+Chiloscyllium_punctatum|A0A401SYB6_CHIPU|SIR1_MOUSE -> Chiloscyllium_punctatum_A0A401SYB6_CHIPU_SIR1_MOUSE
+Chiloscyllium_punctatum|A0A401SZL3_CHIPU|SIR5_CHICK -> Chiloscyllium_punctatum_A0A401SZL3_CHIPU_SIR5_CHICK
+Chiloscyllium_punctatum|A0A401T636_CHIPU|SIR3_HUMAN -> Chiloscyllium_punctatum_A0A401T636_CHIPU_SIR3_HUMAN
+Ciona_intestinalis|F6SLD6_CIOIN|SIR1_HUMAN -> Ciona_intestinalis_F6SLD6_CIOIN_SIR1_HUMAN
+Ciona_intestinalis|F6TVS6_CIOIN|SIR4_MOUSE -> Ciona_intestinalis_F6TVS6_CIOIN_SIR4_MOUSE
+Ciona_intestinalis|F7AUS4_CIOIN|SIR7_RAT -> Ciona_intestinalis_F7AUS4_CIOIN_SIR7_RAT
+Ciona_intestinalis|H2XW94_CIOIN|SIR3_HUMAN -> Ciona_intestinalis_H2XW94_CIOIN_SIR3_HUMAN
+Ciona_intestinalis|H2XWF2_CIOIN|SIR5_MOUSE -> Ciona_intestinalis_H2XWF2_CIOIN_SIR5_MOUSE
+Ciona_intestinalis|Q1RL34_CIOIN|SIR2_DANRE -> Ciona_intestinalis_Q1RL34_CIOIN_SIR2_DANRE
+Clytia_hemisphaerica|TCONS_00017752-protein|SIR4_MOUSE -> Clytia_hemisphaerica_TCONS_00017752-protein_SIR4_MOUSE
+Clytia_hemisphaerica|TCONS_00023571-protein|SIR1_HUMAN -> Clytia_hemisphaerica_TCONS_00023571-protein_SIR1_HUMAN
+Clytia_hemisphaerica|TCONS_00029362-protein|SIR2_DANRE -> Clytia_hemisphaerica_TCONS_00029362-protein_SIR2_DANRE
+Clytia_hemisphaerica|TCONS_00045855-protein|SIR6_CASCN -> Clytia_hemisphaerica_TCONS_00045855-protein_SIR6_CASCN
+Clytia_hemisphaerica|TCONS_00049926-protein|NPD_THET8 -> Clytia_hemisphaerica_TCONS_00049926-protein_NPD_THET8
+Clytia_hemisphaerica|TCONS_00056393-protein|SIR6_CASCN -> Clytia_hemisphaerica_TCONS_00056393-protein_SIR6_CASCN
+Daphnia_magna|A0A0P5CJZ6_9CRUS|SIR2_DANRE -> Daphnia_magna_A0A0P5CJZ6_9CRUS_SIR2_DANRE
+Daphnia_magna|A0A162Q0V9_9CRUS|SIR1_HUMAN -> Daphnia_magna_A0A162Q0V9_9CRUS_SIR1_HUMAN
+Daphnia_magna|A0A162SQA7_9CRUS|SIR6_DROME -> Daphnia_magna_A0A162SQA7_9CRUS_SIR6_DROME
+Daphnia_magna|A0A164XVS9_9CRUS|SIR5_DAPPU -> Daphnia_magna_A0A164XVS9_9CRUS_SIR5_DAPPU
+Dendronephthya_gigantea|XP_028392003.1|SIR5_CANLF -> Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF
+Dendronephthya_gigantea|XP_028398492.1|SIR2_DANRE -> Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE
+Dendronephthya_gigantea|XP_028400421.1|SIR4_MOUSE -> Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE
+Dendronephthya_gigantea|XP_028408359.1|SIR1_HUMAN -> Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN
+Dendronephthya_gigantea|XP_028412260.1|SIR6_MACFA -> Dendronephthya_gigantea_XP_028412260.1_SIR6_MACFA
+Dendronephthya_gigantea|XP_028415928.1|SIR7_BOVIN -> Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN
+Drosophila_melanogaster|SIR4_DROME|SIR4_DROME -> Drosophila_melanogaster_SIR4_DROME_SIR4_DROME
+Drosophila_melanogaster|SIR6_DROME|SIR6_DROME -> Drosophila_melanogaster_SIR6_DROME_SIR6_DROME
+Drosophila_melanogaster|SIR7_DROME|SIR7_DROME -> Drosophila_melanogaster_SIR7_DROME_SIR7_DROME
+Drosophila_melanogaster|SIRT1_DROME|SIRT1_DROME -> Drosophila_melanogaster_SIRT1_DROME_SIRT1_DROME
+Drosophila_melanogaster|SIRT2_DROME|SIRT2_DROME -> Drosophila_melanogaster_SIRT2_DROME_SIRT2_DROME
+Ectocarpus_siliculosus|D7G3Z0_ECTSI|SIR1_ARATH -> Ectocarpus_siliculosus_D7G3Z0_ECTSI_SIR1_ARATH
+Ectocarpus_siliculosus|D8LES8_ECTSI|SIR1_RAT -> Ectocarpus_siliculosus_D8LES8_ECTSI_SIR1_RAT
+Ectocarpus_siliculosus|D8LHN5_ECTSI|SIR2E_DICDI -> Ectocarpus_siliculosus_D8LHN5_ECTSI_SIR2E_DICDI
+Ectocarpus_siliculosus|D8LJJ1_ECTSI|SIR4_ARATH -> Ectocarpus_siliculosus_D8LJJ1_ECTSI_SIR4_ARATH
+Ephydatia_muelleri|m.26778_g.26778|SIR4_MOUSE -> Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE
+Ephydatia_muelleri|m.286671_g.286671|SIR1_ARATH -> Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH
+Ephydatia_muelleri|m.41112_g.41112|SIR6_MACFA -> Ephydatia_muelleri_m.41112_g.41112_SIR6_MACFA
+Ephydatia_muelleri|m.42840_g.42840|SIR5_CANLF -> Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF
+Ephydatia_muelleri|m.44725_g.44725|SIR1_ARATH -> Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH
+Ephydatia_muelleri|m.56358_g.56358|SIR3_MOUSE -> Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE
+Ephydatia_muelleri|m.68701_g.68701|SIR1_HUMAN -> Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN
+Ephydatia_muelleri|m.97546_g.97546|SIR2_DANRE -> Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE
+Exaiptasia_diaphana|KXJ12134.1|SIR3_HUMAN -> Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN
+Exaiptasia_diaphana|KXJ28567.1|SIR7_BOVIN -> Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN
+Exaiptasia_diaphana|XP_020892771.1|SIR1_HUMAN -> Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN
+Exaiptasia_diaphana|XP_020893572.1|SIR4_BOVIN -> Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN
+Exaiptasia_diaphana|XP_020897758.1|SIR5_CHICK -> Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK
+Exaiptasia_diaphana|XP_020912061.1|SIR1_ARATH -> Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH
+Exaiptasia_diaphana|XP_020915333.1|SIR2_DANRE -> Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE
+Exaiptasia_diaphana|XP_020916137.1|SIR6_CASCN -> Exaiptasia_diaphana_XP_020916137.1_SIR6_CASCN
+Fistulifera_solaris|A0A1Z5JC26_FISSO|HST2_SCHPO -> Fistulifera_solaris_A0A1Z5JC26_FISSO_HST2_SCHPO
+Fistulifera_solaris|A0A1Z5JKY8_FISSO|SIR6_CASCN -> Fistulifera_solaris_A0A1Z5JKY8_FISSO_SIR6_CASCN
+Fistulifera_solaris|A0A1Z5JZ96_FISSO|SIR2E_DICDI -> Fistulifera_solaris_A0A1Z5JZ96_FISSO_SIR2E_DICDI
+Fistulifera_solaris|A0A1Z5K280_FISSO|NPD2_BRADU -> Fistulifera_solaris_A0A1Z5K280_FISSO_NPD2_BRADU
+Fistulifera_solaris|A0A1Z5K5D8_FISSO|SIR2_MACFA -> Fistulifera_solaris_A0A1Z5K5D8_FISSO_SIR2_MACFA
+Fistulifera_solaris|A0A1Z5K794_FISSO|HST1_EMENI -> Fistulifera_solaris_A0A1Z5K794_FISSO_HST1_EMENI
+Fonticula_alba|XP_009493409.1|SIR1_RAT -> Fonticula_alba_XP_009493409.1_SIR1_RAT
+Fonticula_alba|XP_009494611.1|HST3_YEAST -> Fonticula_alba_XP_009494611.1_HST3_YEAST
+Fonticula_alba|XP_009494998.1|SIR2_RAT -> Fonticula_alba_XP_009494998.1_SIR2_RAT
+Galerina_marginata|A0A067SC53_GALM3|SIR5_COPC7 -> Galerina_marginata_A0A067SC53_GALM3_SIR5_COPC7
+Galerina_marginata|A0A067SMM4_GALM3|HST1_EMENI -> Galerina_marginata_A0A067SMM4_GALM3_HST1_EMENI
+Galerina_marginata|A0A067T782_GALM3|HST4_EMENI -> Galerina_marginata_A0A067T782_GALM3_HST4_EMENI
+Galerina_marginata|A0A067TC06_GALM3|SIR4_BATDJ -> Galerina_marginata_A0A067TC06_GALM3_SIR4_BATDJ
+Galerina_marginata|A0A067TI91_GALM3|HST21_EMENI -> Galerina_marginata_A0A067TI91_GALM3_HST21_EMENI
+Galerina_marginata|A0A067TQF3_GALM3|HST3_CANAL -> Galerina_marginata_A0A067TQF3_GALM3_HST3_CANAL
+Galerina_marginata|A0A067TTX9_GALM3|SIR5_COPC7 -> Galerina_marginata_A0A067TTX9_GALM3_SIR5_COPC7
+Galerina_marginata|A0A067TWG2_GALM3|SIR5_COPC7 -> Galerina_marginata_A0A067TWG2_GALM3_SIR5_COPC7
+Haliclona_amboinensis|c27278_g1_i2|m.5375|SIR1_ARATH -> Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH
+Haliclona_amboinensis|c33180_g1_i1|m.7512|SIR4_MOUSE -> Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE
+Haliclona_amboinensis|c45780_g1_i1|m.19520|SIR2_DANRE -> Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE
+Haliclona_amboinensis|c47378_g1_i1|m.22237|SIR3_HUMAN -> Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN
+Haliclona_amboinensis|c48062_g1_i4|mm.2497|SIR5_CANLF -> Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF
+Haliclona_amboinensis|c50309_g1_i11|mm.3444|SIR1_MOUSE -> Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE
+Haliclona_tubifera|c17806_g1_i1|m.1263|SIR4_BOVIN -> Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN
+Haliclona_tubifera|c27515_g1_i1|m.3231|SIR5_XENTR -> Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR
+Haliclona_tubifera|c40065_g1_i1|m.9948|SIR1_ARATH -> Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH
+Haliclona_tubifera|c40894_g1_i1|m.10778|SIR1_HUMAN -> Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN
+Haliclona_tubifera|c42791_g1_i4|mm.1297|SIR2_DANRE -> Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE
+Haliclona_tubifera|c47108_g1_i2|m.19397|SIR3_MOUSE -> Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE
+Haliclona_tubifera|c49726_g5_i2|m.24434|SIR6_MACFA -> Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_MACFA
+Haliclona_tubifera|c53653_g1_i1|m.34064|SIR1_ARATH -> Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH
+Henneguya_salminicola|KAF0992715.1|SIR2_DANRE -> Henneguya_salminicola_KAF0992715.1_SIR2_DANRE
+Homo_sapiens|SIR1_HUMAN|SIR1_HUMAN -> Homo_sapiens_SIR1_HUMAN_SIR1_HUMAN
+Homo_sapiens|SIR2_HUMAN|SIR2_HUMAN -> Homo_sapiens_SIR2_HUMAN_SIR2_HUMAN
+Homo_sapiens|SIR3_HUMAN|SIR3_HUMAN -> Homo_sapiens_SIR3_HUMAN_SIR3_HUMAN
+Homo_sapiens|SIR4_HUMAN|SIR4_HUMAN -> Homo_sapiens_SIR4_HUMAN_SIR4_HUMAN
+Homo_sapiens|SIR5_HUMAN|SIR5_HUMAN -> Homo_sapiens_SIR5_HUMAN_SIR5_HUMAN
+Homo_sapiens|SIR6_HUMAN|SIR6_HUMAN -> Homo_sapiens_SIR6_HUMAN_SIR6_HUMAN
+Homo_sapiens|SIR7_HUMAN|SIR7_HUMAN -> Homo_sapiens_SIR7_HUMAN_SIR7_HUMAN
+Hydra_vulgaris|XP_002163018.1|SIR4_MOUSE -> Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE
+Hydra_vulgaris|XP_047125773.1|SIR1_RAT -> Hydra_vulgaris_XP_047125773.1_SIR1_RAT
+Hydra_vulgaris|XP_047139351.1|SIR6_CASCN -> Hydra_vulgaris_XP_047139351.1_SIR6_CASCN
+Latimeria_chalumnae|H3AAK4_LATCH|SIR3_HUMAN -> Latimeria_chalumnae_H3AAK4_LATCH_SIR3_HUMAN
+Latimeria_chalumnae|H3AF98_LATCH|SIR5_XENTR -> Latimeria_chalumnae_H3AF98_LATCH_SIR5_XENTR
+Latimeria_chalumnae|H3AGQ1_LATCH|SIR6_MOUSE -> Latimeria_chalumnae_H3AGQ1_LATCH_SIR6_MOUSE
+Latimeria_chalumnae|H3AHF8_LATCH|SIR1_HUMAN -> Latimeria_chalumnae_H3AHF8_LATCH_SIR1_HUMAN
+Latimeria_chalumnae|H3AKL9_LATCH|SIR7_BOVIN -> Latimeria_chalumnae_H3AKL9_LATCH_SIR7_BOVIN
+Latimeria_chalumnae|H3BDU0_LATCH|SIR3_HUMAN -> Latimeria_chalumnae_H3BDU0_LATCH_SIR3_HUMAN
+Latimeria_chalumnae|H3BG66_LATCH|SIR4_MOUSE -> Latimeria_chalumnae_H3BG66_LATCH_SIR4_MOUSE
+Leucosolenia_complicata|lcpid102077|lcgid36957|SIRT1_DROME -> Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME
+Leucosolenia_complicata|lcpid103158|lcgid58614|SIR2_DANRE -> Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE
+Leucosolenia_complicata|lcpid110268|lcgid61006|SIR1_ARATH -> Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH
+Leucosolenia_complicata|lcpid135799|lcgid5960|SIR7_BOVIN -> Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN
+Leucosolenia_complicata|lcpid16602|lcgid57329|SIR3_MOUSE -> Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE
+Leucosolenia_complicata|lcpid182756|lcgid10070|SIR1_ARATH -> Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH
+Leucosolenia_complicata|lcpid57906|lcgid55101|SIR4_BOVIN -> Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN
+Leucosolenia_complicata|lcpid67440|lcgid21395|NPD_AQUAE -> Leucosolenia_complicata_lcpid67440_lcgid21395_NPD_AQUAE
+Leucosolenia_complicata|lcpid75339|lcgid20684|SIR6_CASCN -> Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_CASCN
+Mnemiopsis_leidyi|ML002614a-PA|SIR6_CASCN -> Mnemiopsis_leidyi_ML002614a-PA_SIR6_CASCN
+Mnemiopsis_leidyi|ML002624a-PA|OSB10_HUMAN -> Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN
+Mnemiopsis_leidyi|ML074235a-PA|SIR2_MOUSE -> Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE
+Mnemiopsis_leidyi|ML07823a-PA|SIR1_HUMAN -> Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN
+Mnemiopsis_leidyi|ML145823a-PA|SIR3_MOUSE -> Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE
+Mnemiopsis_leidyi|ML200240a-PA|SIR1_ARATH -> Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH
+Mnemiopsis_leidyi|ML20759a-PA|SIR2_DANRE -> Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE
+Mnemiopsis_leidyi|ML23958a-PA|SIR1_ORYSI -> Mnemiopsis_leidyi_ML23958a-PA_SIR1_ORYSI
+Mnemiopsis_leidyi|ML41824a-PA|SIR4_MOUSE -> Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE
+Monosiga_brevicollis_MX1|XP_001742130.1|SIR1_RAT -> Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT
+Monosiga_brevicollis_MX1|XP_001744705.1|SIR4_MONBE -> Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE
+Monosiga_brevicollis_MX1|XP_001746923.1|SIR1_ARATH -> Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH
+Monosiga_brevicollis_MX1|XP_001749314.1|SIRT2_DROME -> Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME
+Monosiga_brevicollis_MX1|XP_001749356.1|SIR7_BOVIN -> Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN
+Mus_musculus|SIR1_MOUSE|SIR1_MOUSE -> Mus_musculus_SIR1_MOUSE_SIR1_MOUSE
+Mus_musculus|SIR2_MOUSE|SIR2_MOUSE -> Mus_musculus_SIR2_MOUSE_SIR2_MOUSE
+Mus_musculus|SIR3_MOUSE|SIR3_MOUSE -> Mus_musculus_SIR3_MOUSE_SIR3_MOUSE
+Mus_musculus|SIR4_MOUSE|SIR4_MOUSE -> Mus_musculus_SIR4_MOUSE_SIR4_MOUSE
+Mus_musculus|SIR5_MOUSE|SIR5_MOUSE -> Mus_musculus_SIR5_MOUSE_SIR5_MOUSE
+Mus_musculus|SIR6_MOUSE|SIR6_MOUSE -> Mus_musculus_SIR6_MOUSE_SIR6_MOUSE
+Mus_musculus|SIR7_MOUSE|SIR7_MOUSE -> Mus_musculus_SIR7_MOUSE_SIR7_MOUSE
+Myxobolus_squamalis|KAF1743723.1|SIR2_MOUSE -> Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE
+Nematostella_vectensis|EDO29747.1|SIR7_BOVIN -> Nematostella_vectensis_EDO29747.1_SIR7_BOVIN
+Nematostella_vectensis|EDO31684.1|SIR1_RAT -> Nematostella_vectensis_EDO31684.1_SIR1_RAT
+Nematostella_vectensis|EDO32517.1|SIR6_CASCN -> Nematostella_vectensis_EDO32517.1_SIR6_CASCN
+Nematostella_vectensis|EDO35866.1|SIR4_MOUSE -> Nematostella_vectensis_EDO35866.1_SIR4_MOUSE
+Nematostella_vectensis|EDO46813.1|SIR2_DANRE -> Nematostella_vectensis_EDO46813.1_SIR2_DANRE
+Nematostella_vectensis|EDO47672.1|SIR3_HUMAN -> Nematostella_vectensis_EDO47672.1_SIR3_HUMAN
+Nematostella_vectensis|EDO48459.1|SIR2_DANRE -> Nematostella_vectensis_EDO48459.1_SIR2_DANRE
+Nematostella_vectensis|XP_048576900.1|SIR5_CANLF -> Nematostella_vectensis_XP_048576900.1_SIR5_CANLF
+Octopus_bimaculoides|A0A0L8FJ96_OCTBM|SIR5_DANRE -> Octopus_bimaculoides_A0A0L8FJ96_OCTBM_SIR5_DANRE
+Octopus_bimaculoides|A0A0L8FRB6_OCTBM|SIR1_MOUSE -> Octopus_bimaculoides_A0A0L8FRB6_OCTBM_SIR1_MOUSE
+Octopus_bimaculoides|A0A0L8FVJ2_OCTBM|SIR3_MOUSE -> Octopus_bimaculoides_A0A0L8FVJ2_OCTBM_SIR3_MOUSE
+Octopus_bimaculoides|A0A0L8FVN7_OCTBM|SIR6_CASCN -> Octopus_bimaculoides_A0A0L8FVN7_OCTBM_SIR6_CASCN
+Octopus_bimaculoides|A0A0L8HEZ4_OCTBM|SIR7_BOVIN -> Octopus_bimaculoides_A0A0L8HEZ4_OCTBM_SIR7_BOVIN
+Octopus_bimaculoides|A0A0L8HM37_OCTBM|SIR4_BOVIN -> Octopus_bimaculoides_A0A0L8HM37_OCTBM_SIR4_BOVIN
+Octopus_bimaculoides|A0A0L8IAL6_OCTBM|SIR2_DANRE -> Octopus_bimaculoides_A0A0L8IAL6_OCTBM_SIR2_DANRE
+Orbicella_faveolata|XP_020602659.1|SIR4_BOVIN -> Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN
+Orbicella_faveolata|XP_020603299.1|SIR5_CANLF -> Orbicella_faveolata_XP_020603299.1_SIR5_CANLF
+Orbicella_faveolata|XP_020604327.1|SIR1_ARATH -> Orbicella_faveolata_XP_020604327.1_SIR1_ARATH
+Orbicella_faveolata|XP_020605701.1|SIR3_HUMAN -> Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN
+Orbicella_faveolata|XP_020605893.1|SIR2_DANRE -> Orbicella_faveolata_XP_020605893.1_SIR2_DANRE
+Orbicella_faveolata|XP_020607353.1|SIR7_BOVIN -> Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN
+Orbicella_faveolata|XP_020608148.1|SIR6_CASCN -> Orbicella_faveolata_XP_020608148.1_SIR6_CASCN
+Orbicella_faveolata|XP_020629309.1|SIR1_HUMAN -> Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN
+Orbicella_faveolata|XP_020631316.1|SIR1_ARATH -> Orbicella_faveolata_XP_020631316.1_SIR1_ARATH
+Orbicella_faveolata|XP_020631320.1|SIR1_ARATH -> Orbicella_faveolata_XP_020631320.1_SIR1_ARATH
+Oscarella_carmela|m.102278g.102278|comp37162_c0_seq1|SIR5_CANLF -> Oscarella_carmela_m.102278g.102278_comp37162_c0_seq1_SIR5_CANLF
+Oscarella_carmela|m.10296g.10296|comp22152_c0_seq1|SIR4_MOUSE -> Oscarella_carmela_m.10296g.10296_comp22152_c0_seq1_SIR4_MOUSE
+Oscarella_carmela|m.16056g.16056|comp26712_c0_seq2|SIR7_MOUSE -> Oscarella_carmela_m.16056g.16056_comp26712_c0_seq2_SIR7_MOUSE
+Oscarella_carmela|m.20604g.20604|comp28043_c0_seq1|SIR2_DANRE -> Oscarella_carmela_m.20604g.20604_comp28043_c0_seq1_SIR2_DANRE
+Oscarella_carmela|m.214358g.214358|comp39808_c0_seq29|SIR6_CASCN -> Oscarella_carmela_m.214358g.214358_comp39808_c0_seq29_SIR6_CASCN
+Oscarella_carmela|m.310769g.310769|comp54758_c0_seq1|SIR1_HUMAN -> Oscarella_carmela_m.310769g.310769_comp54758_c0_seq1_SIR1_HUMAN
+Oscarella_carmela|m.58799g.58799|comp34829_c0_seq1|SIR1_ARATH -> Oscarella_carmela_m.58799g.58799_comp34829_c0_seq1_SIR1_ARATH
+Oscarella_carmela|m.66298g.66298|comp35380_c0_seq4|SIR3_MOUSE -> Oscarella_carmela_m.66298g.66298_comp35380_c0_seq4_SIR3_MOUSE
+Oscarella_carmela|m.9609g.9609|comp21492_c0_seq1|SIR1_ARATH -> Oscarella_carmela_m.9609g.9609_comp21492_c0_seq1_SIR1_ARATH
+Pleurobrachia_bachei|sb|2643951|SIR2_DANRE -> Pleurobrachia_bachei_sb_2643951_SIR2_DANRE
+Pleurobrachia_bachei|sb|2650883|SIR2_RAT -> Pleurobrachia_bachei_sb_2650883_SIR2_RAT
+Pleurobrachia_bachei|sb|2653035|SIR1_RAT -> Pleurobrachia_bachei_sb_2653035_SIR1_RAT
+Pleurobrachia_bachei|sb|2657812|SIR6_MOUSE -> Pleurobrachia_bachei_sb_2657812_SIR6_MOUSE
+Pleurobrachia_bachei|sb|2658796|SIR3_MOUSE -> Pleurobrachia_bachei_sb_2658796_SIR3_MOUSE
+Pleurobrachia_bachei|sb|2664049|SIRT2_DROME -> Pleurobrachia_bachei_sb_2664049_SIRT2_DROME
+Pleurobrachia_bachei|sb|2669295|CNX2_ARATH -> Pleurobrachia_bachei_sb_2669295_CNX2_ARATH
+Pocillopora_damicornis|RMX44192.1|SIR1_ORYSI -> Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI
+Pocillopora_damicornis|RMX45954.1|SIR2_MACFA -> Pocillopora_damicornis_RMX45954.1_SIR2_MACFA
+Pocillopora_damicornis|RMX57446.1|SIR4_BOVIN -> Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN
+Pocillopora_damicornis|XP_027036956.1|SIR3_HUMAN -> Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN
+Pocillopora_damicornis|XP_027046210.1|SIR1_ARATH -> Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH
+Pocillopora_damicornis|XP_027050255.1|SIR6_CASCN -> Pocillopora_damicornis_XP_027050255.1_SIR6_CASCN
+Pocillopora_damicornis|XP_027050465.1|SIR1_HUMAN -> Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN
+Pocillopora_damicornis|XP_027051970.1|SIR5_CANLF -> Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF
+Pocillopora_damicornis|XP_027058842.1|SIR7_BOVIN -> Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN
+Puccinia_graminis|E3JQ55_PUCGT|HST4_SCHPO -> Puccinia_graminis_E3JQ55_PUCGT_HST4_SCHPO
+Puccinia_graminis|E3KJ55_PUCGT|SIR4_BATDJ -> Puccinia_graminis_E3KJ55_PUCGT_SIR4_BATDJ
+Puccinia_graminis|E3KY50_PUCGT|SIR2_DANRE -> Puccinia_graminis_E3KY50_PUCGT_SIR2_DANRE
+Rhizophagus_irregularis|A0A2I1G7C6_9GLOM|SIR2_DANRE -> Rhizophagus_irregularis_A0A2I1G7C6_9GLOM_SIR2_DANRE
+Rhizophagus_irregularis|A0A2I1GBB3_9GLOM|HST3_CANAL -> Rhizophagus_irregularis_A0A2I1GBB3_9GLOM_HST3_CANAL
+Rhizophagus_irregularis|A0A2I1GLM2_9GLOM|SIR1_RAT -> Rhizophagus_irregularis_A0A2I1GLM2_9GLOM_SIR1_RAT
+Rhizophagus_irregularis|A0A2I1H174_9GLOM|SIR5_CHICK -> Rhizophagus_irregularis_A0A2I1H174_9GLOM_SIR5_CHICK
+Rhizophagus_irregularis|A0A2I1HDR7_9GLOM|SIR4_BATDJ -> Rhizophagus_irregularis_A0A2I1HDR7_9GLOM_SIR4_BATDJ
+Rozella_allomycis|A0A075AU49_ROZAC|SIR1_HUMAN -> Rozella_allomycis_A0A075AU49_ROZAC_SIR1_HUMAN
+Rozella_allomycis|A0A075AV36_ROZAC|HST3_CANAL -> Rozella_allomycis_A0A075AV36_ROZAC_HST3_CANAL
+Saccharomyces_cerevisiae|HST1_YEAST|HST1_YEAST -> Saccharomyces_cerevisiae_HST1_YEAST_HST1_YEAST
+Saccharomyces_cerevisiae|HST2_YEAST|HST2_YEAST -> Saccharomyces_cerevisiae_HST2_YEAST_HST2_YEAST
+Saccharomyces_cerevisiae|HST3_YEAST|HST3_YEAST -> Saccharomyces_cerevisiae_HST3_YEAST_HST3_YEAST
+Saccharomyces_cerevisiae|HST4_YEAST|HST4_YEAST -> Saccharomyces_cerevisiae_HST4_YEAST_HST4_YEAST
+Saccharomyces_cerevisiae|SIR2_YEAST|SIR2_YEAST -> Saccharomyces_cerevisiae_SIR2_YEAST_SIR2_YEAST
+Salpingoeca_rosetta|XP_004989159.1|SIR4_MONBE -> Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE
+Salpingoeca_rosetta|XP_004991027.1|SIR7_HUMAN -> Salpingoeca_rosetta_XP_004991027.1_SIR7_HUMAN
+Salpingoeca_rosetta|XP_004991122.1|SIRT2_DROME -> Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME
+Salpingoeca_rosetta|XP_004991725.1|SIR6_CASCN -> Salpingoeca_rosetta_XP_004991725.1_SIR6_CASCN
+Salpingoeca_rosetta|XP_004993416.1|SIR6_CASCN -> Salpingoeca_rosetta_XP_004993416.1_SIR6_CASCN
+Salpingoeca_rosetta|XP_004993987.1|NPD2_PYRAE -> Salpingoeca_rosetta_XP_004993987.1_NPD2_PYRAE
+Salpingoeca_rosetta|XP_004994060.1|SIRT1_DROME -> Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME
+Schizosaccharomyces_pombe|HST2_SCHPO|HST2_SCHPO -> Schizosaccharomyces_pombe_HST2_SCHPO_HST2_SCHPO
+Schizosaccharomyces_pombe|HST4_SCHPO|HST4_SCHPO -> Schizosaccharomyces_pombe_HST4_SCHPO_HST4_SCHPO
+Schizosaccharomyces_pombe|SIR2_SCHPO|SIR2_SCHPO -> Schizosaccharomyces_pombe_SIR2_SCHPO_SIR2_SCHPO
+Schmidtea_mediterranea|augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1|SIR5A_XENLA -> Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA
+Schmidtea_mediterranea|augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1|SIR4_MOUSE -> Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE
+Schmidtea_mediterranea|augustus_masked-scaffold272-processed-gene-3.2-mRNA-1|HST21_EMENI -> Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI
+Schmidtea_mediterranea|maker-scaffold8700-snap-gene-0.18-mRNA-1|SIR6_CASCN -> Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_CASCN
+Schmidtea_mediterranea|maker-scaffold9062-augustus-gene-0.7-mRNA-1|SIR1_RAT -> Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT
+Sphaeroforma_arctica_JP610|XP_014151708.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE
+Sphaeroforma_arctica_JP610|XP_014152202.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE
+Sphaeroforma_arctica_JP610|XP_014152407.1|NPD2_PYRAE -> Sphaeroforma_arctica_JP610_XP_014152407.1_NPD2_PYRAE
+Sphaeroforma_arctica_JP610|XP_014153224.1|SIR2A_PLAF7 -> Sphaeroforma_arctica_JP610_XP_014153224.1_SIR2A_PLAF7
+Sphaeroforma_arctica_JP610|XP_014157535.1|SIR2_DANRE -> Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE
+Spizellomyces_punctatus|A0A0L0H4V4_SPIPD|SIR4_BATDJ -> Spizellomyces_punctatus_A0A0L0H4V4_SPIPD_SIR4_BATDJ
+Spizellomyces_punctatus|A0A0L0H9S1_SPIPD|SIR1_HUMAN -> Spizellomyces_punctatus_A0A0L0H9S1_SPIPD_SIR1_HUMAN
+Spizellomyces_punctatus|A0A0L0HKL8_SPIPD|HST4_YEAST -> Spizellomyces_punctatus_A0A0L0HKL8_SPIPD_HST4_YEAST
+Spizellomyces_punctatus|A0A0L0HPN6_SPIPD|SIR2_DANRE -> Spizellomyces_punctatus_A0A0L0HPN6_SPIPD_SIR2_DANRE
+Spizellomyces_punctatus|A0A0L0HTT9_SPIPD|HST3_CANAL -> Spizellomyces_punctatus_A0A0L0HTT9_SPIPD_HST3_CANAL
+Strongylocentrotus_purpuratus|A0A7M7N1G3_STRPU|NPD2_CALS4 -> Strongylocentrotus_purpuratus_A0A7M7N1G3_STRPU_NPD2_CALS4
+Strongylocentrotus_purpuratus|A0A7M7N7D4_STRPU|SIR6_CASCN -> Strongylocentrotus_purpuratus_A0A7M7N7D4_STRPU_SIR6_CASCN
+Strongylocentrotus_purpuratus|A0A7M7NDM7_STRPU|SIR1_HUMAN -> Strongylocentrotus_purpuratus_A0A7M7NDM7_STRPU_SIR1_HUMAN
+Strongylocentrotus_purpuratus|A0A7M7NU88_STRPU|SIR7_HUMAN -> Strongylocentrotus_purpuratus_A0A7M7NU88_STRPU_SIR7_HUMAN
+Strongylocentrotus_purpuratus|A0A7M7NUX7_STRPU|SIR5A_XENLA -> Strongylocentrotus_purpuratus_A0A7M7NUX7_STRPU_SIR5A_XENLA
+Strongylocentrotus_purpuratus|A0A7M7P4N3_STRPU|SIR3_HUMAN -> Strongylocentrotus_purpuratus_A0A7M7P4N3_STRPU_SIR3_HUMAN
+Strongylocentrotus_purpuratus|A0A7M7PQD5_STRPU|SIR2_DANRE -> Strongylocentrotus_purpuratus_A0A7M7PQD5_STRPU_SIR2_DANRE
+Strongylocentrotus_purpuratus|A0A7M7RE10_STRPU|SIR4_HUMAN -> Strongylocentrotus_purpuratus_A0A7M7RE10_STRPU_SIR4_HUMAN
+Stylissa_carteri|augustus_masked-SC_scaffold70346-processed-gene-0.28-mRNA-1|NPD_THEKO -> Stylissa_carteri_augustus_masked-SC_scaffold70346-processed-gene-0.28-mRNA-1_NPD_THEKO
+Stylissa_carteri|maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1|SIR1_ARATH-Domain2 -> Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain2
+Stylissa_carteri|maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1|SIR6_CASCN -> Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_CASCN
+Stylissa_carteri|maker-SC_scaffold2848-snap-gene-0.24-mRNA-1|SIR1_ORYSI -> Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI
+Stylissa_carteri|maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1|SIR5_CANLF -> Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF
+Stylissa_carteri|maker-SC_scaffold739-snap-gene-0.85-mRNA-1|SIR6_MACFA -> Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_MACFA
+Stylissa_carteri|snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1|SIR2_RAT -> Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT
+Stylophora_pistillata|PFX22126.1|SIR7_BOVIN -> Stylophora_pistillata_PFX22126.1_SIR7_BOVIN
+Stylophora_pistillata|PFX26008.1|SIR1_ARATH -> Stylophora_pistillata_PFX26008.1_SIR1_ARATH
+Stylophora_pistillata|XP_022778949.1|SIR3_HUMAN -> Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN
+Stylophora_pistillata|XP_022784120.1|SIR6_CASCN -> Stylophora_pistillata_XP_022784120.1_SIR6_CASCN
+Stylophora_pistillata|XP_022787591.1|SIR4_HUMAN -> Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN
+Stylophora_pistillata|XP_022790004.1|SIR1_ARATH -> Stylophora_pistillata_XP_022790004.1_SIR1_ARATH
+Stylophora_pistillata|XP_022791312.1|SIR5_CANLF -> Stylophora_pistillata_XP_022791312.1_SIR5_CANLF
+Stylophora_pistillata|XP_022798495.1|SIR1_HUMAN -> Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN
+Stylophora_pistillata|XP_022806417.1|SIR2_MACFA -> Stylophora_pistillata_XP_022806417.1_SIR2_MACFA
+Sycon_coactum|12062.p1|SIR7_HUMAN -> Sycon_coactum_12062.p1_SIR7_HUMAN
+Sycon_coactum|29914.p1|NPD1_ARCFU -> Sycon_coactum_29914.p1_NPD1_ARCFU
+Sycon_coactum|31281.p1|SIR3_HUMAN -> Sycon_coactum_31281.p1_SIR3_HUMAN
+Sycon_coactum|7951.p1|SIR4_BOVIN -> Sycon_coactum_7951.p1_SIR4_BOVIN
+Thelohanellus_kitauei|KII66353.1|SIR2_MOUSE -> Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE
+Trichoplax_adhaerens|XP_002108771.1|SIR3_MOUSE -> Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE
+Trichoplax_adhaerens|XP_002108772.1|SIR3_MOUSE -> Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE
+Trichoplax_adhaerens|XP_002109473.1|SIR7_BOVIN -> Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN
+Trichoplax_adhaerens|XP_002110277.1|SIR6_MACFA -> Trichoplax_adhaerens_XP_002110277.1_SIR6_MACFA
+Trichoplax_adhaerens|XP_002111996.1|SIR5_MOUSE -> Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE
+Trichoplax_adhaerens|XP_002113435.1|SIR2_DANRE -> Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE
+Trichoplax_adhaerens|XP_002113608.1|SIR2_DANRE -> Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE
+Trichoplax_adhaerens|XP_002114969.1|SIR4_MOUSE -> Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE
+Trichoplax_sp._H2|RDD40343.1|SIR2_DANRE -> Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE
+Trichoplax_sp._H2|RDD40986.1|SIR4_MOUSE -> Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE
+Trichoplax_sp._H2|RDD42035.1|SIR3_MOUSE -> Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE
+Trichoplax_sp._H2|RDD42036.1|SIR3_HUMAN -> Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN
+Trichoplax_sp._H2|RDD44172.1|SIR5_CANLF -> Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF
+Trichoplax_sp._H2|RDD44322.1|SIR2_DANRE -> Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE
+Trichoplax_sp._H2|RDD45328.1|SIR7_BOVIN -> Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN
+Volvox_carteri|D8TL05_VOLCA|HST3_YEAST -> Volvox_carteri_D8TL05_VOLCA_HST3_YEAST
+Volvox_carteri|D8TU91_VOLCA|SIR1_ARATH -> Volvox_carteri_D8TU91_VOLCA_SIR1_ARATH
+Volvox_carteri|D8U497_VOLCA|SIR4_ARATH -> Volvox_carteri_D8U497_VOLCA_SIR4_ARATH
+Xenia_sp._Carnegie-2017|XP_046840840.1|SIR4_HUMAN -> Xenia_sp._Carnegie-2017_XP_046840840.1_SIR4_HUMAN
+Xenia_sp._Carnegie-2017|XP_046842162.1|SIR5_CANLF -> Xenia_sp._Carnegie-2017_XP_046842162.1_SIR5_CANLF
+Xenia_sp._Carnegie-2017|XP_046844853.1|SIR1_HUMAN -> Xenia_sp._Carnegie-2017_XP_046844853.1_SIR1_HUMAN
+Xenia_sp._Carnegie-2017|XP_046848641.1|SIR2_DANRE -> Xenia_sp._Carnegie-2017_XP_046848641.1_SIR2_DANRE
+Xenia_sp._Carnegie-2017|XP_046855444.1|SIR7_BOVIN -> Xenia_sp._Carnegie-2017_XP_046855444.1_SIR7_BOVIN
+Xenia_sp._Carnegie-2017|XP_046857358.1|SIR6_MACFA -> Xenia_sp._Carnegie-2017_XP_046857358.1_SIR6_MACFA
+Xenopus_laevis|A0A1L8FEV8_XENLA|SIR1_MOUSE -> Xenopus_laevis_A0A1L8FEV8_XENLA_SIR1_MOUSE
+Xenopus_laevis|A0A1L8GWP9_XENLA|SIR3_HUMAN -> Xenopus_laevis_A0A1L8GWP9_XENLA_SIR3_HUMAN
+Xenopus_laevis|A0A1L8I0D6_XENLA|SIR4_BOVIN -> Xenopus_laevis_A0A1L8I0D6_XENLA_SIR4_BOVIN
+Xenopus_laevis|A0A8J0UAR6_XENLA|SIR2_DANRE -> Xenopus_laevis_A0A8J0UAR6_XENLA_SIR2_DANRE
+Xenopus_laevis|A0A8J1KJA7_XENLA|SIR3_MOUSE -> Xenopus_laevis_A0A8J1KJA7_XENLA_SIR3_MOUSE
+Xenopus_laevis|Q5XG15_XENLA|SIR7_HUMAN -> Xenopus_laevis_Q5XG15_XENLA_SIR7_HUMAN
+Xenopus_laevis|Q6GPW5_XENLA|SIR6_MACFA -> Xenopus_laevis_Q6GPW5_XENLA_SIR6_MACFA
+Xenopus_laevis|SIR5A_XENLA|SIR5A_XENLA -> Xenopus_laevis_SIR5A_XENLA_SIR5A_XENLA
+
+                                                                                            Gap/Ambiguity  Composition  p-value
+   1  Acropora_digitifera_XP_015751984.1_SIR7_BOVIN                                                36.45%    passed     84.23%
+   2  Acropora_digitifera_XP_015764189.1_SIR6_CASCN                                                35.47%    passed     89.42%
+   3  Acropora_digitifera_XP_015764941.1_SIR5_CANLF                                                 6.40%    passed     42.01%
+   4  Acropora_digitifera_XP_015769634.1_SIR3_HUMAN                                                10.34%    passed     81.52%
+   5  Acropora_digitifera_XP_015774796.1_SIR1_ARATH                                                26.60%    passed     92.45%
+   6  Acropora_digitifera_XP_015779163.1_SIR2_PONAB                                                36.95%    passed     43.84%
+   7  Acropora_digitifera_XP_015779435.1_SIR1_RAT                                                  12.81%    failed      2.85%
+   8  Acropora_digitifera_XP_015779547.1_SIR4_BOVIN                                                 6.40%    passed     50.56%
+   9  Acropora_millepora_XP_029180011.2_SIR7_BOVIN                                                 36.45%    passed     84.23%
+  10  Acropora_millepora_XP_029189899.1_SIR3_HUMAN                                                 10.34%    passed     84.18%
+  11  Acropora_millepora_XP_029191153.1_SIR5_CANLF                                                  6.40%    passed     75.74%
+  12  Acropora_millepora_XP_029212880.2_SIR1_MOUSE                                                 11.33%    passed      5.56%
+  13  Acropora_millepora_XP_029213217.2_SIR4_BOVIN                                                  6.40%    passed     49.42%
+  14  Acropora_millepora_XP_029214425.2_SIR1_ARATH                                                 15.76%    passed     99.55%
+  15  Acropora_millepora_XP_044163473.1_SIR2_MACFA                                                  9.85%    passed     72.93%
+  16  Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN                                                  11.33%    passed     31.34%
+  17  Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN                                                   6.90%    passed     76.40%
+  18  Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN                                                  36.95%    passed     94.94%
+  19  Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN                                                  10.34%    failed      3.04%
+  20  Actinia_tenebrosa_XP_031561543.1_SIR6_MACFA                                                  36.45%    passed     61.75%
+  21  Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF                                                   6.40%    passed     50.48%
+  22  Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH                                                  16.26%    passed     71.88%
+  23  Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH                                                  28.57%    passed     48.03%
+  24  Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE                                                   9.85%    passed     95.35%
+  25  Amoeboaphelidium_occidentale_KAI3658166.1_SIR2_DANRE                                          9.85%    passed     93.43%
+  26  Amoeboaphelidium_occidentale_KAI3659897.1_HST3_CANAL                                         10.34%    passed     50.23%
+  27  Amoeboaphelidium_occidentale_KAI3659977.1_SIR1_HUMAN                                         10.84%    passed     95.00%
+  28  Amoeboaphelidium_occidentale_KAI3661634.1_SIR4_BATDJ                                          9.85%    passed     54.21%
+  29  Amoeboaphelidium_protococcarum_KAI3629610.1_HST3_CANAL                                        9.85%    passed     65.71%
+  30  Amoeboaphelidium_protococcarum_KAI3633096.1_SIR4_BATDJ                                        7.39%    passed     86.38%
+  31  Amoeboaphelidium_protococcarum_KAI3633495.1_SIR2_DANRE                                        9.85%    passed     48.88%
+  32  Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF                                            7.39%    passed     97.64%
+  33  Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH                                           15.76%    passed     35.68%
+  34  Amphimedon_queenslandica_XP_003385596.1_SIR6_CASCN                                           29.56%    passed     78.30%
+  35  Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI                                           15.76%    passed     48.04%
+  36  Amphimedon_queenslandica_XP_003389737.2_SIR6_MACFA                                           35.47%    passed     25.40%
+  37  Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN                                            6.90%    passed     90.89%
+  38  Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE                                           11.33%    passed     31.14%
+  39  Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH                                           16.75%    passed     87.65%
+  40  Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN                                            9.85%    passed     99.35%
+  41  Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE                                            9.85%    passed     76.56%
+  42  Amphimedon_queenslandica_XP_019861130.1_SIR2_DANRE                                           29.06%    passed     96.05%
+  43  Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE                                           13.30%    passed     70.78%
+  44  Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain2                                    9.85%    passed     51.65%
+  45  Aurelia_coerulea_XLOC_005839_TCONS_00008113_Seg122.19.p1_NPD_AQUAE                           42.86%    passed     13.43%
+  46  Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN                         55.17%    passed     13.55%
+  47  Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN                          11.33%    passed     21.74%
+  48  Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE                           9.85%    passed     63.40%
+  49  Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_CASCN                          35.47%    passed     95.51%
+  50  Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE                          55.67%    passed     28.05%
+  51  Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH                           15.76%    passed     79.63%
+  52  Aurelia_coerulea_XLOC_058355_TCONS_00081668_Seg5923.2.p1_SIR7_BOVIN                          36.95%    passed     45.09%
+  53  Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN                            7.88%    passed     55.57%
+  54  Caenorhabditis_elegans_SIR24_CAEEL_SIR24_CAEEL                                               36.95%    passed     78.43%
+  55  Caenorhabditis_elegans_SIR2_CAEEL_SIR2_CAEEL                                                 11.33%    passed     73.49%
+  56  Caenorhabditis_elegans_SIR41_CAEEL_SIR41_CAEEL                                                6.90%    passed     83.72%
+  57  Caenorhabditis_elegans_SIR42_CAEEL_SIR42_CAEEL                                                6.90%    passed     15.98%
+  58  Capitella_teleta_R7T6P1_CAPTE_SIR3_HUMAN                                                     10.34%    passed     41.06%
+  59  Capitella_teleta_R7T8F1_CAPTE_SIR3_HUMAN                                                      9.85%    passed     82.39%
+  60  Capitella_teleta_R7TBQ3_CAPTE_NPD_METKA                                                      24.14%    failed      0.31%
+  61  Capitella_teleta_R7TK56_CAPTE_SIR2_DANRE                                                      9.85%    passed     77.16%
+  62  Capitella_teleta_R7TRL9_CAPTE_SIR6_MACFA                                                     11.82%    passed     41.63%
+  63  Capitella_teleta_R7TYG4_CAPTE_SIR5_CANLF                                                      6.40%    passed     66.82%
+  64  Capitella_teleta_R7UFJ9_CAPTE_SIR1_ORYSI                                                      6.90%    passed     29.54%
+  65  Capitella_teleta_R7UG42_CAPTE_SIR7_HUMAN                                                     37.44%    passed     91.13%
+  66  Capitella_teleta_R7UXV9_CAPTE_SIR6_MOUSE                                                     35.47%    passed     49.87%
+  67  Capitella_teleta_R7VC11_CAPTE_SIR4_MOUSE                                                      6.40%    passed     92.55%
+  68  Capitella_teleta_R7VG12_CAPTE_SIR1_MOUSE                                                     11.33%    passed     46.53%
+  69  Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE                                        6.90%    passed     56.01%
+  70  Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_MACFA                                   20.69%    passed     24.26%
+  71  Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN                                   34.98%    passed     53.68%
+  72  Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE                                   11.33%    failed      1.47%
+  73  Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE                                    9.85%    passed     95.78%
+  74  Chara_braunii_A0A388K2V7_CHABU_TF29_SCHPO                                                    46.31%    passed     41.83%
+  75  Chara_braunii_A0A388K9Y1_CHABU_SIR6_DROME                                                    41.87%    passed     42.12%
+  76  Chara_braunii_A0A388LX92_CHABU_SIR5_CANLF                                                     6.40%    failed      0.13%
+  77  Chara_braunii_A0A388M0E5_CHABU_SIR1_ARATH                                                    37.44%    passed     66.30%
+  78  Chiloscyllium_punctatum_A0A401RMI2_CHIPU_SIR4_HUMAN                                           6.40%    passed     18.72%
+  79  Chiloscyllium_punctatum_A0A401S4C4_CHIPU_SIR7_HUMAN                                          36.45%    passed     38.86%
+  80  Chiloscyllium_punctatum_A0A401SWK8_CHIPU_SIR2_DANRE                                           9.85%    passed     66.99%
+  81  Chiloscyllium_punctatum_A0A401SYB6_CHIPU_SIR1_MOUSE                                          11.33%    passed     33.64%
+  82  Chiloscyllium_punctatum_A0A401SZL3_CHIPU_SIR5_CHICK                                           6.40%    passed     65.21%
+  83  Chiloscyllium_punctatum_A0A401T636_CHIPU_SIR3_HUMAN                                          11.82%    passed     54.00%
+  84  Ciona_intestinalis_F6SLD6_CIOIN_SIR1_HUMAN                                                   11.33%    passed     79.74%
+  85  Ciona_intestinalis_F6TVS6_CIOIN_SIR4_MOUSE                                                    6.90%    failed      0.77%
+  86  Ciona_intestinalis_F7AUS4_CIOIN_SIR7_RAT                                                     36.95%    passed     49.94%
+  87  Ciona_intestinalis_H2XW94_CIOIN_SIR3_HUMAN                                                    9.36%    passed     21.29%
+  88  Ciona_intestinalis_H2XWF2_CIOIN_SIR5_MOUSE                                                    7.39%    passed     84.05%
+  89  Ciona_intestinalis_Q1RL34_CIOIN_SIR2_DANRE                                                    9.85%    passed     85.81%
+  90  Clytia_hemisphaerica_TCONS_00017752-protein_SIR4_MOUSE                                        6.40%    passed     66.90%
+  91  Clytia_hemisphaerica_TCONS_00023571-protein_SIR1_HUMAN                                       11.33%    passed     49.46%
+  92  Clytia_hemisphaerica_TCONS_00029362-protein_SIR2_DANRE                                        9.85%    passed     92.00%
+  93  Clytia_hemisphaerica_TCONS_00045855-protein_SIR6_CASCN                                       15.76%    passed     34.44%
+  94  Clytia_hemisphaerica_TCONS_00049926-protein_NPD_THET8                                        46.80%    failed      3.94%
+  95  Clytia_hemisphaerica_TCONS_00056393-protein_SIR6_CASCN                                       35.96%    passed     94.80%
+  96  Daphnia_magna_A0A0P5CJZ6_9CRUS_SIR2_DANRE                                                    43.84%    passed     49.50%
+  97  Daphnia_magna_A0A162Q0V9_9CRUS_SIR1_HUMAN                                                    11.33%    passed     30.03%
+  98  Daphnia_magna_A0A162SQA7_9CRUS_SIR6_DROME                                                    35.96%    passed     95.22%
+  99  Daphnia_magna_A0A164XVS9_9CRUS_SIR5_DAPPU                                                     6.40%    passed     49.00%
+ 100  Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF                                             6.40%    passed     95.54%
+ 101  Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE                                             9.36%    passed     96.66%
+ 102  Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE                                             6.40%    passed     27.54%
+ 103  Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN                                            11.33%    passed     66.52%
+ 104  Dendronephthya_gigantea_XP_028412260.1_SIR6_MACFA                                            35.47%    passed     97.47%
+ 105  Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN                                            35.96%    passed     72.74%
+ 106  Drosophila_melanogaster_SIR4_DROME_SIR4_DROME                                                 6.90%    passed     73.31%
+ 107  Drosophila_melanogaster_SIR6_DROME_SIR6_DROME                                                35.96%    passed     96.56%
+ 108  Drosophila_melanogaster_SIR7_DROME_SIR7_DROME                                                36.95%    failed      3.87%
+ 109  Drosophila_melanogaster_SIRT1_DROME_SIRT1_DROME                                              11.33%    passed     71.44%
+ 110  Drosophila_melanogaster_SIRT2_DROME_SIRT2_DROME                                               9.85%    passed     76.31%
+ 111  Ectocarpus_siliculosus_D7G3Z0_ECTSI_SIR1_ARATH                                               37.44%    passed     14.99%
+ 112  Ectocarpus_siliculosus_D8LES8_ECTSI_SIR1_RAT                                                 11.33%    passed     80.60%
+ 113  Ectocarpus_siliculosus_D8LHN5_ECTSI_SIR2E_DICDI                                              46.31%    failed      2.67%
+ 114  Ectocarpus_siliculosus_D8LJJ1_ECTSI_SIR4_ARATH                                                7.39%    passed     38.48%
+ 115  Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE                                                 6.90%    passed     96.42%
+ 116  Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH                                               4.93%    passed     67.07%
+ 117  Ephydatia_muelleri_m.41112_g.41112_SIR6_MACFA                                                33.99%    passed     77.09%
+ 118  Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF                                                 6.40%    passed     31.38%
+ 119  Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH                                                17.24%    passed     82.77%
+ 120  Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE                                                 9.85%    passed     89.21%
+ 121  Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN                                                11.33%    passed     94.45%
+ 122  Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE                                                 9.85%    passed     67.89%
+ 123  Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN                                                    29.06%    passed     40.26%
+ 124  Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN                                                    36.95%    passed     94.35%
+ 125  Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN                                                11.33%    passed     26.50%
+ 126  Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN                                                 7.39%    passed     27.07%
+ 127  Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK                                                 6.40%    passed     74.69%
+ 128  Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH                                                16.26%    passed     15.84%
+ 129  Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE                                                10.34%    passed     92.25%
+ 130  Exaiptasia_diaphana_XP_020916137.1_SIR6_CASCN                                                36.45%    passed     54.55%
+ 131  Fistulifera_solaris_A0A1Z5JC26_FISSO_HST2_SCHPO                                               9.85%    passed     99.86%
+ 132  Fistulifera_solaris_A0A1Z5JKY8_FISSO_SIR6_CASCN                                               8.87%    passed     32.27%
+ 133  Fistulifera_solaris_A0A1Z5JZ96_FISSO_SIR2E_DICDI                                              7.39%    passed     39.06%
+ 134  Fistulifera_solaris_A0A1Z5K280_FISSO_NPD2_BRADU                                               7.39%    passed     11.78%
+ 135  Fistulifera_solaris_A0A1Z5K5D8_FISSO_SIR2_MACFA                                               8.87%    passed      9.33%
+ 136  Fistulifera_solaris_A0A1Z5K794_FISSO_HST1_EMENI                                               7.88%    passed     97.20%
+ 137  Fonticula_alba_XP_009493409.1_SIR1_RAT                                                       11.82%    passed     43.98%
+ 138  Fonticula_alba_XP_009494611.1_HST3_YEAST                                                     10.34%    passed     47.75%
+ 139  Fonticula_alba_XP_009494998.1_SIR2_RAT                                                        9.85%    failed      2.55%
+ 140  Galerina_marginata_A0A067SC53_GALM3_SIR5_COPC7                                               11.33%    passed     51.74%
+ 141  Galerina_marginata_A0A067SMM4_GALM3_HST1_EMENI                                               11.33%    passed     95.58%
+ 142  Galerina_marginata_A0A067T782_GALM3_HST4_EMENI                                               10.34%    passed     36.27%
+ 143  Galerina_marginata_A0A067TC06_GALM3_SIR4_BATDJ                                               17.73%    passed     26.49%
+ 144  Galerina_marginata_A0A067TI91_GALM3_HST21_EMENI                                              10.34%    passed     91.91%
+ 145  Galerina_marginata_A0A067TQF3_GALM3_HST3_CANAL                                               12.32%    passed     96.49%
+ 146  Galerina_marginata_A0A067TTX9_GALM3_SIR5_COPC7                                               30.05%    passed     53.26%
+ 147  Galerina_marginata_A0A067TWG2_GALM3_SIR5_COPC7                                               47.78%    passed     22.23%
+ 148  Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH                                         39.90%    passed     21.23%
+ 149  Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE                                          6.90%    passed     86.64%
+ 150  Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE                                         9.85%    passed     64.71%
+ 151  Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN                                         9.85%    passed     93.94%
+ 152  Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF                                         7.39%    passed     94.33%
+ 153  Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE                                       11.33%    passed     29.88%
+ 154  Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN                                             6.90%    passed     69.58%
+ 155  Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR                                             7.39%    passed     79.52%
+ 156  Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH                                            10.34%    passed     37.51%
+ 157  Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN                                           11.33%    passed     77.07%
+ 158  Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE                                            9.85%    passed     97.97%
+ 159  Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE                                            9.85%    passed     83.69%
+ 160  Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_MACFA                                           33.99%    passed     94.33%
+ 161  Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH                                           16.26%    passed     18.52%
+ 162  Henneguya_salminicola_KAF0992715.1_SIR2_DANRE                                                 9.36%    passed     32.42%
+ 163  Homo_sapiens_SIR1_HUMAN_SIR1_HUMAN                                                           11.33%    passed     36.38%
+ 164  Homo_sapiens_SIR2_HUMAN_SIR2_HUMAN                                                            9.85%    passed     65.86%
+ 165  Homo_sapiens_SIR3_HUMAN_SIR3_HUMAN                                                           10.34%    passed     32.31%
+ 166  Homo_sapiens_SIR4_HUMAN_SIR4_HUMAN                                                            6.40%    failed      5.00%
+ 167  Homo_sapiens_SIR5_HUMAN_SIR5_HUMAN                                                            6.40%    passed     10.62%
+ 168  Homo_sapiens_SIR6_HUMAN_SIR6_HUMAN                                                           35.96%    passed     31.73%
+ 169  Homo_sapiens_SIR7_HUMAN_SIR7_HUMAN                                                           35.96%    passed      6.18%
+ 170  Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE                                                      6.40%    passed     42.35%
+ 171  Hydra_vulgaris_XP_047125773.1_SIR1_RAT                                                       11.33%    passed     31.64%
+ 172  Hydra_vulgaris_XP_047139351.1_SIR6_CASCN                                                     36.45%    passed     75.48%
+ 173  Latimeria_chalumnae_H3AAK4_LATCH_SIR3_HUMAN                                                  10.34%    passed     18.45%
+ 174  Latimeria_chalumnae_H3AF98_LATCH_SIR5_XENTR                                                   6.40%    passed     67.43%
+ 175  Latimeria_chalumnae_H3AGQ1_LATCH_SIR6_MOUSE                                                  35.96%    passed     78.96%
+ 176  Latimeria_chalumnae_H3AHF8_LATCH_SIR1_HUMAN                                                  11.33%    passed     26.50%
+ 177  Latimeria_chalumnae_H3AKL9_LATCH_SIR7_BOVIN                                                  35.96%    passed     30.68%
+ 178  Latimeria_chalumnae_H3BDU0_LATCH_SIR3_HUMAN                                                  10.34%    passed     30.72%
+ 179  Latimeria_chalumnae_H3BG66_LATCH_SIR4_MOUSE                                                   6.40%    passed      8.70%
+ 180  Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME                                   32.51%    passed     71.54%
+ 181  Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE                                     9.85%    passed     81.90%
+ 182  Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH                                    30.54%    passed     37.59%
+ 183  Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN                                     50.25%    passed     31.82%
+ 184  Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE                                      9.85%    passed     85.93%
+ 185  Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH                                    45.32%    passed     50.41%
+ 186  Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN                                      6.40%    passed     52.10%
+ 187  Leucosolenia_complicata_lcpid67440_lcgid21395_NPD_AQUAE                                      11.82%    failed      2.29%
+ 188  Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_CASCN                                     33.50%    passed     82.79%
+ 189  Mnemiopsis_leidyi_ML002614a-PA_SIR6_CASCN                                                    37.44%    passed     75.48%
+ 190  Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN                                                    8.87%    passed     68.43%
+ 191  Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE                                                    11.33%    passed     20.89%
+ 192  Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN                                                     11.33%    passed     50.16%
+ 193  Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE                                                    10.34%    passed     36.93%
+ 194  Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH                                                     7.88%    passed     15.80%
+ 195  Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE                                                      9.85%    passed     81.70%
+ 196  Mnemiopsis_leidyi_ML23958a-PA_SIR1_ORYSI                                                     42.86%    passed     98.54%
+ 197  Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE                                                     38.92%    passed     54.51%
+ 198  Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT                                             11.33%    passed     57.72%
+ 199  Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE                                           10.34%    passed     33.77%
+ 200  Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH                                           35.96%    passed     12.49%
+ 201  Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME                                           9.85%    passed     96.21%
+ 202  Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN                                           15.27%    failed      0.49%
+ 203  Mus_musculus_SIR1_MOUSE_SIR1_MOUSE                                                           11.33%    passed     45.68%
+ 204  Mus_musculus_SIR2_MOUSE_SIR2_MOUSE                                                            9.85%    passed     78.40%
+ 205  Mus_musculus_SIR3_MOUSE_SIR3_MOUSE                                                           10.34%    passed     69.94%
+ 206  Mus_musculus_SIR4_MOUSE_SIR4_MOUSE                                                            6.40%    failed      4.52%
+ 207  Mus_musculus_SIR5_MOUSE_SIR5_MOUSE                                                            6.40%    passed     12.32%
+ 208  Mus_musculus_SIR6_MOUSE_SIR6_MOUSE                                                           35.96%    passed     36.81%
+ 209  Mus_musculus_SIR7_MOUSE_SIR7_MOUSE                                                           36.45%    passed      9.59%
+ 210  Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE                                                   8.87%    passed     49.18%
+ 211  Nematostella_vectensis_EDO29747.1_SIR7_BOVIN                                                 36.95%    passed     95.75%
+ 212  Nematostella_vectensis_EDO31684.1_SIR1_RAT                                                   11.33%    passed     72.71%
+ 213  Nematostella_vectensis_EDO32517.1_SIR6_CASCN                                                 35.96%    passed     94.01%
+ 214  Nematostella_vectensis_EDO35866.1_SIR4_MOUSE                                                  6.40%    passed     91.81%
+ 215  Nematostella_vectensis_EDO46813.1_SIR2_DANRE                                                  9.85%    passed     92.58%
+ 216  Nematostella_vectensis_EDO47672.1_SIR3_HUMAN                                                 10.34%    passed     64.58%
+ 217  Nematostella_vectensis_EDO48459.1_SIR2_DANRE                                                  9.85%    passed     60.61%
+ 218  Nematostella_vectensis_XP_048576900.1_SIR5_CANLF                                              6.40%    passed     13.40%
+ 219  Octopus_bimaculoides_A0A0L8FJ96_OCTBM_SIR5_DANRE                                              6.40%    passed     57.13%
+ 220  Octopus_bimaculoides_A0A0L8FRB6_OCTBM_SIR1_MOUSE                                             11.33%    passed     26.52%
+ 221  Octopus_bimaculoides_A0A0L8FVJ2_OCTBM_SIR3_MOUSE                                             10.34%    passed     26.98%
+ 222  Octopus_bimaculoides_A0A0L8FVN7_OCTBM_SIR6_CASCN                                             35.47%    passed     88.27%
+ 223  Octopus_bimaculoides_A0A0L8HEZ4_OCTBM_SIR7_BOVIN                                             35.47%    passed     19.21%
+ 224  Octopus_bimaculoides_A0A0L8HM37_OCTBM_SIR4_BOVIN                                              7.39%    passed     72.58%
+ 225  Octopus_bimaculoides_A0A0L8IAL6_OCTBM_SIR2_DANRE                                             10.34%    passed     42.85%
+ 226  Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN                                                 6.40%    passed     60.26%
+ 227  Orbicella_faveolata_XP_020603299.1_SIR5_CANLF                                                23.15%    passed     67.17%
+ 228  Orbicella_faveolata_XP_020604327.1_SIR1_ARATH                                                 4.93%    passed     27.51%
+ 229  Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN                                                10.34%    passed     54.51%
+ 230  Orbicella_faveolata_XP_020605893.1_SIR2_DANRE                                                 9.85%    passed     81.34%
+ 231  Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN                                                36.45%    passed     89.76%
+ 232  Orbicella_faveolata_XP_020608148.1_SIR6_CASCN                                                34.98%    passed     43.00%
+ 233  Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN                                                11.33%    passed     15.64%
+ 234  Orbicella_faveolata_XP_020631316.1_SIR1_ARATH                                                15.76%    passed     95.72%
+ 235  Orbicella_faveolata_XP_020631320.1_SIR1_ARATH                                                15.76%    passed     98.75%
+ 236  Oscarella_carmela_m.102278g.102278_comp37162_c0_seq1_SIR5_CANLF                               7.39%    passed     84.49%
+ 237  Oscarella_carmela_m.10296g.10296_comp22152_c0_seq1_SIR4_MOUSE                                 6.40%    passed     78.24%
+ 238  Oscarella_carmela_m.16056g.16056_comp26712_c0_seq2_SIR7_MOUSE                                36.45%    passed     82.71%
+ 239  Oscarella_carmela_m.20604g.20604_comp28043_c0_seq1_SIR2_DANRE                                 9.85%    passed     92.79%
+ 240  Oscarella_carmela_m.214358g.214358_comp39808_c0_seq29_SIR6_CASCN                             35.47%    passed     29.79%
+ 241  Oscarella_carmela_m.310769g.310769_comp54758_c0_seq1_SIR1_HUMAN                              11.33%    passed     61.09%
+ 242  Oscarella_carmela_m.58799g.58799_comp34829_c0_seq1_SIR1_ARATH                                15.76%    passed     27.45%
+ 243  Oscarella_carmela_m.66298g.66298_comp35380_c0_seq4_SIR3_MOUSE                                10.34%    passed     69.11%
+ 244  Oscarella_carmela_m.9609g.9609_comp21492_c0_seq1_SIR1_ARATH                                  15.76%    passed     65.49%
+ 245  Pleurobrachia_bachei_sb_2643951_SIR2_DANRE                                                   26.60%    passed     96.28%
+ 246  Pleurobrachia_bachei_sb_2650883_SIR2_RAT                                                     14.29%    passed     30.67%
+ 247  Pleurobrachia_bachei_sb_2653035_SIR1_RAT                                                     33.99%    passed     76.53%
+ 248  Pleurobrachia_bachei_sb_2657812_SIR6_MOUSE                                                   56.16%    passed     42.54%
+ 249  Pleurobrachia_bachei_sb_2658796_SIR3_MOUSE                                                   10.34%    passed     62.45%
+ 250  Pleurobrachia_bachei_sb_2664049_SIRT2_DROME                                                   9.36%    passed     70.06%
+ 251  Pleurobrachia_bachei_sb_2669295_CNX2_ARATH                                                   40.39%    passed     98.88%
+ 252  Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI                                                 15.76%    passed     98.31%
+ 253  Pocillopora_damicornis_RMX45954.1_SIR2_MACFA                                                  9.85%    passed     92.75%
+ 254  Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN                                                  6.40%    passed     91.90%
+ 255  Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN                                             10.34%    passed     86.83%
+ 256  Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH                                             16.26%    passed     96.16%
+ 257  Pocillopora_damicornis_XP_027050255.1_SIR6_CASCN                                             34.98%    passed     96.38%
+ 258  Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN                                             11.33%    passed     26.60%
+ 259  Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF                                             10.34%    passed     22.49%
+ 260  Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN                                             36.45%    passed     92.39%
+ 261  Puccinia_graminis_E3JQ55_PUCGT_HST4_SCHPO                                                    11.33%    passed     92.31%
+ 262  Puccinia_graminis_E3KJ55_PUCGT_SIR4_BATDJ                                                     6.40%    passed     94.52%
+ 263  Puccinia_graminis_E3KY50_PUCGT_SIR2_DANRE                                                    10.34%    passed     73.94%
+ 264  Rhizophagus_irregularis_A0A2I1G7C6_9GLOM_SIR2_DANRE                                          10.34%    passed     53.35%
+ 265  Rhizophagus_irregularis_A0A2I1GBB3_9GLOM_HST3_CANAL                                           9.85%    passed     93.69%
+ 266  Rhizophagus_irregularis_A0A2I1GLM2_9GLOM_SIR1_RAT                                            11.33%    passed     53.15%
+ 267  Rhizophagus_irregularis_A0A2I1H174_9GLOM_SIR5_CHICK                                           9.85%    passed     45.65%
+ 268  Rhizophagus_irregularis_A0A2I1HDR7_9GLOM_SIR4_BATDJ                                           7.39%    passed      6.55%
+ 269  Rozella_allomycis_A0A075AU49_ROZAC_SIR1_HUMAN                                                11.82%    passed     62.71%
+ 270  Rozella_allomycis_A0A075AV36_ROZAC_HST3_CANAL                                                10.84%    passed     32.71%
+ 271  Saccharomyces_cerevisiae_HST1_YEAST_HST1_YEAST                                               10.34%    passed     95.30%
+ 272  Saccharomyces_cerevisiae_HST2_YEAST_HST2_YEAST                                                9.85%    passed     68.20%
+ 273  Saccharomyces_cerevisiae_HST3_YEAST_HST3_YEAST                                               10.34%    passed     73.22%
+ 274  Saccharomyces_cerevisiae_HST4_YEAST_HST4_YEAST                                               10.84%    passed     59.35%
+ 275  Saccharomyces_cerevisiae_SIR2_YEAST_SIR2_YEAST                                               10.34%    passed     67.42%
+ 276  Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE                                                 9.36%    passed      7.18%
+ 277  Salpingoeca_rosetta_XP_004991027.1_SIR7_HUMAN                                                33.00%    failed      0.33%
+ 278  Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME                                                9.85%    passed     89.77%
+ 279  Salpingoeca_rosetta_XP_004991725.1_SIR6_CASCN                                                34.98%    passed     35.24%
+ 280  Salpingoeca_rosetta_XP_004993416.1_SIR6_CASCN                                                30.05%    passed     79.80%
+ 281  Salpingoeca_rosetta_XP_004993987.1_NPD2_PYRAE                                                21.67%    failed      0.18%
+ 282  Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME                                               10.84%    passed     89.13%
+ 283  Schizosaccharomyces_pombe_HST2_SCHPO_HST2_SCHPO                                               9.85%    passed     26.63%
+ 284  Schizosaccharomyces_pombe_HST4_SCHPO_HST4_SCHPO                                              12.32%    passed     85.83%
+ 285  Schizosaccharomyces_pombe_SIR2_SCHPO_SIR2_SCHPO                                              10.34%    passed     47.98%
+ 286  Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA    7.88%    passed     21.74%
+ 287  Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE    39.90%    passed     54.57%
+ 288  Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI     10.84%    passed      6.68%
+ 289  Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_CASCN                   34.48%    passed     21.59%
+ 290  Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT                  11.33%    passed     36.82%
+ 291  Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE                                         10.34%    passed     53.69%
+ 292  Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE                                          9.85%    passed     93.42%
+ 293  Sphaeroforma_arctica_JP610_XP_014152407.1_NPD2_PYRAE                                         13.30%    failed      3.78%
+ 294  Sphaeroforma_arctica_JP610_XP_014153224.1_SIR2A_PLAF7                                        13.30%    passed     62.75%
+ 295  Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE                                          8.87%    passed     45.84%
+ 296  Spizellomyces_punctatus_A0A0L0H4V4_SPIPD_SIR4_BATDJ                                           9.36%    passed     15.89%
+ 297  Spizellomyces_punctatus_A0A0L0H9S1_SPIPD_SIR1_HUMAN                                          11.33%    passed     49.59%
+ 298  Spizellomyces_punctatus_A0A0L0HKL8_SPIPD_HST4_YEAST                                          13.30%    passed     79.78%
+ 299  Spizellomyces_punctatus_A0A0L0HPN6_SPIPD_SIR2_DANRE                                          10.34%    passed     57.44%
+ 300  Spizellomyces_punctatus_A0A0L0HTT9_SPIPD_HST3_CANAL                                           9.85%    passed     75.83%
+ 301  Strongylocentrotus_purpuratus_A0A7M7N1G3_STRPU_NPD2_CALS4                                    27.59%    failed      2.32%
+ 302  Strongylocentrotus_purpuratus_A0A7M7N7D4_STRPU_SIR6_CASCN                                    34.98%    passed     46.17%
+ 303  Strongylocentrotus_purpuratus_A0A7M7NDM7_STRPU_SIR1_HUMAN                                    11.33%    passed     86.83%
+ 304  Strongylocentrotus_purpuratus_A0A7M7NU88_STRPU_SIR7_HUMAN                                    18.72%    passed     94.58%
+ 305  Strongylocentrotus_purpuratus_A0A7M7NUX7_STRPU_SIR5A_XENLA                                    6.40%    passed     45.90%
+ 306  Strongylocentrotus_purpuratus_A0A7M7P4N3_STRPU_SIR3_HUMAN                                     9.85%    passed      9.74%
+ 307  Strongylocentrotus_purpuratus_A0A7M7PQD5_STRPU_SIR2_DANRE                                     9.85%    passed     40.85%
+ 308  Strongylocentrotus_purpuratus_A0A7M7RE10_STRPU_SIR4_HUMAN                                     6.40%    passed     89.61%
+ 309  Stylissa_carteri_augustus_masked-SC_scaffold70346-processed-gene-0.28-mRNA-1_NPD_THEKO       14.78%    passed     22.19%
+ 310  Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain2         5.91%    passed     75.42%
+ 311  Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_CASCN                 55.67%    passed     46.73%
+ 312  Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI                      15.76%    passed     70.31%
+ 313  Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF                   7.39%    passed     45.82%
+ 314  Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_MACFA                       15.76%    passed     53.25%
+ 315  Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT             21.18%    passed     30.17%
+ 316  Stylophora_pistillata_PFX22126.1_SIR7_BOVIN                                                  36.45%    passed     91.77%
+ 317  Stylophora_pistillata_PFX26008.1_SIR1_ARATH                                                  15.76%    passed     96.52%
+ 318  Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN                                              10.34%    passed     79.22%
+ 319  Stylophora_pistillata_XP_022784120.1_SIR6_CASCN                                              34.98%    passed     95.81%
+ 320  Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN                                               6.40%    passed     79.60%
+ 321  Stylophora_pistillata_XP_022790004.1_SIR1_ARATH                                              16.26%    passed     96.68%
+ 322  Stylophora_pistillata_XP_022791312.1_SIR5_CANLF                                               6.40%    passed     29.56%
+ 323  Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN                                              11.33%    passed     21.07%
+ 324  Stylophora_pistillata_XP_022806417.1_SIR2_MACFA                                               9.85%    passed     89.82%
+ 325  Sycon_coactum_12062.p1_SIR7_HUMAN                                                            36.95%    failed      4.08%
+ 326  Sycon_coactum_29914.p1_NPD1_ARCFU                                                            21.18%    failed      2.15%
+ 327  Sycon_coactum_31281.p1_SIR3_HUMAN                                                            12.81%    passed     35.86%
+ 328  Sycon_coactum_7951.p1_SIR4_BOVIN                                                              6.40%    passed     24.59%
+ 329  Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE                                                  43.84%    passed     85.26%
+ 330  Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE                                                9.85%    passed     10.37%
+ 331  Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE                                                9.85%    passed     95.21%
+ 332  Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN                                               36.95%    passed     33.85%
+ 333  Trichoplax_adhaerens_XP_002110277.1_SIR6_MACFA                                               35.47%    passed     83.81%
+ 334  Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE                                                7.39%    passed     55.96%
+ 335  Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE                                                9.85%    passed     45.43%
+ 336  Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE                                                9.85%    passed     85.00%
+ 337  Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE                                                7.39%    passed     82.41%
+ 338  Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE                                                       9.85%    passed     45.43%
+ 339  Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE                                                       7.39%    passed     81.28%
+ 340  Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE                                                       9.85%    passed     10.37%
+ 341  Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN                                                       9.85%    passed     95.21%
+ 342  Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF                                                       7.39%    passed     56.07%
+ 343  Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE                                                       9.85%    passed     85.00%
+ 344  Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN                                                      36.95%    passed     33.85%
+ 345  Volvox_carteri_D8TL05_VOLCA_HST3_YEAST                                                       15.76%    failed      1.41%
+ 346  Volvox_carteri_D8TU91_VOLCA_SIR1_ARATH                                                       36.95%    passed     55.05%
+ 347  Volvox_carteri_D8U497_VOLCA_SIR4_ARATH                                                        8.37%    failed      3.91%
+ 348  Xenia_sp._Carnegie-2017_XP_046840840.1_SIR4_HUMAN                                             6.40%    passed     49.25%
+ 349  Xenia_sp._Carnegie-2017_XP_046842162.1_SIR5_CANLF                                             6.40%    passed     52.19%
+ 350  Xenia_sp._Carnegie-2017_XP_046844853.1_SIR1_HUMAN                                            11.33%    passed     77.39%
+ 351  Xenia_sp._Carnegie-2017_XP_046848641.1_SIR2_DANRE                                             9.85%    passed     81.67%
+ 352  Xenia_sp._Carnegie-2017_XP_046855444.1_SIR7_BOVIN                                            36.45%    passed     43.01%
+ 353  Xenia_sp._Carnegie-2017_XP_046857358.1_SIR6_MACFA                                            35.96%    passed     96.34%
+ 354  Xenopus_laevis_A0A1L8FEV8_XENLA_SIR1_MOUSE                                                   11.33%    passed     28.26%
+ 355  Xenopus_laevis_A0A1L8GWP9_XENLA_SIR3_HUMAN                                                   10.34%    passed     32.23%
+ 356  Xenopus_laevis_A0A1L8I0D6_XENLA_SIR4_BOVIN                                                    6.40%    passed     18.45%
+ 357  Xenopus_laevis_A0A8J0UAR6_XENLA_SIR2_DANRE                                                    9.85%    passed     85.79%
+ 358  Xenopus_laevis_A0A8J1KJA7_XENLA_SIR3_MOUSE                                                   10.34%    passed     55.30%
+ 359  Xenopus_laevis_Q5XG15_XENLA_SIR7_HUMAN                                                       36.45%    passed     31.05%
+ 360  Xenopus_laevis_Q6GPW5_XENLA_SIR6_MACFA                                                       35.96%    passed     95.45%
+ 361  Xenopus_laevis_SIR5A_XENLA_SIR5A_XENLA                                                        6.40%    passed     45.70%
+WARNING: 5 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                                        17.21%  22 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Acropora_millepora_XP_029180011.2_SIR7_BOVIN is identical to Acropora_digitifera_XP_015751984.1_SIR7_BOVIN but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE is identical to Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN is identical to Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN is identical to Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE is identical to Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE but kept for subsequent analysis
+NOTE: Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE is identical to Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.243 seconds
+NOTE: ModelFinder requires 125 MB RAM!
+ModelFinder will test 546 protein models (sample size: 203) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  1  Dayhoff       73782.934    719 149003.868   1184363.868  151386.063
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  2  Dayhoff+I     73637.305    720 148714.610   1186954.610  151100.118
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  3  Dayhoff+G4    69187.570    720 139815.140   1178055.140  142200.649
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  4  Dayhoff+I+G4  69172.546    721 139787.092   1180911.092  142175.914
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  5  Dayhoff+R2    70317.894    721 142077.787   1183201.787  144466.609
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  6  Dayhoff+R3    69431.300    723 140308.599   1187212.599  142704.047
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  7  Dayhoff+R4    69161.408    725 139772.816   1192472.816  142174.890
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  8  Dayhoff+R5    69045.225    727 139544.450   1198056.450  141953.150
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+  9  Dayhoff+R6    68987.466    729 139432.931   1203772.931  141848.259
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 10  Dayhoff+R7    68941.433    731 139344.866   1209528.866  141766.819
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 11  Dayhoff+R8    68922.923    733 139311.845   1215355.845  141740.425
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 12  Dayhoff+R9    68911.613    735 139293.225   1221213.225  141728.432
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 13  Dayhoff+R10   68901.231    737 139276.462   1227088.462  141718.295
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 14  Dayhoff+F     73612.127    738 148700.254   1239464.254  151145.400
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 15  Dayhoff+F+I   73474.998    739 148427.996   1242147.996  150876.455
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 16  Dayhoff+F+G4  69063.805    739 139605.610   1233325.610  142054.069
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 17  Dayhoff+F+I+G4 69049.912    740 139579.823   1236259.823  142031.596
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 18  Dayhoff+F+R2  70196.279    740 141872.558   1238552.558  144324.330
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 19  Dayhoff+F+R3  69309.647    742 140103.293   1242715.293  142561.692
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 20  Dayhoff+F+R4  69043.781    744 139575.563   1248135.563  142040.588
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 21  Dayhoff+F+R5  68931.288    746 139354.575   1253878.575  141826.227
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 22  Dayhoff+F+R6  68864.878    748 139225.756   1259729.756  141704.034
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 23  Dayhoff+F+R7  68824.557    750 139149.113   1265649.113  141634.018
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 24  Dayhoff+F+R8  68803.716    752 139111.432   1271623.432  141602.963
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 25  Dayhoff+F+R9  68793.049    754 139094.099   1277634.099  141592.256
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 26  Dayhoff+F+R10 68784.311    756 139080.622   1283664.622  141585.406
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 27  mtMAM         83185.232    719 167808.464   1203168.464  170190.660
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 28  mtMAM+I       83027.691    720 167495.383   1205735.383  169880.891
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 29  mtMAM+G4      74570.929    720 150581.859   1188821.859  152967.367
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 30  mtMAM+I+G4    74562.381    721 150566.762   1191690.762  152955.584
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 31  mtMAM+R2      76691.937    721 154825.873   1195949.873  157214.695
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 32  mtMAM+R3      75385.980    723 152217.959   1199121.959  154613.407
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 33  mtMAM+R4      74808.029    725 151066.058   1203766.058  153468.132
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 34  mtMAM+R5      74519.572    727 150493.145   1209005.145  152901.846
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 35  mtMAM+R6      74431.667    729 150321.334   1214661.334  152736.661
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 36  mtMAM+R7      74346.580    731 150155.159   1220339.159  152577.113
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 37  mtMAM+R8      74248.591    733 149963.183   1226007.183  152391.763
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 38  mtMAM+R9      74211.905    735 149893.809   1231813.809  152329.016
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 39  mtMAM+R10     74184.934    737 149843.867   1237655.867  152285.700
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 40  mtMAM+F       78713.332    738 158902.664   1249666.664  161347.810
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 41  mtMAM+F+I     78547.878    739 158573.757   1252293.757  161022.216
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 42  mtMAM+F+G4    71781.342    739 145040.683   1238760.683  147489.142
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 43  mtMAM+F+I+G4  71763.591    740 145007.182   1241687.182  147458.954
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 44  mtMAM+F+R2    73640.195    740 148760.390   1245440.390  151212.162
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 45  mtMAM+F+R3    72360.334    742 146204.667   1248816.667  148663.066
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 46  mtMAM+F+R4    71905.870    744 145299.739   1253859.739  147764.765
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 47  mtMAM+F+R5    71706.454    746 144904.907   1259428.907  147376.559
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 48  mtMAM+F+R6    71596.227    748 144688.454   1265192.454  147166.732
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 49  mtMAM+F+R7    71506.369    750 144512.738   1271012.738  146997.643
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 50  mtMAM+F+R8    71475.688    752 144455.376   1276967.376  146946.907
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 51  mtMAM+F+R9    71455.813    754 144419.626   1282959.626  146917.784
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 52  mtMAM+F+R10   71430.482    756 144372.964   1288956.964  146877.748
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 53  JTT           73508.882    719 148455.764   1183815.764  150837.959
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 54  JTT+I         73327.938    720 148095.875   1186335.875  150481.383
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 55  JTT+G4        68728.214    720 138896.427   1177136.427  141281.936
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 56  JTT+I+G4      68717.109    721 138876.218   1180000.218  141265.040
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 57  JTT+R2        69993.184    721 141428.368   1182552.368  143817.190
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 58  JTT+R3        68990.411    723 139426.822   1186330.822  141822.270
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 59  JTT+R4        68739.380    725 138928.759   1191628.759  141330.834
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 60  JTT+R5        68613.214    727 138680.428   1197192.428  141089.129
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 61  JTT+R6        68543.931    729 138545.863   1202885.863  140961.190
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 62  JTT+R7        68507.731    731 138477.461   1208661.461  140899.415
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 63  JTT+R8        68493.934    733 138453.868   1214497.868  140882.448
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 64  JTT+R9        68483.493    735 138436.987   1220356.987  140872.193
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 65  JTT+R10       68473.864    737 138421.728   1226233.728  140863.561
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 66  JTT+F         73535.362    738 148546.725   1239310.725  150991.871
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 67  JTT+F+I       73357.252    739 148192.505   1241912.505  150640.964
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 68  JTT+F+G4      68849.909    739 139177.818   1232897.818  141626.277
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 69  JTT+F+I+G4    68841.000    740 139162.000   1235842.000  141613.772
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 70  JTT+F+R2      70093.030    740 141666.059   1238346.059  144117.832
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 71  JTT+F+R3      69095.930    742 139675.860   1242287.860  142134.259
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 72  JTT+F+R4      68859.706    744 139207.413   1247767.413  141672.438
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 73  JTT+F+R5      68735.749    746 138963.498   1253487.498  141435.150
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 74  JTT+F+R6      68667.187    748 138830.374   1259334.374  141308.652
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 75  JTT+F+R7      68635.072    750 138770.144   1265270.144  141255.049
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 76  JTT+F+R8      68620.359    752 138744.718   1271256.718  141236.249
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 77  JTT+F+R9      68608.572    754 138725.145   1277265.145  141223.302
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 78  JTT+F+R10     68603.339    756 138718.679   1283302.679  141223.463
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 79  WAG           72064.572    719 145567.144   1180927.144  147949.340
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 80  WAG+I         71928.302    720 145296.605   1183536.605  147682.113
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 81  WAG+G4        68041.422    720 137522.845   1175762.845  139908.353
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 82  WAG+I+G4      68033.696    721 137509.391   1178633.391  139898.213
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 83  WAG+R2        69003.579    721 139449.158   1180573.158  141837.980
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 84  WAG+R3        68211.544    723 137869.088   1184773.088  140264.536
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 85  WAG+R4        68024.998    725 137499.996   1190199.996  139902.071
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 86  WAG+R5        67887.461    727 137228.922   1195740.922  139637.623
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 87  WAG+R6        67840.080    729 137138.159   1201478.159  139553.486
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 88  WAG+R7        67815.606    731 137093.211   1207277.211  139515.165
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 89  WAG+R8        67802.416    733 137070.832   1213114.832  139499.412
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 90  WAG+R9        67791.042    735 137052.084   1218972.084  139487.291
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 91  WAG+R10       67789.143    737 137052.287   1224864.287  139494.119
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 92  WAG+F         71929.394    738 145334.787   1236098.787  147779.933
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 93  WAG+F+I       71801.270    739 145080.539   1238800.539  147528.998
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 94  WAG+F+G4      67978.758    739 137435.517   1231155.517  139883.976
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 95  WAG+F+I+G4    67972.144    740 137424.287   1234104.287  139876.060
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 96  WAG+F+R2      68941.974    740 139363.949   1236043.949  141815.721
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 97  WAG+F+R3      68137.898    742 137759.796   1240371.796  140218.195
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 98  WAG+F+R4      67947.024    744 137382.048   1245942.048  139847.073
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+ 99  WAG+F+R5      67821.121    746 137134.243   1251658.243  139605.895
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+100  WAG+F+R6      67780.908    748 137057.816   1257561.816  139536.094
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+101  WAG+F+R7      67755.385    750 137010.770   1263510.770  139495.675
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+102  WAG+F+R8      67743.582    752 136991.163   1269503.163  139482.694
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+103  WAG+F+R9      67733.255    754 136974.510   1275514.510  139472.667
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+104  WAG+F+R10     67730.997    756 136973.993   1281557.993  139478.777
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+105  cpREV         72881.825    719 147201.650   1182561.650  149583.845
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+106  cpREV+I       72699.538    720 146839.075   1185079.075  149224.584
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+107  cpREV+G4      68816.189    720 139072.377   1177312.377  141457.885
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+108  cpREV+I+G4    68799.484    721 139040.969   1180164.969  141429.791
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+109  cpREV+R2      69733.840    721 140909.680   1182033.680  143298.502
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+110  cpREV+R3      68975.146    723 139396.291   1186300.291  141791.739
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+111  cpREV+R4      68764.377    725 138978.755   1191678.755  141380.829
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+112  cpREV+R5      68620.359    727 138694.717   1197206.717  141103.418
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+113  cpREV+R6      68580.304    729 138618.608   1202958.608  141033.935
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+114  cpREV+R7      68539.760    731 138541.521   1208725.521  140963.474
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+115  cpREV+R8      68527.688    733 138521.377   1214565.377  140949.957
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+116  cpREV+R9      68516.993    735 138503.986   1220423.986  140939.193
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+117  cpREV+R10     68511.826    737 138497.652   1226309.652  140939.485
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+118  cpREV+F       72810.273    738 147096.546   1237860.546  149541.692
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+119  cpREV+F+I     72630.870    739 146739.740   1240459.740  149188.200
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+120  cpREV+F+G4    68791.108    739 139060.216   1232780.216  141508.675
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+121  cpREV+F+I+G4  68775.396    740 139030.792   1235710.792  141482.565
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+122  cpREV+F+R2    69684.592    740 140849.183   1237529.183  143300.955
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+123  cpREV+F+R3    68954.619    742 139393.238   1242005.238  141851.637
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+124  cpREV+F+R4    68729.533    744 138947.065   1247507.065  141412.090
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+125  cpREV+F+R5    68603.263    746 138698.526   1253222.526  141170.178
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+126  cpREV+F+R6    68557.556    748 138611.112   1259115.112  141089.390
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+127  cpREV+F+R7    68528.461    750 138556.922   1265056.922  141041.827
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+128  cpREV+F+R8    68508.078    752 138520.157   1271032.157  141011.688
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+129  cpREV+F+R9    68495.008    754 138498.016   1277038.016  140996.173
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+130  cpREV+F+R10   68489.454    756 138490.908   1283074.908  140995.692
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+131  mtREV         78620.617    719 158679.235   1194039.235  161061.430
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+132  mtREV+I       78477.967    720 158395.933   1196635.933  160781.442
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+133  mtREV+G4      72476.530    720 146393.060   1184633.060  148778.569
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+134  mtREV+I+G4    72465.261    721 146372.522   1187496.522  148761.344
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+135  mtREV+R2      73964.076    721 149370.152   1190494.152  151758.974
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+136  mtREV+R3      72875.843    723 147197.685   1194101.685  149593.133
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+137  mtREV+R4      72500.677    725 146451.354   1199151.354  148853.428
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+138  mtREV+R5      72346.467    727 146146.935   1204658.935  148555.635
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+139  mtREV+R6      72305.757    729 146069.513   1210409.513  148484.841
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+140  mtREV+R7      72209.835    731 145881.671   1216065.671  148303.624
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+141  mtREV+R8      72195.606    733 145857.212   1221901.212  148285.792
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+142  mtREV+R9      72187.254    735 145844.508   1227764.508  148279.715
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+143  mtREV+R10     72187.221    737 145848.441   1233660.441  148290.274
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+144  mtREV+F       74978.414    738 151432.828   1242196.828  153877.974
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+145  mtREV+F+I     74834.436    739 151146.873   1244866.873  153595.332
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+146  mtREV+F+G4    69789.199    739 141056.397   1234776.397  143504.857
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+147  mtREV+F+I+G4  69779.887    740 141039.774   1237719.774  143491.547
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+148  mtREV+F+R2    71180.983    740 143841.967   1240521.967  146293.739
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+149  mtREV+F+R3    70093.112    742 141670.224   1244282.224  144128.623
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+150  mtREV+F+R4    69786.973    744 141061.946   1249621.946  143526.971
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+151  mtREV+F+R5    69644.481    746 140780.962   1255304.962  143252.614
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+152  mtREV+F+R6    69586.463    748 140668.926   1261172.926  143147.204
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+153  mtREV+F+R7    69527.198    750 140554.395   1267054.395  143039.300
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+154  mtREV+F+R8    69514.100    752 140532.200   1273044.200  143023.731
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+155  mtREV+F+R9    69499.875    754 140507.749   1279047.749  143005.907
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+156  mtREV+F+R10   69499.820    756 140511.640   1285095.640  143016.423
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+157  rtREV         73133.323    719 147704.647   1183064.647  150086.842
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+158  rtREV+I       72934.646    720 147309.291   1185549.291  149694.800
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+159  rtREV+G4      68330.523    720 138101.045   1176341.045  140486.554
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+160  rtREV+I+G4    68313.933    721 138069.867   1179193.867  140458.688
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+161  rtREV+R2      69559.863    721 140561.726   1181685.726  142950.548
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+162  rtREV+R3      68584.345    723 138614.689   1185518.689  141010.137
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+163  rtREV+R4      68317.228    725 138084.455   1190784.455  140486.530
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+164  rtREV+R5      68199.836    727 137853.672   1196365.672  140262.373
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+165  rtREV+R6      68143.061    729 137744.123   1202084.123  140159.450
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+166  rtREV+R7      68096.112    731 137654.224   1207838.224  140076.178
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+167  rtREV+R8      68078.533    733 137623.066   1213667.066  140051.646
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+168  rtREV+R9      68070.428    735 137610.855   1219530.855  140046.062
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+169  rtREV+R10     68070.162    737 137614.325   1225426.325  140056.157
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+170  rtREV+F       72978.357    738 147432.714   1238196.714  149877.860
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+171  rtREV+F+I     72777.824    739 147033.647   1240753.647  149482.107
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+172  rtREV+F+G4    68189.218    739 137856.435   1231576.435  140304.895
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+173  rtREV+F+I+G4  68174.892    740 137829.785   1234509.785  140281.557
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+174  rtREV+F+R2    69455.308    740 140390.615   1237070.615  142842.388
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+175  rtREV+F+R3    68436.739    742 138357.478   1240969.478  140815.876
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+176  rtREV+F+R4    68182.636    744 137853.273   1246413.273  140318.298
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+177  rtREV+F+R5    68060.309    746 137612.618   1252136.618  140084.270
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+178  rtREV+F+R6    68006.005    748 137508.009   1258012.009  139986.287
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+179  rtREV+F+R7    67959.332    750 137418.663   1263918.663  139903.568
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+180  rtREV+F+R8    67945.149    752 137394.298   1269906.298  139885.828
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+181  rtREV+F+R9    67937.580    754 137383.160   1275923.160  139881.318
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+182  rtREV+F+R10   67937.461    756 137386.923   1281970.923  139891.707
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+183  mtART         82198.003    719 165834.007   1201194.007  168216.202
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+184  mtART+I       81879.475    720 165198.951   1203438.951  167584.459
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+185  mtART+G4      73686.922    720 148813.844   1187053.844  151199.352
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+186  mtART+I+G4    73661.998    721 148765.996   1189889.996  151154.818
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+187  mtART+R2      75546.487    721 152534.973   1193658.973  154923.795
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+188  mtART+R3      74378.006    723 150202.012   1197106.012  152597.460
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+189  mtART+R4      73863.083    725 149176.166   1201876.166  151578.240
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+190  mtART+R5      73678.827    727 148811.654   1207323.654  151220.355
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+191  mtART+R6      73585.836    729 148629.671   1212969.671  151044.998
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+192  mtART+R7      73456.439    731 148374.878   1218558.878  150796.832
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+193  mtART+R8      73423.919    733 148313.837   1224357.837  150742.417
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+194  mtART+R9      73403.054    735 148276.108   1230196.108  150711.314
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+195  mtART+R10     73402.517    737 148279.033   1236091.033  150720.866
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+196  mtART+F       77674.925    738 156825.851   1247589.851  159270.997
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+197  mtART+F+I     77405.384    739 156288.767   1250008.767  158737.226
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+198  mtART+F+G4    70743.212    739 142964.423   1236684.423  145412.882
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+199  mtART+F+I+G4  70720.175    740 142920.349   1239600.349  145372.122
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+200  mtART+F+R2    72397.302    740 146274.604   1242954.604  148726.376
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+201  mtART+F+R3    71290.166    742 144064.332   1246676.332  146522.731
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+202  mtART+F+R4    70874.528    744 143237.055   1251797.055  145702.081
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+203  mtART+F+R5    70698.307    746 142888.613   1257412.613  145360.265
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+204  mtART+F+R6    70594.473    748 142684.946   1263188.946  145163.224
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+205  mtART+F+R7    70480.920    750 142461.840   1268961.840  144946.745
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+206  mtART+F+R8    70447.812    752 142399.624   1274911.624  144891.155
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+207  mtART+F+R9    70428.260    754 142364.521   1280904.521  144862.678
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+208  mtART+F+R10   70427.613    756 142367.226   1286951.226  144872.010
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+209  mtZOA         79273.048    719 159984.097   1195344.097  162366.292
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+210  mtZOA+I       78961.272    720 159362.543   1197602.543  161748.051
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+211  mtZOA+G4      71600.365    720 144640.729   1182880.729  147026.237
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+212  mtZOA+I+G4    71578.084    721 144598.169   1185722.169  146986.990
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+213  mtZOA+R2      73294.754    721 148031.508   1189155.508  150420.329
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+214  mtZOA+R3      72242.029    723 145930.059   1192834.059  148325.507
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+215  mtZOA+R4      71742.996    725 144935.992   1197635.992  147338.066
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+216  mtZOA+R5      71581.444    727 144616.887   1203128.887  147025.588
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+217  mtZOA+R6      71491.314    729 144440.629   1208780.629  146855.956
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+218  mtZOA+R7      71388.034    731 144238.067   1214422.067  146660.021
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+219  mtZOA+R8      71357.156    733 144180.311   1220224.311  146608.891
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+220  mtZOA+R9      71333.281    735 144136.561   1226056.561  146571.768
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+221  mtZOA+R10     71332.577    737 144139.153   1231951.153  146580.986
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+222  mtZOA+F       75912.465    738 153300.931   1244064.931  155746.077
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+223  mtZOA+F+I     75645.552    739 152769.103   1246489.103  155217.563
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+224  mtZOA+F+G4    69683.068    739 140844.136   1234564.136  143292.595
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+225  mtZOA+F+I+G4  69656.082    740 140792.165   1237472.165  143243.937
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+226  mtZOA+F+R2    71210.458    740 143900.916   1240580.916  146352.688
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+227  mtZOA+F+R3    70150.151    742 141784.302   1244396.302  144242.701
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+228  mtZOA+F+R4    69746.564    744 140981.129   1249541.129  143446.154
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+229  mtZOA+F+R5    69608.412    746 140708.823   1255232.823  143180.475
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+230  mtZOA+F+R6    69524.188    748 140544.376   1261048.376  143022.655
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+231  mtZOA+F+R7    69434.003    750 140368.006   1266868.006  142852.910
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+232  mtZOA+F+R8    69413.066    752 140330.132   1272842.132  142821.663
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+233  mtZOA+F+R9    69400.539    754 140309.079   1278849.079  142807.236
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+234  mtZOA+F+R10   69400.207    756 140312.415   1284896.415  142817.198
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+235  VT            72349.083    719 146136.167   1181496.167  148518.362
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+236  VT+I          72173.008    720 145786.016   1184026.016  148171.524
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+237  VT+G4         68163.285    720 137766.571   1176006.571  140152.079
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+238  VT+I+G4       68152.344    721 137746.688   1178870.688  140135.510
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+239  VT+R2         69225.797    721 139893.595   1181017.595  142282.416
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+240  VT+R3         68336.086    723 138118.172   1185022.172  140513.620
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+241  VT+R4         68136.097    725 137722.194   1190422.194  140124.268
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+242  VT+R5         68035.404    727 137524.808   1196036.808  139933.509
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+243  VT+R6         67978.470    729 137414.940   1201754.940  139830.268
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+244  VT+R7         67956.050    731 137374.099   1207558.099  139796.053
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+245  VT+R8         67949.114    733 137364.227   1213408.227  139792.807
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+246  VT+R9         67944.739    735 137359.478   1219279.478  139794.684
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+248  VT+F          72375.357    738 146226.714   1236990.714  148671.860
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+249  VT+F+I        72204.831    739 145887.661   1239607.661  148336.121
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+250  VT+F+G4       68270.956    739 138019.911   1231739.911  140468.371
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+251  VT+F+I+G4     68260.284    740 138000.568   1234680.568  140452.340
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+252  VT+F+R2       69308.192    740 140096.383   1236776.383  142548.156
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+253  VT+F+R3       68438.267    742 138360.534   1240972.534  140818.933
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+254  VT+F+R4       68224.115    744 137936.231   1246496.231  140401.256
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+255  VT+F+R5       68136.941    746 137765.882   1252289.882  140237.534
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+256  VT+F+R6       68088.179    748 137672.358   1258176.358  140150.636
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+257  VT+F+R7       68069.683    750 137639.366   1264139.366  140124.271
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+258  VT+F+R8       68060.985    752 137625.969   1270137.969  140117.500
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+259  VT+F+R9       68056.149    754 137620.298   1276160.298  140118.456
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+261  LG            72665.414    719 146768.828   1182128.828  149151.023
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+262  LG+I          72473.981    720 146387.962   1184627.962  148773.471
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+263  LG+G4         67816.331    720 137072.663   1175312.663  139458.171
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+264  LG+I+G4       67802.092    721 137046.183   1178170.183  139435.005
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+265  LG+R2         69097.109    721 139636.217   1180760.217  142025.039
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+266  LG+R3         68065.707    723 137577.415   1184481.415  139972.863
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+267  LG+R4         67793.314    725 137036.629   1189736.629  139438.703
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+268  LG+R5         67686.580    727 136827.159   1195339.159  139235.860
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+269  LG+R6         67623.719    729 136705.438   1201045.438  139120.765
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+270  LG+R7         67593.983    731 136649.967   1206833.967  139071.920
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+271  LG+R8         67574.357    733 136614.713   1212658.713  139043.293
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+272  LG+R9         67566.110    735 136602.221   1218522.221  139037.427
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+273  LG+R10        67554.740    737 136583.480   1224395.480  139025.312
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+274  LG+F          72683.008    738 146842.016   1237606.016  149287.162
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+275  LG+F+I        72497.499    739 146472.999   1240192.999  148921.458
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+276  LG+F+G4       67925.503    739 137329.005   1231049.005  139777.464
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+277  LG+F+I+G4     67911.933    740 137303.865   1233983.865  139755.638
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+278  LG+F+R2       69198.425    740 139876.850   1236556.850  142328.622
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+279  LG+F+R3       68168.587    742 137821.173   1240433.173  140279.572
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+280  LG+F+R4       67902.737    744 137293.474   1245853.474  139758.499
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+281  LG+F+R5       67795.988    746 137083.977   1251607.977  139555.628
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+282  LG+F+R6       67739.156    748 136974.311   1257478.311  139452.590
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+283  LG+F+R7       67709.053    750 136918.107   1263418.107  139403.011
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+284  LG+F+R8       67693.443    752 136890.885   1269402.885  139382.416
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+285  LG+F+R9       67686.166    754 136880.332   1275420.332  139378.489
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+286  LG+F+R10      67675.150    756 136862.300   1281446.300  139367.083
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+287  DCMut         73774.673    719 148987.346   1184347.346  151369.541
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+288  DCMut+I       73628.904    720 148697.807   1186937.807  151083.316
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+289  DCMut+G4      69185.411    720 139810.822   1178050.822  142196.331
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+290  DCMut+I+G4    69170.373    721 139782.746   1180906.746  142171.568
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+291  DCMut+R2      70307.709    721 142057.418   1183181.418  144446.240
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+292  DCMut+R3      69401.644    723 140249.287   1187153.287  142644.735
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+293  DCMut+R4      69137.418    725 139724.836   1192424.836  142126.910
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+294  DCMut+R5      69055.624    727 139565.249   1198077.249  141973.949
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+295  DCMut+R6      68997.340    729 139452.679   1203792.679  141868.007
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+296  DCMut+R7      68946.195    731 139354.390   1209538.390  141776.343
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+297  DCMut+R8      68937.640    733 139341.279   1215385.279  141769.859
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+298  DCMut+R9      68932.736    735 139335.472   1221255.472  141770.678
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+300  DCMut+F       73603.954    738 148683.908   1239447.908  151129.054
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+301  DCMut+F+I     73466.672    739 148411.345   1242131.345  150859.804
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+302  DCMut+F+G4    69062.031    739 139602.061   1233322.061  142050.521
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+303  DCMut+F+I+G4  69048.074    740 139576.147   1236256.147  142027.920
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+304  DCMut+F+R2    70193.128    740 141866.256   1238546.256  144318.029
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+305  DCMut+F+R3    69281.104    742 140046.207   1242658.207  142504.606
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+306  DCMut+F+R4    69024.907    744 139537.813   1248097.813  142002.839
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+307  DCMut+F+R5    68935.702    746 139363.405   1253887.405  141835.056
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+308  DCMut+F+R6    68878.147    748 139252.295   1259756.295  141730.573
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+309  DCMut+F+R7    68830.422    750 139160.844   1265660.844  141645.748
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+310  DCMut+F+R8    68822.274    752 139148.548   1271660.548  141640.079
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+311  DCMut+F+R9    68817.627    754 139143.253   1277683.253  141641.411
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+313  PMB           72484.173    719 146406.347   1181766.347  148788.542
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+314  PMB+I         72341.666    720 146123.332   1184363.332  148508.840
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+315  PMB+G4        68536.439    720 138512.878   1176752.878  140898.387
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+316  PMB+I+G4      68527.340    721 138496.679   1179620.679  140885.501
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+317  PMB+R2        69539.475    721 140520.950   1181644.950  142909.771
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+318  PMB+R3        68684.582    723 138815.163   1185719.163  141210.611
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+319  PMB+R4        68498.549    725 138447.097   1191147.097  140849.172
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+320  PMB+R5        68392.769    727 138239.539   1196751.539  140648.240
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+321  PMB+R6        68342.584    729 138143.167   1202483.167  140558.495
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+322  PMB+R7        68322.067    731 138106.134   1208290.134  140528.087
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+323  PMB+R8        68316.852    733 138099.704   1214143.704  140528.284
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+326  PMB+F         72400.277    738 146276.553   1237040.553  148721.699
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+327  PMB+F+I       72260.227    739 145998.455   1239718.455  148446.914
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+328  PMB+F+G4      68543.258    739 138564.515   1232284.515  141012.974
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+329  PMB+F+I+G4    68534.723    740 138549.445   1235229.445  141001.218
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+330  PMB+F+R2      69531.039    740 140542.079   1237222.079  142993.851
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+331  PMB+F+R3      68690.218    742 138864.437   1241476.437  141322.836
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+332  PMB+F+R4      68505.523    744 138499.046   1247059.046  140964.072
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+333  PMB+F+R5      68397.822    746 138287.644   1252811.644  140759.296
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+334  PMB+F+R6      68353.652    748 138203.304   1258707.304  140681.582
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+335  PMB+F+R7      68336.549    750 138173.098   1264673.098  140658.003
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+336  PMB+F+R8      68331.949    752 138167.897   1270679.897  140659.428
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+339  HIVb          76079.939    719 153597.878   1188957.878  155980.073
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+340  HIVb+I        75885.994    720 153211.989   1191451.989  155597.497
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+341  HIVb+G4       70747.585    720 142935.171   1181175.171  145320.679
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+342  HIVb+I+G4     70733.274    721 142908.547   1184032.547  145297.369
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+343  HIVb+R2       72108.373    721 145658.747   1186782.747  148047.568
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+344  HIVb+R3       71034.680    723 143515.360   1190419.360  145910.808
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+345  HIVb+R4       70727.456    725 142904.911   1195604.911  145306.986
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+346  HIVb+R5       70610.842    727 142675.684   1201187.684  145084.385
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+347  HIVb+R6       70547.495    729 142552.990   1206892.990  144968.317
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+348  HIVb+R7       70498.662    731 142459.324   1212643.324  144881.277
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+349  HIVb+R8       70486.988    733 142439.975   1218483.975  144868.555
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+350  HIVb+R9       70479.210    735 142428.420   1224348.420  144863.626
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+351  HIVb+R10      70464.806    737 142403.611   1230215.611  144845.444
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+352  HIVb+F        76145.587    738 153767.175   1244531.175  156212.321
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+353  HIVb+F+I      75936.831    739 153351.663   1247071.663  155800.122
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+354  HIVb+F+G4     70709.300    739 142896.599   1236616.599  145345.059
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+355  HIVb+F+I+G4   70696.229    740 142872.458   1239552.458  145324.230
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+356  HIVb+F+R2     72145.918    740 145771.835   1242451.835  148223.608
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+357  HIVb+F+R3     71011.799    742 143507.598   1246119.598  145965.997
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+358  HIVb+F+R4     70700.259    744 142888.518   1251448.518  145353.543
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+359  HIVb+F+R5     70588.478    746 142668.956   1257192.956  145140.608
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+360  HIVb+F+R6     70518.233    748 142532.467   1263036.467  145010.745
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+361  HIVb+F+R7     70472.309    750 142444.619   1268944.619  144929.523
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+362  HIVb+F+R8     70461.914    752 142427.828   1274939.828  144919.359
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+363  HIVb+F+R9     70454.190    754 142416.379   1280956.379  144914.537
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+364  HIVb+F+R10    70445.478    756 142402.955   1286986.955  144907.739
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+365  HIVw          79050.607    719 159539.213   1194899.213  161921.408
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+366  HIVw+I        78870.159    720 159180.318   1197420.318  161565.826
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+367  HIVw+G4       74176.771    720 149793.541   1188033.541  152179.049
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+368  HIVw+I+G4     74168.007    721 149778.013   1190902.013  152166.835
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+369  HIVw+R2       75432.722    721 152307.443   1193431.443  154696.265
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+370  HIVw+R3       74396.058    723 150238.116   1197142.116  152633.564
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+371  HIVw+R4       74160.284    725 149770.568   1202470.568  152172.643
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+372  HIVw+R5       74018.171    727 149490.342   1208002.342  151899.043
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+373  HIVw+R6       73953.333    729 149364.665   1213704.665  151779.992
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+374  HIVw+R7       73898.741    731 149259.482   1219443.482  151681.436
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+375  HIVw+R8       73887.659    733 149241.319   1225285.319  151669.899
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+376  HIVw+R9       73877.588    735 149225.176   1231145.176  151660.382
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+377  HIVw+R10      73868.478    737 149210.956   1237022.956  151652.788
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+378  HIVw+F        77972.617    738 157421.235   1248185.235  159866.381
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+379  HIVw+F+I      77766.622    739 157011.243   1250731.243  159459.703
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+380  HIVw+F+G4     72935.764    739 147349.528   1241069.528  149797.987
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+381  HIVw+F+I+G4   72924.497    740 147328.994   1244008.994  149780.766
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+382  HIVw+F+R2     74259.230    740 149998.461   1246678.461  152450.233
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+383  HIVw+F+R3     73160.775    742 147805.549   1250417.549  150263.948
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+384  HIVw+F+R4     72932.383    744 147352.766   1255912.766  149817.792
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+385  HIVw+F+R5     72803.526    746 147099.052   1261623.052  149570.704
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+386  HIVw+F+R6     72727.643    748 146951.286   1267455.286  149429.564
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+387  HIVw+F+R7     72675.690    750 146851.381   1273351.381  149336.285
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+388  HIVw+F+R8     72661.941    752 146827.882   1279339.882  149319.413
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+389  HIVw+F+R9     72651.850    754 146811.699   1285351.699  149309.857
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+390  HIVw+F+R10    72641.759    756 146795.517   1291379.517  149300.301
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+391  JTTDCMut      73461.686    719 148361.372   1183721.372  150743.567
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+392  JTTDCMut+I    73287.879    720 148015.758   1186255.758  150401.266
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+393  JTTDCMut+G4   68712.804    720 138865.608   1177105.608  141251.116
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+394  JTTDCMut+I+G4 68701.114    721 138844.227   1179968.227  141233.049
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+395  JTTDCMut+R2   69961.438    721 141364.877   1182488.877  143753.698
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+396  JTTDCMut+R3   68945.851    723 139337.701   1186241.701  141733.149
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+397  JTTDCMut+R4   68695.088    725 138840.175   1191540.175  141242.249
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+398  JTTDCMut+R5   68608.559    727 138671.118   1197183.118  141079.819
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+399  JTTDCMut+R6   68534.971    729 138527.941   1202867.941  140943.269
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+400  JTTDCMut+R7   68500.849    731 138463.697   1208647.697  140885.651
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+401  JTTDCMut+R8   68493.139    733 138452.278   1214496.278  140880.857
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+402  JTTDCMut+R9   68486.083    735 138442.166   1220362.166  140877.372
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+403  JTTDCMut+R10  68481.325    737 138436.650   1226248.650  140878.483
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+404  JTTDCMut+F    73483.875    738 148443.749   1239207.749  150888.895
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+405  JTTDCMut+F+I  73312.872    739 148103.743   1241823.743  150552.202
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+406  JTTDCMut+F+G4 68825.176    739 139128.352   1232848.352  141576.811
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+407  JTTDCMut+F+I+G4 68816.869    740 139113.739   1235793.739  141565.511
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+408  JTTDCMut+F+R2 70059.502    740 141599.005   1238279.005  144050.777
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+409  JTTDCMut+F+R3 69045.365    742 139574.730   1242186.730  142033.129
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+410  JTTDCMut+F+R4 68809.804    744 139107.607   1247667.607  141572.632
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+411  JTTDCMut+F+R5 68716.923    746 138925.846   1253449.846  141397.498
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+412  JTTDCMut+F+R6 68648.033    748 138792.066   1259296.066  141270.344
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+413  JTTDCMut+F+R7 68618.261    750 138736.521   1265236.521  141221.426
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+414  JTTDCMut+F+R8 68609.524    752 138723.048   1271235.048  141214.578
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+415  JTTDCMut+F+R9 68602.997    754 138713.994   1277253.994  141212.152
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+416  JTTDCMut+F+R10 68598.455    756 138708.911   1283292.911  141213.695
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+417  FLU           74939.492    719 151316.984   1186676.984  153699.179
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+418  FLU+I         74825.483    720 151090.966   1189330.966  153476.474
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+419  FLU+G4        70357.948    720 142155.896   1180395.896  144541.404
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+420  FLU+I+G4      70351.303    721 142144.606   1183268.606  144533.427
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+421  FLU+R2        71518.925    721 144479.850   1185603.850  146868.672
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+422  FLU+R3        70593.522    723 142633.043   1189537.043  145028.491
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+423  FLU+R4        70335.182    725 142120.363   1194820.363  144522.438
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+424  FLU+R5        70202.759    727 141859.518   1200371.518  144268.219
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+425  FLU+R6        70156.249    729 141770.499   1206110.499  144185.826
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+426  FLU+R7        70122.147    731 141706.293   1211890.293  144128.247
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+427  FLU+R8        70116.274    733 141698.547   1217742.547  144127.127
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+428  FLU+R9        70108.925    735 141687.850   1223607.850  144123.056
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+429  FLU+R10       70099.714    737 141673.429   1229485.429  144115.262
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+430  FLU+F         74391.924    738 150259.848   1241023.848  152704.994
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+431  FLU+F+I       74273.697    739 150025.394   1243745.394  152473.854
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+432  FLU+F+G4      69875.880    739 141229.761   1234949.761  143678.220
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+433  FLU+F+I+G4    69868.811    740 141217.622   1237897.622  143669.395
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+434  FLU+F+R2      71043.171    740 143566.341   1240246.341  146018.114
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+435  FLU+F+R3      70106.211    742 141696.422   1244308.422  144154.820
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+436  FLU+F+R4      69866.556    744 141221.113   1249781.113  143686.138
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+437  FLU+F+R5      69719.481    746 140930.961   1255454.961  143402.613
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+438  FLU+F+R6      69673.245    748 140842.490   1261346.490  143320.768
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+439  FLU+F+R7      69641.238    750 140782.476   1267282.476  143267.380
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+440  FLU+F+R8      69635.404    752 140774.809   1273286.809  143266.340
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+441  FLU+F+R9      69627.742    754 140763.484   1279303.484  143261.641
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+442  FLU+F+R10     69619.110    756 140750.219   1285334.219  143255.003
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+443  Blosum62      72368.159    719 146174.319   1181534.319  148556.514
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+444  Blosum62+I    72217.022    720 145874.044   1184114.044  148259.552
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+445  Blosum62+G4   68408.563    720 138257.125   1176497.125  140642.634
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+446  Blosum62+I+G4 68398.485    721 138238.970   1179362.970  140627.791
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+447  Blosum62+R2   69420.303    721 140282.606   1181406.606  142671.428
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+448  Blosum62+R3   68563.461    723 138572.923   1185476.923  140968.370
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+449  Blosum62+R4   68378.429    725 138206.858   1190906.858  140608.932
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+450  Blosum62+R5   68270.691    727 137995.382   1196507.382  140404.083
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+451  Blosum62+R6   68223.631    729 137905.262   1202245.262  140320.589
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+452  Blosum62+R7   68204.227    731 137870.454   1208054.454  140292.408
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+453  Blosum62+R8   68201.309    733 137868.617   1213912.617  140297.197
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+456  Blosum62+F    72264.512    738 146005.025   1236769.025  148450.171
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+457  Blosum62+F+I  72115.199    739 145708.399   1239428.399  148156.858
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+458  Blosum62+F+G4 68403.682    739 138285.363   1232005.363  140733.823
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+459  Blosum62+F+I+G4 68394.031    740 138268.062   1234948.062  140719.834
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+460  Blosum62+F+R2 69384.471    740 140248.941   1236928.941  142700.714
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+461  Blosum62+F+R3 68557.940    742 138599.879   1241211.879  141058.278
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+462  Blosum62+F+R4 68360.843    744 138209.687   1246769.687  140674.712
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+463  Blosum62+F+R5 68261.801    746 138015.602   1252539.602  140487.253
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+464  Blosum62+F+R6 68220.600    748 137937.200   1258441.200  140415.478
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+465  Blosum62+F+R7 68204.732    750 137909.464   1264409.464  140394.368
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+466  Blosum62+F+R8 68201.949    752 137907.899   1270419.899  140399.430
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+469  mtMet         79461.127    719 160360.254   1195720.254  162742.449
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+470  mtMet+I       79219.842    720 159879.685   1198119.685  162265.193
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+471  mtMet+G4      72520.707    720 146481.414   1184721.414  148866.922
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+472  mtMet+I+G4    72499.244    721 146440.487   1187564.487  148829.309
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+473  mtMet+R2      74067.734    721 149577.469   1190701.469  151966.290
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+474  mtMet+R3      73044.485    723 147534.969   1194438.969  149930.417
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+475  mtMet+R4      72555.497    725 146560.994   1199260.994  148963.069
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+476  mtMet+R5      72463.543    727 146381.086   1204893.086  148789.787
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+477  mtMet+R6      72382.494    729 146222.988   1210562.988  148638.315
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+478  mtMet+R7      72330.618    731 146123.235   1216307.235  148545.189
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+479  mtMet+R8      72314.262    733 146094.524   1222138.524  148523.104
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+480  mtMet+R9      72293.966    735 146057.932   1227977.932  148493.139
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+481  mtMet+R10     72282.367    737 146038.735   1233850.735  148480.567
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+482  mtMet+F       75864.185    738 153204.370   1243968.370  155649.516
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+483  mtMet+F+I     75623.200    739 152724.400   1246444.400  155172.859
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+484  mtMet+F+G4    69994.621    739 141467.243   1235187.243  143915.702
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+485  mtMet+F+I+G4  69967.917    740 141415.834   1238095.834  143867.606
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+486  mtMet+F+R2    71534.681    740 144549.362   1241229.362  147001.135
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+487  mtMet+F+R3    70400.038    742 142284.077   1244896.077  144742.476
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+488  mtMet+F+R4    69986.667    744 141461.334   1250021.334  143926.360
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+489  mtMet+F+R5    69917.133    746 141326.267   1255850.267  143797.919
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+490  mtMet+F+R6    69832.629    748 141161.258   1261665.258  143639.536
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+491  mtMet+F+R7    69784.319    750 141068.638   1267568.638  143553.543
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+492  mtMet+F+R8    69772.955    752 141049.911   1273561.911  143541.442
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+493  mtMet+F+R9    69756.972    754 141021.944   1279561.944  143520.102
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+494  mtMet+F+R10   69743.253    756 140998.505   1285582.505  143503.289
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+495  mtVer         80983.873    719 163405.745   1198765.745  165787.940
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+496  mtVer+I       80778.737    720 162997.475   1201237.475  165382.983
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+497  mtVer+G4      73430.231    720 148300.463   1186540.463  150685.971
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+498  mtVer+I+G4    73416.044    721 148274.088   1189398.088  150662.909
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+499  mtVer+R2      75138.237    721 151718.474   1192842.474  154107.295
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+500  mtVer+R3      74052.017    723 149550.034   1196454.034  151945.482
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+501  mtVer+R4      73471.430    725 148392.860   1201092.860  150794.934
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+502  mtVer+R5      73405.615    727 148265.230   1206777.230  150673.931
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+503  mtVer+R6      73314.444    729 148086.889   1212426.889  150502.216
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+504  mtVer+R7      73245.562    731 147953.124   1218137.124  150375.078
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+505  mtVer+R8      73231.221    733 147928.442   1223972.442  150357.022
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+506  mtVer+R9      73213.762    735 147897.524   1229817.524  150332.731
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+507  mtVer+R10     73198.230    737 147870.459   1235682.459  150312.292
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+508  mtVer+F       77683.721    738 156843.442   1247607.442  159288.588
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+509  mtVer+F+I     77439.877    739 156357.754   1250077.754  158806.213
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+510  mtVer+F+G4    71294.161    739 144066.322   1237786.322  146514.781
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+511  mtVer+F+I+G4  71272.699    740 144025.397   1240705.397  146477.170
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+512  mtVer+F+R2    73028.005    740 147536.010   1244216.010  149987.782
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+513  mtVer+F+R3    71747.506    742 144979.013   1247591.013  147437.412
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+514  mtVer+F+R4    71317.356    744 144122.712   1252682.712  146587.737
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+515  mtVer+F+R5    71220.951    746 143933.902   1258457.902  146405.553
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+516  mtVer+F+R6    71138.270    748 143772.540   1264276.540  146250.818
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+517  mtVer+F+R7    71088.273    750 143676.545   1270176.545  146161.450
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+518  mtVer+F+R8    71077.557    752 143659.114   1276171.114  146150.644
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+519  mtVer+F+R9    71060.805    754 143629.610   1282169.610  146127.768
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+520  mtVer+F+R10   71048.398    756 143608.796   1288192.796  146113.580
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+521  mtInv         79015.075    719 159468.150   1194828.150  161850.345
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+522  mtInv+I       78758.068    720 158956.136   1197196.136  161341.644
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+523  mtInv+G4      72596.309    720 146632.619   1184872.619  149018.127
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+524  mtInv+I+G4    72569.095    721 146580.191   1187704.191  148969.012
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+525  mtInv+R2      74085.667    721 149613.334   1190737.334  152002.156
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+526  mtInv+R3      73051.096    723 147548.192   1194452.192  149943.640
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+527  mtInv+R4      72596.048    725 146642.096   1199342.096  149044.170
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+528  mtInv+R5      72508.604    727 146471.207   1204983.207  148879.908
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+529  mtInv+R6      72446.757    729 146351.514   1210691.514  148766.841
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+530  mtInv+R7      72396.870    731 146255.739   1216439.739  148677.693
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+531  mtInv+R8      72386.403    733 146238.806   1222282.806  148667.386
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+532  mtInv+R9      72375.772    735 146221.544   1228141.544  148656.750
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+533  mtInv+R10     72363.258    737 146200.516   1234012.516  148642.348
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+534  mtInv+F       74833.495    738 151142.989   1241906.989  153588.135
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+535  mtInv+F+I     74586.770    739 150651.540   1244371.540  153100.000
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+536  mtInv+F+G4    69393.665    739 140265.331   1233985.331  142713.790
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+537  mtInv+F+I+G4  69362.739    740 140205.478   1236885.478  142657.250
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+538  mtInv+F+R2    70817.280    740 143114.560   1239794.560  145566.332
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+539  mtInv+F+R3    69734.666    742 140953.332   1243565.332  143411.730
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+540  mtInv+F+R4    69364.392    744 140216.783   1248776.783  142681.809
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+541  mtInv+F+R5    69279.426    746 140050.852   1254574.852  142522.504
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+542  mtInv+F+R6    69211.898    748 139919.796   1260423.796  142398.074
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+543  mtInv+F+R7    69163.151    750 139826.303   1266326.303  142311.207
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+544  mtInv+F+R8    69153.420    752 139810.839   1272322.839  142302.370
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+545  mtInv+F+R9    69139.270    754 139786.540   1278326.540  142284.698
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+546  mtInv+F+R10   69130.285    756 139772.571   1284356.571  142277.354
+Akaike Information Criterion:           LG+R10
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+R10
+Best-fit model: LG+R10 chosen according to BIC
+
+All model information printed to 8_SIR2_Domains.mafft.trimal.fasta.model.gz
+CPU time for ModelFinder: 25027.646 seconds (6h:57m:7s)
+Wall-clock time for ModelFinder: 1712.895 seconds (0h:28m:32s)
+Generating 1000 samples for ultrafast bootstrap (seed: 129880)...
+
+NOTE: 125 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -nt AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -67554.223
+2. Current log-likelihood: -67533.003
+3. Current log-likelihood: -67530.925
+4. Current log-likelihood: -67530.618
+5. Current log-likelihood: -67530.514
+Optimal log-likelihood: -67530.409
+Site proportion and rates:  (0.112,0.048) (0.081,0.152) (0.066,0.269) (0.101,0.438) (0.079,0.673) (0.101,0.747) (0.159,1.018) (0.081,1.413) (0.092,1.787) (0.129,2.728)
+Parameters optimization took 5 rounds (16.832 sec)
+Computing ML distances based on estimated model parameters... 192.224 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.109 seconds
+Log-likelihood of BIONJ tree: -67873.791
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 17.147 second
+Computing log-likelihood of 98 initial trees ... 35.907 seconds
+Current best score: -67438.736
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -67163.745
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -67160.173
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -67148.931
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -67099.599
+Iteration 10 / LogL: -67146.290 / Time: 0h:2m:53s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 15: -67084.280
+Iteration 20 / LogL: -67162.643 / Time: 0h:3m:58s
+Finish initializing candidate tree set (20)
+Current best tree score: -67084.280 / CPU time: 206.624
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -67072.612
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -67062.950
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -67034.628
+Iteration 30 / LogL: -67043.975 / Time: 0h:4m:58s (0h:16m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -67030.222
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -67020.541
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 37: -67016.311
+Iteration 40 / LogL: -67028.752 / Time: 0h:6m:0s (0h:14m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 46: -67001.390
+Iteration 50 / LogL: -67011.882 / Time: 0h:6m:57s (0h:13m:38s left)
+Log-likelihood cutoff on original alignment: -67185.662
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -66999.202
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 55: -66998.514
+Iteration 60 / LogL: -67026.646 / Time: 0h:8m:3s (0h:12m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 61: -66998.303
+Iteration 70 / LogL: -66998.528 / Time: 0h:8m:58s (0h:11m:49s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 71: -66976.432
+Iteration 80 / LogL: -67015.602 / Time: 0h:9m:52s (0h:11m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 90: -66971.276
+Iteration 90 / LogL: -66971.276 / Time: 0h:10m:47s (0h:12m:7s left)
+Iteration 100 / LogL: -67001.162 / Time: 0h:11m:39s (0h:10m:36s left)
+Log-likelihood cutoff on original alignment: -67166.421
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -66981.116 / Time: 0h:12m:33s (0h:10m:22s left)
+Iteration 120 / LogL: -67020.943 / Time: 0h:13m:24s (0h:9m:0s left)
+Iteration 130 / LogL: -66975.844 / Time: 0h:14m:16s (0h:7m:44s left)
+Iteration 140 / LogL: -66984.679 / Time: 0h:15m:9s (0h:6m:32s left)
+Iteration 150 / LogL: -66985.571 / Time: 0h:16m:0s (0h:5m:22s left)
+Log-likelihood cutoff on original alignment: -67094.589
+Iteration 160 / LogL: -67016.512 / Time: 0h:16m:53s (0h:4m:14s left)
+Iteration 170 / LogL: -66973.447 / Time: 0h:17m:41s (0h:3m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 179: -66970.208
+Iteration 180 / LogL: -66983.882 / Time: 0h:18m:39s (0h:10m:19s left)
+Iteration 190 / LogL: -66981.131 / Time: 0h:19m:28s (0h:9m:10s left)
+Iteration 200 / LogL: -66988.968 / Time: 0h:20m:17s (0h:8m:3s left)
+Log-likelihood cutoff on original alignment: -67086.080
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+Iteration 210 / LogL: -66988.476 / Time: 0h:21m:7s (0h:9m:5s left)
+Iteration 220 / LogL: -66979.312 / Time: 0h:21m:57s (0h:8m:1s left)
+Iteration 230 / LogL: -66986.874 / Time: 0h:22m:48s (0h:6m:58s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 239: -66967.549
+Iteration 240 / LogL: -66973.875 / Time: 0h:23m:41s (0h:9m:48s left)
+Iteration 250 / LogL: -66984.946 / Time: 0h:24m:34s (0h:8m:47s left)
+Log-likelihood cutoff on original alignment: -67086.080
+Iteration 260 / LogL: -66973.985 / Time: 0h:25m:26s (0h:7m:45s left)
+Iteration 270 / LogL: -66980.424 / Time: 0h:26m:19s (0h:6m:45s left)
+Iteration 280 / LogL: -66984.234 / Time: 0h:27m:11s (0h:5m:45s left)
+Iteration 290 / LogL: -66976.024 / Time: 0h:28m:4s (0h:4m:45s left)
+Iteration 300 / LogL: -67004.298 / Time: 0h:28m:55s (0h:3m:46s left)
+Log-likelihood cutoff on original alignment: -67086.080
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 310 / LogL: -66977.052 / Time: 0h:29m:48s (0h:8m:41s left)
+Iteration 320 / LogL: -66971.501 / Time: 0h:30m:43s (0h:7m:42s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 322: -66966.036
+Iteration 330 / LogL: -66969.525 / Time: 0h:31m:39s (0h:8m:51s left)
+Iteration 340 / LogL: -66975.050 / Time: 0h:32m:32s (0h:7m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 345: -66965.618
+Iteration 350 / LogL: -66970.157 / Time: 0h:33m:32s (0h:9m:7s left)
+Log-likelihood cutoff on original alignment: -67086.080
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 353: -66963.910
+Iteration 360 / LogL: -66977.914 / Time: 0h:34m:41s (0h:8m:59s left)
+Iteration 370 / LogL: -66979.805 / Time: 0h:35m:35s (0h:8m:0s left)
+Iteration 380 / LogL: -67018.453 / Time: 0h:36m:28s (0h:7m:1s left)
+Iteration 390 / LogL: -66979.495 / Time: 0h:37m:21s (0h:6m:3s left)
+Iteration 400 / LogL: -66980.958 / Time: 0h:38m:15s (0h:5m:4s left)
+Log-likelihood cutoff on original alignment: -67086.080
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+Iteration 410 / LogL: -66973.832 / Time: 0h:39m:14s (0h:8m:38s left)
+Iteration 420 / LogL: -67001.908 / Time: 0h:40m:8s (0h:7m:39s left)
+Iteration 430 / LogL: -67002.106 / Time: 0h:41m:1s (0h:6m:41s left)
+Iteration 440 / LogL: -66970.434 / Time: 0h:41m:56s (0h:5m:43s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 447: -66963.525
+Iteration 450 / LogL: -67023.979 / Time: 0h:42m:53s (0h:9m:15s left)
+Log-likelihood cutoff on original alignment: -67086.080
+Iteration 460 / LogL: -66987.867 / Time: 0h:43m:46s (0h:8m:17s left)
+Iteration 470 / LogL: -66964.384 / Time: 0h:44m:40s (0h:7m:20s left)
+Iteration 480 / LogL: -66970.601 / Time: 0h:45m:34s (0h:6m:22s left)
+Iteration 490 / LogL: -66976.687 / Time: 0h:46m:27s (0h:5m:24s left)
+Iteration 500 / LogL: -66977.578 / Time: 0h:47m:21s (0h:4m:27s left)
+Log-likelihood cutoff on original alignment: -67086.080
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+Iteration 510 / LogL: -67001.415 / Time: 0h:48m:19s (0h:8m:32s left)
+Iteration 520 / LogL: -66993.722 / Time: 0h:49m:13s (0h:7m:35s left)
+Iteration 530 / LogL: -66969.937 / Time: 0h:50m:8s (0h:6m:38s left)
+Iteration 540 / LogL: -66976.442 / Time: 0h:51m:4s (0h:5m:41s left)
+TREE SEARCH COMPLETED AFTER 548 ITERATIONS / Time: 0h:51m:47s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -66963.525
+Optimal log-likelihood: -66963.521
+Site proportion and rates:  (0.114,0.050) (0.097,0.158) (0.060,0.300) (0.096,0.471) (0.145,0.712) (0.116,0.911) (0.094,1.163) (0.095,1.505) (0.078,2.064) (0.104,2.830)
+Parameters optimization took 1 rounds (2.318 sec)
+BEST SCORE FOUND : -66963.521
+Creating bootstrap support values...
+Split supports printed to NEXUS file 8_SIR2_Domains.mafft.trimal.fasta.splits.nex
+Total tree length: 151.942
+
+Total number of iterations: 548
+CPU time used for tree search: 47808.419 sec (13h:16m:48s)
+Wall-clock time used for tree search: 3075.725 sec (0h:51m:15s)
+Total CPU time used: 48316.180 sec (13h:25m:16s)
+Total wall-clock time used: 3111.139 sec (0h:51m:51s)
+
+Computing bootstrap consensus tree...
+Reading input file 8_SIR2_Domains.mafft.trimal.fasta.splits.nex...
+361 taxa and 2335 splits.
+Consensus tree written to 8_SIR2_Domains.mafft.trimal.fasta.contree
+Reading input trees file 8_SIR2_Domains.mafft.trimal.fasta.contree
+Log-likelihood of consensus tree: -66965.680
+
+Analysis results written to: 
+  IQ-TREE report:                8_SIR2_Domains.mafft.trimal.fasta.iqtree
+  Maximum-likelihood tree:       8_SIR2_Domains.mafft.trimal.fasta.treefile
+  Likelihood distances:          8_SIR2_Domains.mafft.trimal.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          8_SIR2_Domains.mafft.trimal.fasta.splits.nex
+  Consensus tree:                8_SIR2_Domains.mafft.trimal.fasta.contree
+  Screen log file:               8_SIR2_Domains.mafft.trimal.fasta.log
+
+Date and Time: Sun Jul 17 19:00:19 2022

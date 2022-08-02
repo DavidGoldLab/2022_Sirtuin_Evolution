@@ -1,0 +1,463 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=361;
+	taxlabels
+	'Acropora_digitifera_XP_015751984.1_SIR7_BOVIN'
+	'Acropora_digitifera_XP_015764189.1_SIR6_CASCN'
+	'Acropora_digitifera_XP_015764941.1_SIR5_CANLF'
+	'Acropora_digitifera_XP_015769634.1_SIR3_HUMAN'
+	'Acropora_digitifera_XP_015774796.1_SIR1_ARATH'
+	'Acropora_digitifera_XP_015779163.1_SIR2_PONAB'
+	'Acropora_digitifera_XP_015779435.1_SIR1_RAT'
+	'Acropora_digitifera_XP_015779547.1_SIR4_BOVIN'
+	'Acropora_millepora_XP_029180011.2_SIR7_BOVIN'
+	'Acropora_millepora_XP_029189899.1_SIR3_HUMAN'
+	'Acropora_millepora_XP_029191153.1_SIR5_CANLF'
+	'Acropora_millepora_XP_029212880.2_SIR1_MOUSE'
+	'Acropora_millepora_XP_029213217.2_SIR4_BOVIN'
+	'Acropora_millepora_XP_029214425.2_SIR1_ARATH'
+	'Acropora_millepora_XP_044163473.1_SIR2_MACFA'
+	'Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN'
+	'Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN'
+	'Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN'
+	'Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN'
+	'Actinia_tenebrosa_XP_031561543.1_SIR6_MACFA'
+	'Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF'
+	'Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH'
+	'Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH'
+	'Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE'
+	'Amoeboaphelidium_occidentale_KAI3658166.1_SIR2_DANRE'
+	'Amoeboaphelidium_occidentale_KAI3659897.1_HST3_CANAL'
+	'Amoeboaphelidium_occidentale_KAI3659977.1_SIR1_HUMAN'
+	'Amoeboaphelidium_occidentale_KAI3661634.1_SIR4_BATDJ'
+	'Amoeboaphelidium_protococcarum_KAI3629610.1_HST3_CANAL'
+	'Amoeboaphelidium_protococcarum_KAI3633096.1_SIR4_BATDJ'
+	'Amoeboaphelidium_protococcarum_KAI3633495.1_SIR2_DANRE'
+	'Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF'
+	'Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH'
+	'Amphimedon_queenslandica_XP_003385596.1_SIR6_CASCN'
+	'Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI'
+	'Amphimedon_queenslandica_XP_003389737.2_SIR6_MACFA'
+	'Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN'
+	'Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE'
+	'Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH'
+	'Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN'
+	'Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE'
+	'Amphimedon_queenslandica_XP_019861130.1_SIR2_DANRE'
+	'Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE'
+	'Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain2'
+	'Aurelia_coerulea_XLOC_005839_TCONS_00008113_Seg122.19.p1_NPD_AQUAE'[&!color=#ff0000]
+	'Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN'
+	'Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN'
+	'Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE'
+	'Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_CASCN'
+	'Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE'
+	'Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH'
+	'Aurelia_coerulea_XLOC_058355_TCONS_00081668_Seg5923.2.p1_SIR7_BOVIN'
+	'Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN'
+	Caenorhabditis_elegans_SIR24_CAEEL_SIR24_CAEEL
+	Caenorhabditis_elegans_SIR2_CAEEL_SIR2_CAEEL
+	Caenorhabditis_elegans_SIR41_CAEEL_SIR41_CAEEL
+	Caenorhabditis_elegans_SIR42_CAEEL_SIR42_CAEEL
+	Capitella_teleta_R7T6P1_CAPTE_SIR3_HUMAN
+	Capitella_teleta_R7T8F1_CAPTE_SIR3_HUMAN
+	Capitella_teleta_R7TBQ3_CAPTE_NPD_METKA[&!color=#ff0000]
+	Capitella_teleta_R7TK56_CAPTE_SIR2_DANRE
+	Capitella_teleta_R7TRL9_CAPTE_SIR6_MACFA
+	Capitella_teleta_R7TYG4_CAPTE_SIR5_CANLF
+	Capitella_teleta_R7UFJ9_CAPTE_SIR1_ORYSI
+	Capitella_teleta_R7UG42_CAPTE_SIR7_HUMAN
+	Capitella_teleta_R7UXV9_CAPTE_SIR6_MOUSE
+	Capitella_teleta_R7VC11_CAPTE_SIR4_MOUSE
+	Capitella_teleta_R7VG12_CAPTE_SIR1_MOUSE
+	'Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE'
+	'Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_MACFA'
+	'Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN'
+	'Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE'
+	'Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE'
+	Chara_braunii_A0A388K2V7_CHABU_TF29_SCHPO
+	Chara_braunii_A0A388K9Y1_CHABU_SIR6_DROME
+	Chara_braunii_A0A388LX92_CHABU_SIR5_CANLF
+	Chara_braunii_A0A388M0E5_CHABU_SIR1_ARATH
+	Chiloscyllium_punctatum_A0A401RMI2_CHIPU_SIR4_HUMAN
+	Chiloscyllium_punctatum_A0A401S4C4_CHIPU_SIR7_HUMAN
+	Chiloscyllium_punctatum_A0A401SWK8_CHIPU_SIR2_DANRE
+	Chiloscyllium_punctatum_A0A401SYB6_CHIPU_SIR1_MOUSE
+	Chiloscyllium_punctatum_A0A401SZL3_CHIPU_SIR5_CHICK
+	Chiloscyllium_punctatum_A0A401T636_CHIPU_SIR3_HUMAN
+	Ciona_intestinalis_F6SLD6_CIOIN_SIR1_HUMAN
+	Ciona_intestinalis_F6TVS6_CIOIN_SIR4_MOUSE
+	Ciona_intestinalis_F7AUS4_CIOIN_SIR7_RAT
+	Ciona_intestinalis_H2XW94_CIOIN_SIR3_HUMAN
+	Ciona_intestinalis_H2XWF2_CIOIN_SIR5_MOUSE
+	Ciona_intestinalis_Q1RL34_CIOIN_SIR2_DANRE
+	Clytia_hemisphaerica_TCONS_00017752-protein_SIR4_MOUSE
+	Clytia_hemisphaerica_TCONS_00023571-protein_SIR1_HUMAN
+	Clytia_hemisphaerica_TCONS_00029362-protein_SIR2_DANRE
+	Clytia_hemisphaerica_TCONS_00045855-protein_SIR6_CASCN
+	Clytia_hemisphaerica_TCONS_00049926-protein_NPD_THET8[&!color=#ff0000]
+	Clytia_hemisphaerica_TCONS_00056393-protein_SIR6_CASCN
+	Daphnia_magna_A0A0P5CJZ6_9CRUS_SIR2_DANRE
+	Daphnia_magna_A0A162Q0V9_9CRUS_SIR1_HUMAN
+	Daphnia_magna_A0A162SQA7_9CRUS_SIR6_DROME
+	Daphnia_magna_A0A164XVS9_9CRUS_SIR5_DAPPU
+	'Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF'
+	'Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE'
+	'Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE'
+	'Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN'
+	'Dendronephthya_gigantea_XP_028412260.1_SIR6_MACFA'
+	'Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN'
+	Drosophila_melanogaster_SIR4_DROME_SIR4_DROME
+	Drosophila_melanogaster_SIR6_DROME_SIR6_DROME
+	Drosophila_melanogaster_SIR7_DROME_SIR7_DROME
+	Drosophila_melanogaster_SIRT1_DROME_SIRT1_DROME
+	Drosophila_melanogaster_SIRT2_DROME_SIRT2_DROME
+	Ectocarpus_siliculosus_D7G3Z0_ECTSI_SIR1_ARATH
+	Ectocarpus_siliculosus_D8LES8_ECTSI_SIR1_RAT
+	Ectocarpus_siliculosus_D8LHN5_ECTSI_SIR2E_DICDI
+	Ectocarpus_siliculosus_D8LJJ1_ECTSI_SIR4_ARATH
+	'Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE'
+	'Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH'
+	'Ephydatia_muelleri_m.41112_g.41112_SIR6_MACFA'
+	'Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF'
+	'Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH'
+	'Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE'
+	'Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN'
+	'Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE'
+	'Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN'
+	'Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN'
+	'Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN'
+	'Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN'
+	'Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK'
+	'Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH'
+	'Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE'
+	'Exaiptasia_diaphana_XP_020916137.1_SIR6_CASCN'
+	Fistulifera_solaris_A0A1Z5JC26_FISSO_HST2_SCHPO
+	Fistulifera_solaris_A0A1Z5JKY8_FISSO_SIR6_CASCN
+	Fistulifera_solaris_A0A1Z5JZ96_FISSO_SIR2E_DICDI
+	Fistulifera_solaris_A0A1Z5K280_FISSO_NPD2_BRADU
+	Fistulifera_solaris_A0A1Z5K5D8_FISSO_SIR2_MACFA
+	Fistulifera_solaris_A0A1Z5K794_FISSO_HST1_EMENI
+	'Fonticula_alba_XP_009493409.1_SIR1_RAT'
+	'Fonticula_alba_XP_009494611.1_HST3_YEAST'
+	'Fonticula_alba_XP_009494998.1_SIR2_RAT'
+	Galerina_marginata_A0A067SC53_GALM3_SIR5_COPC7
+	Galerina_marginata_A0A067SMM4_GALM3_HST1_EMENI
+	Galerina_marginata_A0A067T782_GALM3_HST4_EMENI
+	Galerina_marginata_A0A067TC06_GALM3_SIR4_BATDJ
+	Galerina_marginata_A0A067TI91_GALM3_HST21_EMENI
+	Galerina_marginata_A0A067TQF3_GALM3_HST3_CANAL
+	Galerina_marginata_A0A067TTX9_GALM3_SIR5_COPC7
+	Galerina_marginata_A0A067TWG2_GALM3_SIR5_COPC7
+	'Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH'
+	'Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE'
+	'Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE'
+	'Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN'
+	'Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF'
+	'Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE'
+	'Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN'
+	'Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR'
+	'Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH'
+	'Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN'
+	'Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE'
+	'Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE'
+	'Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_MACFA'
+	'Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH'
+	'Henneguya_salminicola_KAF0992715.1_SIR2_DANRE'
+	Homo_sapiens_SIR1_HUMAN_SIR1_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR2_HUMAN_SIR2_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR3_HUMAN_SIR3_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR4_HUMAN_SIR4_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR5_HUMAN_SIR5_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR6_HUMAN_SIR6_HUMAN[&!color=#0000ff]
+	Homo_sapiens_SIR7_HUMAN_SIR7_HUMAN[&!color=#0000ff]
+	'Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE'
+	'Hydra_vulgaris_XP_047125773.1_SIR1_RAT'
+	'Hydra_vulgaris_XP_047139351.1_SIR6_CASCN'
+	Latimeria_chalumnae_H3AAK4_LATCH_SIR3_HUMAN
+	Latimeria_chalumnae_H3AF98_LATCH_SIR5_XENTR
+	Latimeria_chalumnae_H3AGQ1_LATCH_SIR6_MOUSE
+	Latimeria_chalumnae_H3AHF8_LATCH_SIR1_HUMAN
+	Latimeria_chalumnae_H3AKL9_LATCH_SIR7_BOVIN
+	Latimeria_chalumnae_H3BDU0_LATCH_SIR3_HUMAN
+	Latimeria_chalumnae_H3BG66_LATCH_SIR4_MOUSE
+	Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME
+	Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE
+	Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH
+	Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN
+	Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE
+	Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH
+	Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN
+	Leucosolenia_complicata_lcpid67440_lcgid21395_NPD_AQUAE[&!color=#ff0000]
+	Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_CASCN
+	Mnemiopsis_leidyi_ML002614a-PA_SIR6_CASCN
+	Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN
+	Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE
+	Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN
+	Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE
+	Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH
+	Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE
+	Mnemiopsis_leidyi_ML23958a-PA_SIR1_ORYSI
+	Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE
+	'Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT'
+	'Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE'
+	'Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH'
+	'Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME'
+	'Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN'
+	Mus_musculus_SIR1_MOUSE_SIR1_MOUSE
+	Mus_musculus_SIR2_MOUSE_SIR2_MOUSE
+	Mus_musculus_SIR3_MOUSE_SIR3_MOUSE
+	Mus_musculus_SIR4_MOUSE_SIR4_MOUSE
+	Mus_musculus_SIR5_MOUSE_SIR5_MOUSE
+	Mus_musculus_SIR6_MOUSE_SIR6_MOUSE
+	Mus_musculus_SIR7_MOUSE_SIR7_MOUSE
+	'Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE'
+	'Nematostella_vectensis_EDO29747.1_SIR7_BOVIN'
+	'Nematostella_vectensis_EDO31684.1_SIR1_RAT'
+	'Nematostella_vectensis_EDO32517.1_SIR6_CASCN'
+	'Nematostella_vectensis_EDO35866.1_SIR4_MOUSE'
+	'Nematostella_vectensis_EDO46813.1_SIR2_DANRE'
+	'Nematostella_vectensis_EDO47672.1_SIR3_HUMAN'
+	'Nematostella_vectensis_EDO48459.1_SIR2_DANRE'
+	'Nematostella_vectensis_XP_048576900.1_SIR5_CANLF'
+	Octopus_bimaculoides_A0A0L8FJ96_OCTBM_SIR5_DANRE
+	Octopus_bimaculoides_A0A0L8FRB6_OCTBM_SIR1_MOUSE
+	Octopus_bimaculoides_A0A0L8FVJ2_OCTBM_SIR3_MOUSE
+	Octopus_bimaculoides_A0A0L8FVN7_OCTBM_SIR6_CASCN
+	Octopus_bimaculoides_A0A0L8HEZ4_OCTBM_SIR7_BOVIN
+	Octopus_bimaculoides_A0A0L8HM37_OCTBM_SIR4_BOVIN
+	Octopus_bimaculoides_A0A0L8IAL6_OCTBM_SIR2_DANRE
+	'Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN'
+	'Orbicella_faveolata_XP_020603299.1_SIR5_CANLF'
+	'Orbicella_faveolata_XP_020604327.1_SIR1_ARATH'
+	'Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN'
+	'Orbicella_faveolata_XP_020605893.1_SIR2_DANRE'
+	'Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN'
+	'Orbicella_faveolata_XP_020608148.1_SIR6_CASCN'
+	'Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN'
+	'Orbicella_faveolata_XP_020631316.1_SIR1_ARATH'
+	'Orbicella_faveolata_XP_020631320.1_SIR1_ARATH'
+	'Oscarella_carmela_m.102278g.102278_comp37162_c0_seq1_SIR5_CANLF'
+	'Oscarella_carmela_m.10296g.10296_comp22152_c0_seq1_SIR4_MOUSE'
+	'Oscarella_carmela_m.16056g.16056_comp26712_c0_seq2_SIR7_MOUSE'
+	'Oscarella_carmela_m.20604g.20604_comp28043_c0_seq1_SIR2_DANRE'
+	'Oscarella_carmela_m.214358g.214358_comp39808_c0_seq29_SIR6_CASCN'
+	'Oscarella_carmela_m.310769g.310769_comp54758_c0_seq1_SIR1_HUMAN'
+	'Oscarella_carmela_m.58799g.58799_comp34829_c0_seq1_SIR1_ARATH'
+	'Oscarella_carmela_m.66298g.66298_comp35380_c0_seq4_SIR3_MOUSE'
+	'Oscarella_carmela_m.9609g.9609_comp21492_c0_seq1_SIR1_ARATH'
+	Pleurobrachia_bachei_sb_2643951_SIR2_DANRE
+	Pleurobrachia_bachei_sb_2650883_SIR2_RAT
+	Pleurobrachia_bachei_sb_2653035_SIR1_RAT
+	Pleurobrachia_bachei_sb_2657812_SIR6_MOUSE
+	Pleurobrachia_bachei_sb_2658796_SIR3_MOUSE
+	Pleurobrachia_bachei_sb_2664049_SIRT2_DROME
+	Pleurobrachia_bachei_sb_2669295_CNX2_ARATH
+	'Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI'
+	'Pocillopora_damicornis_RMX45954.1_SIR2_MACFA'
+	'Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN'
+	'Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN'
+	'Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH'
+	'Pocillopora_damicornis_XP_027050255.1_SIR6_CASCN'
+	'Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN'
+	'Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF'
+	'Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN'
+	Puccinia_graminis_E3JQ55_PUCGT_HST4_SCHPO
+	Puccinia_graminis_E3KJ55_PUCGT_SIR4_BATDJ
+	Puccinia_graminis_E3KY50_PUCGT_SIR2_DANRE
+	Rhizophagus_irregularis_A0A2I1G7C6_9GLOM_SIR2_DANRE
+	Rhizophagus_irregularis_A0A2I1GBB3_9GLOM_HST3_CANAL
+	Rhizophagus_irregularis_A0A2I1GLM2_9GLOM_SIR1_RAT
+	Rhizophagus_irregularis_A0A2I1H174_9GLOM_SIR5_CHICK
+	Rhizophagus_irregularis_A0A2I1HDR7_9GLOM_SIR4_BATDJ
+	Rozella_allomycis_A0A075AU49_ROZAC_SIR1_HUMAN
+	Rozella_allomycis_A0A075AV36_ROZAC_HST3_CANAL
+	Saccharomyces_cerevisiae_HST1_YEAST_HST1_YEAST
+	Saccharomyces_cerevisiae_HST2_YEAST_HST2_YEAST
+	Saccharomyces_cerevisiae_HST3_YEAST_HST3_YEAST
+	Saccharomyces_cerevisiae_HST4_YEAST_HST4_YEAST
+	Saccharomyces_cerevisiae_SIR2_YEAST_SIR2_YEAST
+	'Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE'
+	'Salpingoeca_rosetta_XP_004991027.1_SIR7_HUMAN'
+	'Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME'
+	'Salpingoeca_rosetta_XP_004991725.1_SIR6_CASCN'
+	'Salpingoeca_rosetta_XP_004993416.1_SIR6_CASCN'
+	'Salpingoeca_rosetta_XP_004993987.1_NPD2_PYRAE'[&!color=#ff0000]
+	'Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME'
+	Schizosaccharomyces_pombe_HST2_SCHPO_HST2_SCHPO
+	Schizosaccharomyces_pombe_HST4_SCHPO_HST4_SCHPO
+	Schizosaccharomyces_pombe_SIR2_SCHPO_SIR2_SCHPO
+	'Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA'
+	'Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE'
+	'Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI'
+	'Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_CASCN'
+	'Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT'
+	'Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE'
+	'Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE'
+	'Sphaeroforma_arctica_JP610_XP_014152407.1_NPD2_PYRAE'[&!color=#ff0000]
+	'Sphaeroforma_arctica_JP610_XP_014153224.1_SIR2A_PLAF7'[&!color=#ff0000]
+	'Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE'
+	Spizellomyces_punctatus_A0A0L0H4V4_SPIPD_SIR4_BATDJ
+	Spizellomyces_punctatus_A0A0L0H9S1_SPIPD_SIR1_HUMAN
+	Spizellomyces_punctatus_A0A0L0HKL8_SPIPD_HST4_YEAST
+	Spizellomyces_punctatus_A0A0L0HPN6_SPIPD_SIR2_DANRE
+	Spizellomyces_punctatus_A0A0L0HTT9_SPIPD_HST3_CANAL
+	Strongylocentrotus_purpuratus_A0A7M7N1G3_STRPU_NPD2_CALS4[&!color=#ff0000]
+	Strongylocentrotus_purpuratus_A0A7M7N7D4_STRPU_SIR6_CASCN
+	Strongylocentrotus_purpuratus_A0A7M7NDM7_STRPU_SIR1_HUMAN
+	Strongylocentrotus_purpuratus_A0A7M7NU88_STRPU_SIR7_HUMAN
+	Strongylocentrotus_purpuratus_A0A7M7NUX7_STRPU_SIR5A_XENLA
+	Strongylocentrotus_purpuratus_A0A7M7P4N3_STRPU_SIR3_HUMAN
+	Strongylocentrotus_purpuratus_A0A7M7PQD5_STRPU_SIR2_DANRE
+	Strongylocentrotus_purpuratus_A0A7M7RE10_STRPU_SIR4_HUMAN
+	'Stylissa_carteri_augustus_masked-SC_scaffold70346-processed-gene-0.28-mRNA-1_NPD_THEKO'[&!color=#ff0000]
+	'Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain2'
+	'Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_CASCN'
+	'Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI'
+	'Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF'
+	'Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_MACFA'
+	'Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT'
+	'Stylophora_pistillata_PFX22126.1_SIR7_BOVIN'
+	'Stylophora_pistillata_PFX26008.1_SIR1_ARATH'
+	'Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN'
+	'Stylophora_pistillata_XP_022784120.1_SIR6_CASCN'
+	'Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN'
+	'Stylophora_pistillata_XP_022790004.1_SIR1_ARATH'
+	'Stylophora_pistillata_XP_022791312.1_SIR5_CANLF'
+	'Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN'
+	'Stylophora_pistillata_XP_022806417.1_SIR2_MACFA'
+	'Sycon_coactum_12062.p1_SIR7_HUMAN'
+	'Sycon_coactum_29914.p1_NPD1_ARCFU'[&!color=#ff0000]
+	'Sycon_coactum_31281.p1_SIR3_HUMAN'
+	'Sycon_coactum_7951.p1_SIR4_BOVIN'
+	'Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE'
+	'Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE'
+	'Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE'
+	'Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN'
+	'Trichoplax_adhaerens_XP_002110277.1_SIR6_MACFA'
+	'Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE'
+	'Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE'
+	'Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE'
+	'Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE'
+	'Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE'
+	'Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE'
+	'Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE'
+	'Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN'
+	'Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF'
+	'Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE'
+	'Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN'
+	Volvox_carteri_D8TL05_VOLCA_HST3_YEAST
+	Volvox_carteri_D8TU91_VOLCA_SIR1_ARATH
+	Volvox_carteri_D8U497_VOLCA_SIR4_ARATH
+	'Xenia_sp._Carnegie-2017_XP_046840840.1_SIR4_HUMAN'
+	'Xenia_sp._Carnegie-2017_XP_046842162.1_SIR5_CANLF'
+	'Xenia_sp._Carnegie-2017_XP_046844853.1_SIR1_HUMAN'
+	'Xenia_sp._Carnegie-2017_XP_046848641.1_SIR2_DANRE'
+	'Xenia_sp._Carnegie-2017_XP_046855444.1_SIR7_BOVIN'
+	'Xenia_sp._Carnegie-2017_XP_046857358.1_SIR6_MACFA'
+	Xenopus_laevis_A0A1L8FEV8_XENLA_SIR1_MOUSE
+	Xenopus_laevis_A0A1L8GWP9_XENLA_SIR3_HUMAN
+	Xenopus_laevis_A0A1L8I0D6_XENLA_SIR4_BOVIN
+	Xenopus_laevis_A0A8J0UAR6_XENLA_SIR2_DANRE
+	Xenopus_laevis_A0A8J1KJA7_XENLA_SIR3_MOUSE
+	Xenopus_laevis_Q5XG15_XENLA_SIR7_HUMAN
+	Xenopus_laevis_Q6GPW5_XENLA_SIR6_MACFA
+	Xenopus_laevis_SIR5A_XENLA_SIR5A_XENLA
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ('Acropora_digitifera_XP_015751984.1_SIR7_BOVIN':2.0E-6,(((((((((((((((((((('Acropora_digitifera_XP_015764189.1_SIR6_CASCN':0.127895,('Orbicella_faveolata_XP_020608148.1_SIR6_CASCN':0.083824,('Pocillopora_damicornis_XP_027050255.1_SIR6_CASCN':0.033132,'Stylophora_pistillata_XP_022784120.1_SIR6_CASCN':0.016718)[&label=100]:0.029246)[&label=99]:0.04019)[&label=99]:0.107964,(('Actinia_tenebrosa_XP_031561543.1_SIR6_MACFA':0.092759,'Nematostella_vectensis_EDO32517.1_SIR6_CASCN':0.190767)[&label=94]:0.075048,'Exaiptasia_diaphana_XP_020916137.1_SIR6_CASCN':0.06914)[&label=93]:0.11264)[&label=51]:0.08568,(((('Amphimedon_queenslandica_XP_003389737.2_SIR6_MACFA':0.208773,'Haliclona_tubifera_c49726_g5_i2_m.24434_SIR6_MACFA':0.263552)[&label=65]:0.109358,('Ephydatia_muelleri_m.41112_g.41112_SIR6_MACFA':0.151515,'Stylissa_carteri_maker-SC_scaffold2306-augustus-gene-0.139-mRNA-1_SIR6_CASCN':0.075714)[&label=90]:0.036444)[&label=72]:0.13296,((('Aurelia_coerulea_XLOC_034300_TCONS_00048726_Seg2682.3.p1_SIR6_CASCN':0.172102,(Clytia_hemisphaerica_TCONS_00056393-protein_SIR6_CASCN:0.097162,'Hydra_vulgaris_XP_047139351.1_SIR6_CASCN':0.170851)[&label=93]:0.129117)[&label=97]:0.160671,Leucosolenia_complicata_lcpid75339_lcgid20684_SIR6_CASCN:0.424138)[&label=46]:0.024703,((((((Capitella_teleta_R7UXV9_CAPTE_SIR6_MOUSE:0.231316,'Schmidtea_mediterranea_maker-scaffold8700-snap-gene-0.18-mRNA-1_SIR6_CASCN':0.367285)[&label=49]:0.051192,((Homo_sapiens_SIR6_HUMAN_SIR6_HUMAN:0.025934,Mus_musculus_SIR6_MOUSE_SIR6_MOUSE:0.057004)[&label=90]:0.038423,(Latimeria_chalumnae_H3AGQ1_LATCH_SIR6_MOUSE:0.100033,Xenopus_laevis_Q6GPW5_XENLA_SIR6_MACFA:0.093606)[&label=100]:0.085563)[&label=100]:0.251078)[&label=46]:0.037049,Octopus_bimaculoides_A0A0L8FVN7_OCTBM_SIR6_CASCN:0.289176)[&label=92]:0.067694,Strongylocentrotus_purpuratus_A0A7M7N7D4_STRPU_SIR6_CASCN:0.302877)[&label=94]:0.081071,(('Dendronephthya_gigantea_XP_028412260.1_SIR6_MACFA':0.115819,'Xenia_sp._Carnegie-2017_XP_046857358.1_SIR6_MACFA':0.104583)[&label=100]:0.167352,'Oscarella_carmela_m.214358g.214358_comp39808_c0_seq29_SIR6_CASCN':0.489636)[&label=83]:0.053206)[&label=89]:0.031855,'Trichoplax_adhaerens_XP_002110277.1_SIR6_MACFA':0.390492)[&label=48]:0.076889)[&label=25]:0.055543)[&label=46]:0.061079,(Daphnia_magna_A0A162SQA7_9CRUS_SIR6_DROME:0.299028,Drosophila_melanogaster_SIR6_DROME_SIR6_DROME:0.354075)[&label=100]:0.330156)[&label=23]:0.045925)[&label=31]:0.124051,(((Chara_braunii_A0A388K2V7_CHABU_TF29_SCHPO:0.533798,Volvox_carteri_D8TU91_VOLCA_SIR1_ARATH:0.399293)[&label=100]:0.147297,(Mnemiopsis_leidyi_ML002614a-PA_SIR6_CASCN:0.154846,Pleurobrachia_bachei_sb_2657812_SIR6_MOUSE:0.236413)[&label=100]:0.36591)[&label=68]:0.159847,Ectocarpus_siliculosus_D7G3Z0_ECTSI_SIR1_ARATH:0.717441)[&label=48]:0.073675)[&label=48]:0.068189,(Caenorhabditis_elegans_SIR24_CAEEL_SIR24_CAEEL:1.398612,Fistulifera_solaris_A0A1Z5JKY8_FISSO_SIR6_CASCN:0.707279)[&label=48]:0.02594)[&label=100]:0.319695,((((((((('Acropora_digitifera_XP_015774796.1_SIR1_ARATH':2.0E-6,'Acropora_millepora_XP_029214425.2_SIR1_ARATH':0.007095)[&label=100]:0.107216,('Orbicella_faveolata_XP_020631320.1_SIR1_ARATH':0.105402,('Pocillopora_damicornis_RMX44192.1_SIR1_ORYSI':0.008139,'Stylophora_pistillata_PFX26008.1_SIR1_ARATH':0.049077)[&label=100]:0.116138)[&label=99]:0.076431)[&label=99]:0.140939,('Aurelia_coerulea_XLOC_058163_TCONS_00081427_Seg589.7.p1_SIR1_ARATH':0.209574,Chara_braunii_A0A388M0E5_CHABU_SIR1_ARATH:0.687286)[&label=67]:0.134758)[&label=95]:0.069948,(('Actinia_tenebrosa_XP_031565139.1_SIR1_ARATH':0.228344,'Exaiptasia_diaphana_XP_020912061.1_SIR1_ARATH':0.152861)[&label=93]:0.022599,('Orbicella_faveolata_XP_020631316.1_SIR1_ARATH':0.130043,('Pocillopora_damicornis_XP_027046210.1_SIR1_ARATH':0.032386,'Stylophora_pistillata_XP_022790004.1_SIR1_ARATH':0.026281)[&label=100]:0.072207)[&label=100]:0.146402)[&label=93]:0.064416)[&label=98]:0.064181,(('Amphimedon_queenslandica_XP_011406188.1_SIR1_ARATH':0.156155,'Ephydatia_muelleri_m.44725_g.44725_SIR1_ARATH':0.268499)[&label=100]:0.082024,'Oscarella_carmela_m.9609g.9609_comp21492_c0_seq1_SIR1_ARATH':0.188269)[&label=99]:0.125866)[&label=98]:0.052685,((('Amphimedon_queenslandica_XP_003383581.1_SIR1_ARATH':0.179324,('Haliclona_amboinensis_c27278_g1_i2_m.5375_SIR1_ARATH':2.0E-6,'Haliclona_tubifera_c53653_g1_i1_m.34064_SIR1_ARATH':0.027976)[&label=100]:0.337788)[&label=100]:0.074391,'Amphimedon_queenslandica_XP_003388355.1_SIR1_ORYSI':0.216532)[&label=100]:0.109622,('Oscarella_carmela_m.58799g.58799_comp34829_c0_seq1_SIR1_ARATH':0.211338,('Stylissa_carteri_maker-SC_scaffold2848-snap-gene-0.24-mRNA-1_SIR1_ORYSI':0.265444,'Stylissa_carteri_maker-SC_scaffold739-snap-gene-0.85-mRNA-1_SIR6_MACFA':0.198481)[&label=100]:0.100366)[&label=99]:0.057388)[&label=100]:0.118171)[&label=97]:0.094616,Clytia_hemisphaerica_TCONS_00045855-protein_SIR6_CASCN:0.274083)[&label=94]:0.280946,Leucosolenia_complicata_lcpid182756_lcgid10070_SIR1_ARATH:0.693957)[&label=94]:0.17083,(((('Actinia_tenebrosa_XP_031565494.1_SIR1_ARATH':0.227589,'Orbicella_faveolata_XP_020604327.1_SIR1_ARATH':0.213855)[&label=96]:0.072431,((('Amphimedon_queenslandica_XP_003385596.1_SIR6_CASCN':0.252432,(Leucosolenia_complicata_lcpid110268_lcgid61006_SIR1_ARATH:0.572893,'Salpingoeca_rosetta_XP_004993416.1_SIR6_CASCN':0.401236)[&label=100]:0.190996)[&label=98]:0.107878,(('Ephydatia_muelleri_m.286671_g.286671_SIR1_ARATH':0.321192,'Haliclona_tubifera_c40065_g1_i1_m.9948_SIR1_ARATH':0.361511)[&label=91]:0.073467,'Stylissa_carteri_maker-SC_scaffold144383-augustus-gene-0.30-mRNA-1_SIR1_ARATH-Domain2':0.231052)[&label=91]:0.125693)[&label=98]:0.077964,Mnemiopsis_leidyi_ML200240a-PA_SIR1_ARATH:0.485264)[&label=92]:0.06517)[&label=98]:0.128729,Capitella_teleta_R7UFJ9_CAPTE_SIR1_ORYSI:0.356912)[&label=98]:0.15957,Capitella_teleta_R7TRL9_CAPTE_SIR6_MACFA:0.359667)[&label=100]:0.480731)[&label=81]:0.115283)[&label=80]:0.0721,('Monosiga_brevicollis_MX1_XP_001746923.1_SIR1_ARATH':0.989011,'Salpingoeca_rosetta_XP_004991725.1_SIR6_CASCN':0.549216)[&label=62]:0.101932)[&label=66]:0.180523,((((((((((((((((((('Acropora_digitifera_XP_015764941.1_SIR5_CANLF'[&!color=#ff0000]:0.026962,'Acropora_millepora_XP_029191153.1_SIR5_CANLF'[&!color=#ff0000]:0.014459)[&label=100,!color=#ff0000]:0.085389,('Orbicella_faveolata_XP_020603299.1_SIR5_CANLF'[&!color=#ff0000]:0.095374,('Pocillopora_damicornis_XP_027051970.1_SIR5_CANLF'[&!color=#ff0000]:0.033582,'Stylophora_pistillata_XP_022791312.1_SIR5_CANLF'[&!color=#ff0000]:0.012275)[&label=100,!color=#ff0000]:0.109233)[&label=100,!color=#ff0000]:0.070285)[&label=100,!color=#ff0000]:0.093956,((('Actinia_tenebrosa_XP_031565089.1_SIR5_CANLF'[&!color=#ff0000]:0.136595,'Exaiptasia_diaphana_XP_020897758.1_SIR5_CHICK'[&!color=#ff0000]:0.267725)[&label=100,!color=#ff0000]:0.041591,'Nematostella_vectensis_XP_048576900.1_SIR5_CANLF'[&!color=#ff0000]:0.256032)[&label=100,!color=#ff0000]:0.082291,('Dendronephthya_gigantea_XP_028392003.1_SIR5_CANLF'[&!color=#ff0000]:0.155253,'Xenia_sp._Carnegie-2017_XP_046842162.1_SIR5_CANLF'[&!color=#ff0000]:0.206835)[&label=100,!color=#ff0000]:0.076307)[&label=100,!color=#ff0000]:0.080315)[&label=81,!color=#ff0000]:0.029521,(((('Amphimedon_queenslandica_XP_003382458.1_SIR5_CANLF'[&!color=#ff0000]:0.089829,'Haliclona_amboinensis_c48062_g1_i4_mm.2497_SIR5_CANLF'[&!color=#ff0000]:0.087577)[&label=100,!color=#ff0000]:0.050715,'Haliclona_tubifera_c27515_g1_i1_m.3231_SIR5_XENTR'[&!color=#ff0000]:0.13557)[&label=100,!color=#ff0000]:0.063885,('Ephydatia_muelleri_m.42840_g.42840_SIR5_CANLF'[&!color=#ff0000]:0.224619,'Stylissa_carteri_maker-SC_scaffold3240-augustus-gene-0.61-mRNA-1_SIR5_CANLF'[&!color=#ff0000]:0.144356)[&label=96,!color=#ff0000]:0.035128)[&label=95,!color=#ff0000]:0.047408,('Oscarella_carmela_m.102278g.102278_comp37162_c0_seq1_SIR5_CANLF'[&!color=#ff0000]:0.213185,('Trichoplax_adhaerens_XP_002111996.1_SIR5_MOUSE'[&!color=#ff0000]:0.023441,'Trichoplax_sp._H2_RDD44172.1_SIR5_CANLF'[&!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:0.19963)[&label=100,!color=#ff0000]:0.154945)[&label=99,!color=#ff0000]:0.071804)[&label=78,!color=#ff0000]:0.076043,Strongylocentrotus_purpuratus_A0A7M7NUX7_STRPU_SIR5A_XENLA[&!color=#ff0000]:0.29106)[&label=92,!color=#ff0000]:0.060738,((Chiloscyllium_punctatum_A0A401SZL3_CHIPU_SIR5_CHICK[&!color=#ff0000]:0.128057,((Homo_sapiens_SIR5_HUMAN_SIR5_HUMAN[&!color=#ff0000]:0.065148,Mus_musculus_SIR5_MOUSE_SIR5_MOUSE[&!color=#ff0000]:0.044779)[&label=100,!color=#ff0000]:0.12095,Xenopus_laevis_SIR5A_XENLA_SIR5A_XENLA[&!color=#ff0000]:0.122089)[&label=100,!color=#ff0000]:0.050987)[&label=99,!color=#ff0000]:0.02992,Latimeria_chalumnae_H3AF98_LATCH_SIR5_XENTR[&!color=#ff0000]:0.102572)[&label=100,!color=#ff0000]:0.114143)[&label=60,!color=#ff0000]:0.033456,Capitella_teleta_R7TYG4_CAPTE_SIR5_CANLF[&!color=#ff0000]:0.243332)[&label=62,!color=#ff0000]:0.052161,Octopus_bimaculoides_A0A0L8FJ96_OCTBM_SIR5_DANRE[&!color=#ff0000]:0.190499)[&label=99,!color=#ff0000]:0.061633,Ciona_intestinalis_H2XWF2_CIOIN_SIR5_MOUSE[&!color=#ff0000]:0.279392)[&label=98,!color=#ff0000]:0.035753,Daphnia_magna_A0A164XVS9_9CRUS_SIR5_DAPPU[&!color=#ff0000]:0.301)[&label=100,!color=#ff0000]:0.103251,((Galerina_marginata_A0A067SC53_GALM3_SIR5_COPC7[&!color=#ff0000]:1.278896,(Galerina_marginata_A0A067TTX9_GALM3_SIR5_COPC7[&!color=#ff0000]:0.408598,Galerina_marginata_A0A067TWG2_GALM3_SIR5_COPC7[&!color=#ff0000]:3.0E-6)[&label=100,!color=#ff0000]:0.505999)[&label=89,!color=#ff0000]:0.156974,Rhizophagus_irregularis_A0A2I1H174_9GLOM_SIR5_CHICK[&!color=#ff0000]:0.295639)[&label=88,!color=#ff0000]:0.150157)[&label=89,!color=#ff0000]:0.111915,'Schmidtea_mediterranea_augustus_masked-scaffold19448-processed-gene-0.0-mRNA-1_SIR5A_XENLA'[&!color=#ff0000]:0.525728)[&label=60,!color=#ff0000]:0.056105,Chara_braunii_A0A388LX92_CHABU_SIR5_CANLF[&!color=#ff0000]:0.464298)[&label=100,!color=#ff0000]:0.509689,((Ectocarpus_siliculosus_D8LHN5_ECTSI_SIR2E_DICDI[&!color=#ff0000]:0.499452,Fistulifera_solaris_A0A1Z5JZ96_FISSO_SIR2E_DICDI[&!color=#ff0000]:0.855174)[&label=100,!color=#ff0000]:1.713764,('Sphaeroforma_arctica_JP610_XP_014152407.1_NPD2_PYRAE'[&!color=#ff0000]:0.531951,'Sphaeroforma_arctica_JP610_XP_014153224.1_SIR2A_PLAF7'[&!color=#ff0000]:0.173757)[&label=100,!color=#ff0000]:1.146604)[&label=89,!color=#ff0000]:0.182141)[&label=90,!color=#ff0000]:0.245696,'Stylissa_carteri_augustus_masked-SC_scaffold70346-processed-gene-0.28-mRNA-1_NPD_THEKO'[&!color=#ff0000]:1.024096)[&label=99,!color=#ff0000]:0.183295,(((('Aurelia_coerulea_XLOC_005839_TCONS_00008113_Seg122.19.p1_NPD_AQUAE'[&!color=#ff0000]:0.217599,(Clytia_hemisphaerica_TCONS_00049926-protein_NPD_THET8[&!color=#ff0000]:0.553324,(Leucosolenia_complicata_lcpid67440_lcgid21395_NPD_AQUAE[&!color=#ff0000]:0.258509,'Sycon_coactum_29914.p1_NPD1_ARCFU'[&!color=#ff0000]:0.19446)[&label=100,!color=#ff0000]:0.117447)[&label=100,!color=#ff0000]:0.111293)[&label=100,!color=#ff0000]:0.131971,Capitella_teleta_R7TBQ3_CAPTE_NPD_METKA[&!color=#ff0000]:0.648148)[&label=99,!color=#ff0000]:0.141004,'Salpingoeca_rosetta_XP_004993987.1_NPD2_PYRAE'[&!color=#ff0000]:1.387485)[&label=75,!color=#ff0000]:0.073895,Strongylocentrotus_purpuratus_A0A7M7N1G3_STRPU_NPD2_CALS4[&!color=#ff0000]:1.109873)[&label=100,!color=#ff0000]:1.503668)[&label=95,!color=#ff0000]:0.10144,((((((((((((((((('Acropora_digitifera_XP_015769634.1_SIR3_HUMAN'[&!color=#0000ff]:2.0E-6,'Acropora_millepora_XP_029189899.1_SIR3_HUMAN'[&!color=#0000ff]:0.006178)[&label=100,!color=#0000ff]:0.024599,('Orbicella_faveolata_XP_020605701.1_SIR3_HUMAN'[&!color=#0000ff]:0.059644,('Pocillopora_damicornis_XP_027036956.1_SIR3_HUMAN'[&!color=#0000ff]:0.019393,'Stylophora_pistillata_XP_022778949.1_SIR3_HUMAN'[&!color=#0000ff]:0.011405)[&label=100,!color=#0000ff]:0.027191)[&label=80,!color=#0000ff]:0.018829)[&label=99,!color=#0000ff]:0.079722,('Actinia_tenebrosa_XP_031557593.1_SIR3_HUMAN'[&!color=#0000ff]:0.148935,'Nematostella_vectensis_EDO47672.1_SIR3_HUMAN'[&!color=#0000ff]:0.093846)[&label=81,!color=#0000ff]:0.034425)[&label=96,!color=#0000ff]:0.055768,'Exaiptasia_diaphana_KXJ12134.1_SIR3_HUMAN'[&!color=#0000ff]:0.752749)[&label=96,!color=#0000ff]:0.074654,((((('Amphimedon_queenslandica_XP_019851125.1_SIR3_HUMAN'[&!color=#0000ff]:0.121833,'Haliclona_amboinensis_c47378_g1_i1_m.22237_SIR3_HUMAN'[&!color=#0000ff]:0.086389)[&label=100,!color=#0000ff]:0.083929,'Haliclona_tubifera_c47108_g1_i2_m.19397_SIR3_MOUSE'[&!color=#0000ff]:0.228901)[&label=100,!color=#0000ff]:0.057256,'Ephydatia_muelleri_m.56358_g.56358_SIR3_MOUSE'[&!color=#0000ff]:0.310426)[&label=100,!color=#0000ff]:0.067275,'Oscarella_carmela_m.66298g.66298_comp35380_c0_seq4_SIR3_MOUSE'[&!color=#0000ff]:0.364582)[&label=92,!color=#0000ff]:0.073178,(Capitella_teleta_R7T6P1_CAPTE_SIR3_HUMAN[&!color=#0000ff]:0.264593,Ciona_intestinalis_H2XW94_CIOIN_SIR3_HUMAN[&!color=#0000ff]:0.251626)[&label=94,!color=#0000ff]:0.076908)[&label=91,!color=#0000ff]:0.056171)[&label=85,!color=#0000ff]:0.02616,'Aurelia_coerulea_XLOC_005945_TCONS_00008273_Seg12214.1.p1_SIR3_HUMAN'[&!color=#0000ff]:0.42741)[&label=46,!color=#0000ff]:3.0E-6,((Leucosolenia_complicata_lcpid16602_lcgid57329_SIR3_MOUSE[&!color=#0000ff]:0.213698,'Sycon_coactum_31281.p1_SIR3_HUMAN'[&!color=#0000ff]:0.306718)[&label=100,!color=#0000ff]:0.273937,((Mnemiopsis_leidyi_ML145823a-PA_SIR3_MOUSE[&!color=#0000ff]:0.187676,Pleurobrachia_bachei_sb_2658796_SIR3_MOUSE[&!color=#0000ff]:0.111851)[&label=100,!color=#0000ff]:0.695695,('Trichoplax_adhaerens_XP_002108771.1_SIR3_MOUSE'[&!color=#0000ff]:2.0E-6,'Trichoplax_sp._H2_RDD42035.1_SIR3_MOUSE'[&!color=#0000ff]:2.0E-6)[&label=100,!color=#0000ff]:0.41566)[&label=99,!color=#0000ff]:0.070965)[&label=88,!color=#0000ff]:0.080371)[&label=88,!color=#0000ff]:0.026463,(((Chiloscyllium_punctatum_A0A401T636_CHIPU_SIR3_HUMAN[&!color=#0000ff]:0.231629,((Homo_sapiens_SIR3_HUMAN_SIR3_HUMAN[&!color=#0000ff]:0.055943,Mus_musculus_SIR3_MOUSE_SIR3_MOUSE[&!color=#0000ff]:0.071824)[&label=100,!color=#0000ff]:0.105395,Xenopus_laevis_A0A8J1KJA7_XENLA_SIR3_MOUSE[&!color=#0000ff]:0.477286)[&label=97,!color=#0000ff]:0.127147)[&label=63,!color=#0000ff]:0.044604,Latimeria_chalumnae_H3AAK4_LATCH_SIR3_HUMAN[&!color=#0000ff]:0.208336)[&label=100,!color=#0000ff]:0.204571,(Latimeria_chalumnae_H3BDU0_LATCH_SIR3_HUMAN[&!color=#0000ff]:0.214023,Xenopus_laevis_A0A1L8GWP9_XENLA_SIR3_HUMAN[&!color=#0000ff]:0.350414)[&label=99,!color=#0000ff]:0.065069)[&label=77,!color=#0000ff]:0.067717)[&label=78,!color=#0000ff]:0.041379,Strongylocentrotus_purpuratus_A0A7M7P4N3_STRPU_SIR3_HUMAN[&!color=#0000ff]:0.256338)[&label=83,!color=#0000ff]:0.04126,Octopus_bimaculoides_A0A0L8FVJ2_OCTBM_SIR3_MOUSE[&!color=#0000ff]:0.33661)[&label=92,!color=#0000ff]:0.095759,(('Aurelia_coerulea_XLOC_057165_TCONS_00080094_Seg5705.2.p1_SIR3_MOUSE'[&!color=#0000ff]:0.298994,('Trichoplax_adhaerens_XP_002108772.1_SIR3_MOUSE'[&!color=#0000ff]:2.0E-6,'Trichoplax_sp._H2_RDD42036.1_SIR3_HUMAN'[&!color=#0000ff]:2.0E-6)[&label=100,!color=#0000ff]:0.565273)[&label=84,!color=#0000ff]:0.08673,Capitella_teleta_R7T8F1_CAPTE_SIR3_HUMAN[&!color=#0000ff]:0.28957)[&label=98,!color=#0000ff]:0.112144)[&label=100,!color=#0000ff]:0.144331,(((((((((((((((((((('Acropora_digitifera_XP_015779435.1_SIR1_RAT'[&!color=#008040]:2.0E-6,'Acropora_millepora_XP_029212880.2_SIR1_MOUSE'[&!color=#008040]:2.0E-6)[&label=100,!color=#008040]:0.101581,'Orbicella_faveolata_XP_020629309.1_SIR1_HUMAN'[&!color=#008040]:0.041859)[&label=99,!color=#008040]:0.018007,('Pocillopora_damicornis_XP_027050465.1_SIR1_HUMAN'[&!color=#008040]:0.031162,'Stylophora_pistillata_XP_022798495.1_SIR1_HUMAN'[&!color=#008040]:0.036419)[&label=94,!color=#008040]:0.020795)[&label=93,!color=#008040]:0.041549,(('Actinia_tenebrosa_XP_031549158.1_SIR1_HUMAN'[&!color=#008040]:0.024859,'Exaiptasia_diaphana_XP_020892771.1_SIR1_HUMAN'[&!color=#008040]:0.082857)[&label=100,!color=#008040]:0.047297,'Nematostella_vectensis_EDO31684.1_SIR1_RAT'[&!color=#008040]:0.159434)[&label=99,!color=#008040]:0.051594)[&label=100,!color=#008040]:0.074935,('Dendronephthya_gigantea_XP_028408359.1_SIR1_HUMAN'[&!color=#008040]:0.087796,'Xenia_sp._Carnegie-2017_XP_046844853.1_SIR1_HUMAN'[&!color=#008040]:0.140725)[&label=100,!color=#008040]:0.182114)[&label=100,!color=#008040]:0.067263,Strongylocentrotus_purpuratus_A0A7M7NDM7_STRPU_SIR1_HUMAN[&!color=#008040]:0.277838)[&label=97,!color=#008040]:0.02825,'Aurelia_coerulea_XLOC_021578_TCONS_00030503_Seg1865.9.p1_SIR1_HUMAN'[&!color=#008040]:0.174045)[&label=99,!color=#008040]:0.036444,'Oscarella_carmela_m.310769g.310769_comp54758_c0_seq1_SIR1_HUMAN'[&!color=#008040]:0.209326)[&label=97,!color=#008040]:0.065581,(((Chiloscyllium_punctatum_A0A401SYB6_CHIPU_SIR1_MOUSE[&!color=#008040]:0.082789,Xenopus_laevis_A0A1L8FEV8_XENLA_SIR1_MOUSE[&!color=#008040]:0.071851)[&label=84,!color=#008040]:0.008343,((Homo_sapiens_SIR1_HUMAN_SIR1_HUMAN[&!color=#008040]:2.0E-6,Mus_musculus_SIR1_MOUSE_SIR1_MOUSE[&!color=#008040]:0.00626)[&label=100,!color=#008040]:0.023991,Latimeria_chalumnae_H3AHF8_LATCH_SIR1_HUMAN[&!color=#008040]:0.481278)[&label=48,!color=#008040]:3.0E-6)[&label=100,!color=#008040]:0.111535,(Ciona_intestinalis_F6SLD6_CIOIN_SIR1_HUMAN[&!color=#008040]:0.152132,(Clytia_hemisphaerica_TCONS_00023571-protein_SIR1_HUMAN[&!color=#008040]:0.091378,'Hydra_vulgaris_XP_047125773.1_SIR1_RAT'[&!color=#008040]:0.150338)[&label=99,!color=#008040]:0.136731)[&label=80,!color=#008040]:0.068633)[&label=78,!color=#008040]:0.026818)[&label=94,!color=#008040]:0.044605,(Capitella_teleta_R7VG12_CAPTE_SIR1_MOUSE[&!color=#008040]:0.239146,Octopus_bimaculoides_A0A0L8FRB6_OCTBM_SIR1_MOUSE[&!color=#008040]:0.171418)[&label=98,!color=#008040]:0.025929)[&label=97,!color=#008040]:0.05496,Drosophila_melanogaster_SIRT1_DROME_SIRT1_DROME[&!color=#008040]:0.282065)[&label=88,!color=#008040]:0.028079,Daphnia_magna_A0A162Q0V9_9CRUS_SIR1_HUMAN[&!color=#008040]:0.242172)[&label=90,!color=#008040]:0.047169,((((('Amphimedon_queenslandica_XP_011404349.2_SIR1_MOUSE'[&!color=#008040]:0.158159,'Haliclona_amboinensis_c50309_g1_i11_mm.3444_SIR1_MOUSE'[&!color=#008040]:0.119729)[&label=100,!color=#008040]:0.04741,'Haliclona_tubifera_c40894_g1_i1_m.10778_SIR1_HUMAN'[&!color=#008040]:0.304308)[&label=100,!color=#008040]:0.095613,'Ephydatia_muelleri_m.68701_g.68701_SIR1_HUMAN'[&!color=#008040]:0.332167)[&label=100,!color=#008040]:0.073346,(Mnemiopsis_leidyi_ML07823a-PA_SIR1_HUMAN[&!color=#008040]:0.160438,Pleurobrachia_bachei_sb_2653035_SIR1_RAT[&!color=#008040]:0.168281)[&label=100,!color=#008040]:0.246964)[&label=74,!color=#008040]:0.034661,(Leucosolenia_complicata_lcpid102077_lcgid36957_SIRT1_DROME[&!color=#008040]:0.334743,('Monosiga_brevicollis_MX1_XP_001742130.1_SIR1_RAT'[&!color=#008040]:0.18861,'Salpingoeca_rosetta_XP_004994060.1_SIRT1_DROME'[&!color=#008040]:0.438268)[&label=100,!color=#008040]:0.240154)[&label=81,!color=#008040]:0.160701)[&label=64,!color=#008040]:0.057004)[&label=68,!color=#008040]:0.020704,'Schmidtea_mediterranea_maker-scaffold9062-augustus-gene-0.7-mRNA-1_SIR1_RAT'[&!color=#008040]:0.307276)[&label=82,!color=#008040]:0.102897,('Amoeboaphelidium_occidentale_KAI3659977.1_SIR1_HUMAN'[&!color=#008040]:0.511189,((((Ectocarpus_siliculosus_D8LES8_ECTSI_SIR1_RAT[&!color=#008040]:0.487968,Fistulifera_solaris_A0A1Z5K794_FISSO_HST1_EMENI[&!color=#008040]:0.572869)[&label=100,!color=#008040]:0.23354,((Saccharomyces_cerevisiae_HST1_YEAST_HST1_YEAST[&!color=#008040]:0.068635,Saccharomyces_cerevisiae_SIR2_YEAST_SIR2_YEAST[&!color=#008040]:0.095954)[&label=100,!color=#008040]:0.626423,Schizosaccharomyces_pombe_SIR2_SCHPO_SIR2_SCHPO[&!color=#008040]:0.405605)[&label=100,!color=#008040]:0.253231)[&label=91,!color=#008040]:0.081365,Galerina_marginata_A0A067SMM4_GALM3_HST1_EMENI[&!color=#008040]:0.408051)[&label=87,!color=#008040]:0.021621,(Rhizophagus_irregularis_A0A2I1GLM2_9GLOM_SIR1_RAT[&!color=#008040]:0.159411,Spizellomyces_punctatus_A0A0L0H9S1_SPIPD_SIR1_HUMAN[&!color=#008040]:0.20453)[&label=99,!color=#008040]:0.111599)[&label=88,!color=#008040]:0.039546)[&label=90,!color=#008040]:0.08656)[&label=87,!color=#008040]:0.08208,Caenorhabditis_elegans_SIR2_CAEEL_SIR2_CAEEL[&!color=#008040]:0.405771)[&label=87,!color=#008040]:0.085979,'Capsaspora_owczarzaki_ATCC_30864_XP_004346801.2_SIR1_MOUSE'[&!color=#008040]:0.375363)[&label=91,!color=#008040]:0.100181,Rozella_allomycis_A0A075AU49_ROZAC_SIR1_HUMAN[&!color=#008040]:0.31597)[&label=93,!color=#008040]:0.211724,'Fonticula_alba_XP_009493409.1_SIR1_RAT'[&!color=#008040]:0.51569)[&label=100,!color=#008040]:0.321496,(Fistulifera_solaris_A0A1Z5JC26_FISSO_HST2_SCHPO[&!color=#008040]:0.556021,'Schmidtea_mediterranea_augustus_masked-scaffold272-processed-gene-3.2-mRNA-1_HST21_EMENI'[&!color=#008040]:0.857503)[&label=65,!color=#008040]:0.133385)[&label=51,!color=#008040]:0.044449)[&label=48,!color=#000000]:0.032882,(((((((((((('Acropora_digitifera_XP_015779163.1_SIR2_PONAB'[&!color=#00ffff]:0.034913,'Acropora_millepora_XP_044163473.1_SIR2_MACFA'[&!color=#00ffff]:0.024154)[&label=100,!color=#00ffff]:0.221153,('Orbicella_faveolata_XP_020605893.1_SIR2_DANRE'[&!color=#00ffff]:0.059101,('Pocillopora_damicornis_RMX45954.1_SIR2_MACFA'[&!color=#00ffff]:0.016119,'Stylophora_pistillata_XP_022806417.1_SIR2_MACFA'[&!color=#00ffff]:0.042185)[&label=100,!color=#00ffff]:0.081498)[&label=100,!color=#00ffff]:0.036347)[&label=100,!color=#00ffff]:0.044636,'Nematostella_vectensis_EDO46813.1_SIR2_DANRE'[&!color=#00ffff]:0.215207)[&label=77,!color=#00ffff]:0.040115,('Dendronephthya_gigantea_XP_028398492.1_SIR2_DANRE'[&!color=#00ffff]:0.134045,'Xenia_sp._Carnegie-2017_XP_046848641.1_SIR2_DANRE'[&!color=#00ffff]:0.203329)[&label=100,!color=#00ffff]:0.130633)[&label=77,!color=#00ffff]:0.034181,'Oscarella_carmela_m.20604g.20604_comp28043_c0_seq1_SIR2_DANRE'[&!color=#00ffff]:0.28016)[&label=18,!color=#00ffff]:0.014361,(((('Actinia_tenebrosa_XP_031571475.1_SIR2_DANRE'[&!color=#00ffff]:0.172313,(Ciona_intestinalis_Q1RL34_CIOIN_SIR2_DANRE[&!color=#00ffff]:0.243176,'Exaiptasia_diaphana_XP_020915333.1_SIR2_DANRE'[&!color=#00ffff]:0.190904)[&label=96,!color=#00ffff]:0.039723)[&label=96,!color=#00ffff]:0.063489,((((('Amphimedon_queenslandica_XP_019851847.1_SIR2_DANRE'[&!color=#00ffff]:0.069609,'Haliclona_amboinensis_c45780_g1_i1_m.19520_SIR2_DANRE'[&!color=#00ffff]:0.136171)[&label=95,!color=#00ffff]:0.041984,(('Amphimedon_queenslandica_XP_019861130.1_SIR2_DANRE'[&!color=#00ffff]:0.411957,('Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE'[&!color=#00ffff]:0.236386,'Amphimedon_queenslandica_XP_019864326.1_SIR2_DANRE-Domain2'[&!color=#00ffff]:3.0E-6)[&label=100,!color=#00ffff]:0.243746)[&label=97,!color=#00ffff]:0.077534,('Ephydatia_muelleri_m.97546_g.97546_SIR2_DANRE'[&!color=#00ffff]:0.108859,'Stylissa_carteri_snap_masked-SC_scaffold12141-processed-gene-0.2-mRNA-1_SIR2_RAT'[&!color=#00ffff]:0.176116)[&label=100,!color=#00ffff]:0.154578)[&label=88,!color=#00ffff]:0.060214)[&label=94,!color=#00ffff]:0.036397,'Haliclona_tubifera_c42791_g1_i4_mm.1297_SIR2_DANRE'[&!color=#00ffff]:0.236459)[&label=100,!color=#00ffff]:0.140353,'Nematostella_vectensis_EDO48459.1_SIR2_DANRE'[&!color=#00ffff]:0.372616)[&label=96,!color=#00ffff]:0.016184,Leucosolenia_complicata_lcpid103158_lcgid58614_SIR2_DANRE[&!color=#00ffff]:0.417074)[&label=87,!color=#00ffff]:0.034975)[&label=98,!color=#00ffff]:0.015176,'Capsaspora_owczarzaki_ATCC_30864_XP_004348413.1_SIR2_DANRE'[&!color=#00ffff]:0.336267)[&label=53,!color=#00ffff]:0.050411,'Sphaeroforma_arctica_JP610_XP_014152202.1_SIR2_DANRE'[&!color=#00ffff]:0.427961)[&label=40,!color=#00ffff]:9.0E-4)[&label=78,!color=#00ffff]:0.056051,((('Aurelia_coerulea_XLOC_021960_TCONS_00031013_Seg1882.3.p1_SIR2_DANRE'[&!color=#00ffff]:0.293205,Clytia_hemisphaerica_TCONS_00029362-protein_SIR2_DANRE[&!color=#00ffff]:0.212622)[&label=96,!color=#00ffff]:0.080129,((((Chiloscyllium_punctatum_A0A401SWK8_CHIPU_SIR2_DANRE[&!color=#00ffff]:0.133611,(Mnemiopsis_leidyi_ML20759a-PA_SIR2_DANRE[&!color=#00ffff]:0.121785,Pleurobrachia_bachei_sb_2643951_SIR2_DANRE[&!color=#00ffff]:0.156244)[&label=100,!color=#00ffff]:0.566448)[&label=94,!color=#00ffff]:0.040397,((Homo_sapiens_SIR2_HUMAN_SIR2_HUMAN[&!color=#00ffff]:0.082224,Mus_musculus_SIR2_MOUSE_SIR2_MOUSE[&!color=#00ffff]:0.063046)[&label=100,!color=#00ffff]:0.093962,Xenopus_laevis_A0A8J0UAR6_XENLA_SIR2_DANRE[&!color=#00ffff]:0.146847)[&label=100,!color=#00ffff]:0.060659)[&label=96,!color=#00ffff]:0.138401,Drosophila_melanogaster_SIRT2_DROME_SIRT2_DROME[&!color=#00ffff]:0.320463)[&label=89,!color=#00ffff]:0.040038,((Daphnia_magna_A0A0P5CJZ6_9CRUS_SIR2_DANRE[&!color=#00ffff]:0.224272,(((Fistulifera_solaris_A0A1Z5K5D8_FISSO_SIR2_MACFA[&!color=#00ffff]:0.805333,'Sphaeroforma_arctica_JP610_XP_014157535.1_SIR2_DANRE'[&!color=#00ffff]:1.083652)[&label=100,!color=#00ffff]:0.783675,('Trichoplax_adhaerens_XP_002113435.1_SIR2_DANRE'[&!color=#00ffff]:2.0E-6,'Trichoplax_sp._H2_RDD40343.1_SIR2_DANRE'[&!color=#00ffff]:2.0E-6)[&label=100,!color=#00ffff]:0.441142)[&label=97,!color=#00ffff]:0.203259,(('Henneguya_salminicola_KAF0992715.1_SIR2_DANRE'[&!color=#00ffff]:0.21397,'Myxobolus_squamalis_KAF1743723.1_SIR2_MOUSE'[&!color=#00ffff]:0.295667)[&label=99,!color=#00ffff]:0.217734,'Thelohanellus_kitauei_KII66353.1_SIR2_MOUSE'[&!color=#00ffff]:0.475839)[&label=100,!color=#00ffff]:0.299084)[&label=100,!color=#00ffff]:0.148871)[&label=93,!color=#00ffff]:0.098812,((Mnemiopsis_leidyi_ML074235a-PA_SIR2_MOUSE[&!color=#00ffff]:0.342941,Pleurobrachia_bachei_sb_2650883_SIR2_RAT[&!color=#00ffff]:0.17771)[&label=100,!color=#00ffff]:1.804914,Octopus_bimaculoides_A0A0L8IAL6_OCTBM_SIR2_DANRE[&!color=#00ffff]:0.346596)[&label=47,!color=#00ffff]:2.0E-6)[&label=92,!color=#00ffff]:0.050728)[&label=79,!color=#00ffff]:0.049244)[&label=72,!color=#00ffff]:0.019569,Strongylocentrotus_purpuratus_A0A7M7PQD5_STRPU_SIR2_DANRE[&!color=#00ffff]:0.315941)[&label=88,!color=#00ffff]:0.057067)[&label=59,!color=#00ffff]:0.015571,(Capitella_teleta_R7TK56_CAPTE_SIR2_DANRE[&!color=#00ffff]:0.2187,('Trichoplax_adhaerens_XP_002113608.1_SIR2_DANRE'[&!color=#00ffff]:2.0E-6,'Trichoplax_sp._H2_RDD44322.1_SIR2_DANRE'[&!color=#00ffff]:2.0E-6)[&label=100,!color=#00ffff]:0.362013)[&label=65,!color=#00ffff]:0.087547)[&label=67,!color=#00ffff]:0.055016,'Monosiga_brevicollis_MX1_XP_001749314.1_SIRT2_DROME'[&!color=#00ffff]:0.352702)[&label=54,!color=#00ffff]:0.025787,'Salpingoeca_rosetta_XP_004991122.1_SIRT2_DROME'[&!color=#00ffff]:0.391588)[&label=55,!color=#00ffff]:0.027366,Spizellomyces_punctatus_A0A0L0HPN6_SPIPD_SIR2_DANRE[&!color=#00ffff]:0.293531)[&label=50,!color=#00ffff]:0.004391,(('Amoeboaphelidium_occidentale_KAI3658166.1_SIR2_DANRE'[&!color=#00ffff]:0.212883,('Amoeboaphelidium_protococcarum_KAI3633495.1_SIR2_DANRE'[&!color=#00ffff]:0.272758,Saccharomyces_cerevisiae_HST2_YEAST_HST2_YEAST[&!color=#00ffff]:0.739628)[&label=80,!color=#00ffff]:0.086325)[&label=81,!color=#00ffff]:0.097775,((((Galerina_marginata_A0A067TI91_GALM3_HST21_EMENI[&!color=#00ffff]:0.401635,Schizosaccharomyces_pombe_HST2_SCHPO_HST2_SCHPO[&!color=#00ffff]:0.542984)[&label=67,!color=#00ffff]:0.129853,Puccinia_graminis_E3KY50_PUCGT_SIR2_DANRE[&!color=#00ffff]:0.507168)[&label=45,!color=#00ffff]:0.028466,'Sphaeroforma_arctica_JP610_XP_014151708.1_SIR2_DANRE'[&!color=#00ffff]:0.635728)[&label=64,!color=#00ffff]:0.06974,Rhizophagus_irregularis_A0A2I1G7C6_9GLOM_SIR2_DANRE[&!color=#00ffff]:0.52089)[&label=89,!color=#00ffff]:0.109318)[&label=65,!color=#00ffff]:0.056994)[&label=91,!color=#00ffff]:0.096235)[&label=85,!color=#00ffff]:0.170065,(Mnemiopsis_leidyi_ML002624a-PA_OSB10_HUMAN[&!color=#00ffff]:0.129143,Pleurobrachia_bachei_sb_2664049_SIRT2_DROME[&!color=#00ffff]:0.343387)[&label=100,!color=#00ffff]:0.451662)[&label=95,!color=#00ffff]:0.296514,'Fonticula_alba_XP_009494998.1_SIR2_RAT'[&!color=#00ffff]:0.852107)[&label=97,!color=#00ffff]:0.368213,(((((((('Amoeboaphelidium_occidentale_KAI3659897.1_HST3_CANAL'[&!color=#80ff00]:0.464324,('Amoeboaphelidium_protococcarum_KAI3629610.1_HST3_CANAL'[&!color=#80ff00]:0.45066,Spizellomyces_punctatus_A0A0L0HTT9_SPIPD_HST3_CANAL[&!color=#80ff00]:0.329879)[&label=96,!color=#80ff00]:0.11266)[&label=99,!color=#80ff00]:0.12238,(Galerina_marginata_A0A067TQF3_GALM3_HST3_CANAL[&!color=#80ff00]:0.558332,Saccharomyces_cerevisiae_HST3_YEAST_HST3_YEAST[&!color=#80ff00]:0.749687)[&label=95,!color=#80ff00]:0.037831)[&label=90,!color=#80ff00]:0.071932,Rhizophagus_irregularis_A0A2I1GBB3_9GLOM_HST3_CANAL[&!color=#80ff00]:0.926268)[&label=94,!color=#80ff00]:0.102613,((Galerina_marginata_A0A067T782_GALM3_HST4_EMENI[&!color=#80ff00]:0.588312,(Saccharomyces_cerevisiae_HST4_YEAST_HST4_YEAST[&!color=#80ff00]:0.785745,Schizosaccharomyces_pombe_HST4_SCHPO_HST4_SCHPO[&!color=#80ff00]:0.529434)[&label=100,!color=#80ff00]:0.392293)[&label=77,!color=#80ff00]:0.045994,Puccinia_graminis_E3JQ55_PUCGT_HST4_SCHPO[&!color=#80ff00]:0.584766)[&label=100,!color=#80ff00]:0.263678)[&label=96,!color=#80ff00]:0.098148,Rozella_allomycis_A0A075AV36_ROZAC_HST3_CANAL[&!color=#80ff00]:0.634958)[&label=97,!color=#80ff00]:0.081358,'Fonticula_alba_XP_009494611.1_HST3_YEAST'[&!color=#80ff00]:0.808872)[&label=99,!color=#80ff00]:0.192292,Volvox_carteri_D8TL05_VOLCA_HST3_YEAST[&!color=#80ff00]:2.261388)[&label=99,!color=#80ff00]:0.167849,Spizellomyces_punctatus_A0A0L0HKL8_SPIPD_HST4_YEAST[&!color=#80ff00]:1.65884)[&label=98,!color=#80ff00]:0.165952)[&label=100]:0.83171,((((((((((((((('Acropora_digitifera_XP_015779547.1_SIR4_BOVIN'[&!color=#ff8000]:0.004663,'Acropora_millepora_XP_029213217.2_SIR4_BOVIN'[&!color=#ff8000]:0.011647)[&label=100,!color=#ff8000]:0.132861,('Orbicella_faveolata_XP_020602659.1_SIR4_BOVIN'[&!color=#ff8000]:0.063366,('Pocillopora_damicornis_RMX57446.1_SIR4_BOVIN'[&!color=#ff8000]:0.033628,'Stylophora_pistillata_XP_022787591.1_SIR4_HUMAN'[&!color=#ff8000]:0.071212)[&label=100,!color=#ff8000]:0.095345)[&label=100,!color=#ff8000]:0.076581)[&label=100,!color=#ff8000]:0.122883,(('Actinia_tenebrosa_XP_031549214.1_SIR4_BOVIN'[&!color=#ff8000]:0.077583,'Exaiptasia_diaphana_XP_020893572.1_SIR4_BOVIN'[&!color=#ff8000]:0.222633)[&label=81,!color=#ff8000]:0.135485,'Nematostella_vectensis_EDO35866.1_SIR4_MOUSE'[&!color=#ff8000]:0.222798)[&label=100,!color=#ff8000]:0.079324)[&label=100,!color=#ff8000]:0.140873,('Dendronephthya_gigantea_XP_028400421.1_SIR4_MOUSE'[&!color=#ff8000]:0.171184,'Xenia_sp._Carnegie-2017_XP_046840840.1_SIR4_HUMAN'[&!color=#ff8000]:0.296749)[&label=100,!color=#ff8000]:0.156241)[&label=97,!color=#ff8000]:0.031327,(Leucosolenia_complicata_lcpid57906_lcgid55101_SIR4_BOVIN[&!color=#ff8000]:0.228584,'Sycon_coactum_7951.p1_SIR4_BOVIN'[&!color=#ff8000]:0.205782)[&label=100,!color=#ff8000]:0.351919)[&label=92,!color=#ff8000]:0.030597,Strongylocentrotus_purpuratus_A0A7M7RE10_STRPU_SIR4_HUMAN[&!color=#ff8000]:0.325996)[&label=68,!color=#ff8000]:0.050087,(Capitella_teleta_R7VC11_CAPTE_SIR4_MOUSE[&!color=#ff8000]:0.417113,(((Chiloscyllium_punctatum_A0A401RMI2_CHIPU_SIR4_HUMAN[&!color=#ff8000]:0.181897,Latimeria_chalumnae_H3BG66_LATCH_SIR4_MOUSE[&!color=#ff8000]:0.159794)[&label=78,!color=#ff8000]:0.033852,Xenopus_laevis_A0A1L8I0D6_XENLA_SIR4_BOVIN[&!color=#ff8000]:0.2973)[&label=46,!color=#ff8000]:0.024676,(Homo_sapiens_SIR4_HUMAN_SIR4_HUMAN[&!color=#ff8000]:0.067642,Mus_musculus_SIR4_MOUSE_SIR4_MOUSE[&!color=#ff8000]:0.059373)[&label=100,!color=#ff8000]:0.151638)[&label=56,!color=#ff8000]:0.075854)[&label=98,!color=#ff8000]:0.087258)[&label=92,!color=#ff8000]:0.090322,Octopus_bimaculoides_A0A0L8HM37_OCTBM_SIR4_BOVIN[&!color=#ff8000]:0.340421)[&label=88,!color=#ff8000]:0.04742,(((((('Amphimedon_queenslandica_XP_011403504.2_SIR4_BOVIN'[&!color=#ff8000]:0.142729,'Haliclona_tubifera_c17806_g1_i1_m.1263_SIR4_BOVIN'[&!color=#ff8000]:0.232625)[&label=98,!color=#ff8000]:0.042108,'Haliclona_amboinensis_c33180_g1_i1_m.7512_SIR4_MOUSE'[&!color=#ff8000]:0.090245)[&label=100,!color=#ff8000]:0.293237,'Ephydatia_muelleri_m.26778_g.26778_SIR4_MOUSE'[&!color=#ff8000]:0.284785)[&label=100,!color=#ff8000]:0.184579,(('Aurelia_coerulea_XLOC_073218_TCONS_00101516_Seg992.8.p1_SIR4_BOVIN'[&!color=#ff8000]:0.381911,Clytia_hemisphaerica_TCONS_00017752-protein_SIR4_MOUSE[&!color=#ff8000]:0.388217)[&label=100,!color=#ff8000]:0.053529,'Hydra_vulgaris_XP_002163018.1_SIR4_MOUSE'[&!color=#ff8000]:0.362309)[&label=100,!color=#ff8000]:0.135722)[&label=96,!color=#ff8000]:0.066561,'Oscarella_carmela_m.10296g.10296_comp22152_c0_seq1_SIR4_MOUSE'[&!color=#ff8000]:0.502213)[&label=86,!color=#ff8000]:0.044564,(Ciona_intestinalis_F6TVS6_CIOIN_SIR4_MOUSE[&!color=#ff8000]:0.697212,('Trichoplax_adhaerens_XP_002114969.1_SIR4_MOUSE'[&!color=#ff8000]:2.0E-6,'Trichoplax_sp._H2_RDD40986.1_SIR4_MOUSE'[&!color=#ff8000]:0.005257)[&label=100,!color=#ff8000]:0.525315)[&label=72,!color=#ff8000]:0.111869)[&label=53,!color=#ff8000]:0.045028)[&label=52,!color=#ff8000]:0.036633,'Schmidtea_mediterranea_augustus_masked-scaffold20463-processed-gene-0.0-mRNA-1_SIR4_MOUSE'[&!color=#ff8000]:0.638684)[&label=68,!color=#ff8000]:0.081438,((Caenorhabditis_elegans_SIR41_CAEEL_SIR41_CAEEL[&!color=#ff8000]:0.042812,Caenorhabditis_elegans_SIR42_CAEEL_SIR42_CAEEL[&!color=#ff8000]:0.280766)[&label=100,!color=#ff8000]:0.561272,(Drosophila_melanogaster_SIR4_DROME_SIR4_DROME[&!color=#ff8000]:0.48173,Mnemiopsis_leidyi_ML41824a-PA_SIR4_MOUSE[&!color=#ff8000]:0.61911)[&label=79,!color=#ff8000]:0.062797)[&label=79,!color=#ff8000]:0.090435)[&label=97,!color=#ff8000]:0.142571,'Capsaspora_owczarzaki_ATCC_30864_KJE90862.1_SIR4_MOUSE'[&!color=#ff8000]:0.617947)[&label=100,!color=#ff8000]:0.181035,((Ectocarpus_siliculosus_D8LJJ1_ECTSI_SIR4_ARATH[&!color=#ff8000]:0.429316,Fistulifera_solaris_A0A1Z5K280_FISSO_NPD2_BRADU[&!color=#ff8000]:0.529501)[&label=100,!color=#ff8000]:0.193005,Volvox_carteri_D8U497_VOLCA_SIR4_ARATH[&!color=#ff8000]:0.540279)[&label=94,!color=#ff8000]:0.090779)[&label=94,!color=#ff8000]:0.082081,('Monosiga_brevicollis_MX1_XP_001744705.1_SIR4_MONBE'[&!color=#ff8000]:0.51072,'Salpingoeca_rosetta_XP_004989159.1_SIR4_MONBE'[&!color=#ff8000]:0.424489)[&label=99,!color=#ff8000]:0.147164)[&label=98,!color=#ff8000]:0.05245,(('Amoeboaphelidium_occidentale_KAI3661634.1_SIR4_BATDJ'[&!color=#ff8000]:0.348686,'Amoeboaphelidium_protococcarum_KAI3633096.1_SIR4_BATDJ'[&!color=#ff8000]:0.580095)[&label=100,!color=#ff8000]:0.132927,(((Galerina_marginata_A0A067TC06_GALM3_SIR4_BATDJ[&!color=#ff8000]:0.327613,Puccinia_graminis_E3KJ55_PUCGT_SIR4_BATDJ[&!color=#ff8000]:0.489272)[&label=100,!color=#ff8000]:0.239546,Rhizophagus_irregularis_A0A2I1HDR7_9GLOM_SIR4_BATDJ[&!color=#ff8000]:0.345895)[&label=100,!color=#ff8000]:0.26095,Spizellomyces_punctatus_A0A0L0H4V4_SPIPD_SIR4_BATDJ[&!color=#ff8000]:0.421769)[&label=99,!color=#ff8000]:0.085002)[&label=100,!color=#ff8000]:0.257877)[&label=100,!color=#ff8000]:0.409179)[&label=96]:0.190211)[&label=100]:1.404316,('Capsaspora_owczarzaki_ATCC_30864_XP_004343843.2_SIR6_MACFA':0.482123,(Mnemiopsis_leidyi_ML23958a-PA_SIR1_ORYSI:0.215378,Pleurobrachia_bachei_sb_2669295_CNX2_ARATH:0.125299)[&label=100]:0.567624)[&label=100]:0.956377)[&label=87]:0.175565,Chara_braunii_A0A388K9Y1_CHABU_SIR6_DROME:0.461618)[&label=81]:0.216639)[&label=100]:0.381332,'Monosiga_brevicollis_MX1_XP_001749356.1_SIR7_BOVIN':0.728199)[&label=62]:0.073219,'Capsaspora_owczarzaki_ATCC_30864_XP_004344427.2_SIR7_HUMAN':0.550004)[&label=61]:0.042812,((Leucosolenia_complicata_lcpid135799_lcgid5960_SIR7_BOVIN:0.115596,'Sycon_coactum_12062.p1_SIR7_HUMAN':0.196132)[&label=100]:0.208584,'Salpingoeca_rosetta_XP_004991027.1_SIR7_HUMAN':0.609899)[&label=97]:0.223879)[&label=88]:0.089627,Drosophila_melanogaster_SIR7_DROME_SIR7_DROME:0.271771)[&label=91]:0.17886,Xenopus_laevis_Q5XG15_XENLA_SIR7_HUMAN:0.181499)[&label=55]:3.0E-6,((Chiloscyllium_punctatum_A0A401S4C4_CHIPU_SIR7_HUMAN:0.114675,Latimeria_chalumnae_H3AKL9_LATCH_SIR7_BOVIN:0.125669)[&label=100]:0.021827,(Homo_sapiens_SIR7_HUMAN_SIR7_HUMAN:0.00643,Mus_musculus_SIR7_MOUSE_SIR7_MOUSE:0.007795)[&label=100]:0.127549)[&label=95]:0.042413)[&label=70]:0.03647,((Capitella_teleta_R7UG42_CAPTE_SIR7_HUMAN:0.216458,Octopus_bimaculoides_A0A0L8HEZ4_OCTBM_SIR7_BOVIN:0.43495)[&label=92]:0.1392,((Ciona_intestinalis_F7AUS4_CIOIN_SIR7_RAT:0.401516,('Trichoplax_adhaerens_XP_002109473.1_SIR7_BOVIN':2.0E-6,'Trichoplax_sp._H2_RDD45328.1_SIR7_BOVIN':2.0E-6)[&label=100]:0.212376)[&label=78]:0.121407,'Oscarella_carmela_m.16056g.16056_comp26712_c0_seq2_SIR7_MOUSE':0.288212)[&label=61]:0.045911)[&label=68]:0.01938)[&label=96]:0.126772,Strongylocentrotus_purpuratus_A0A7M7NU88_STRPU_SIR7_HUMAN:0.300422)[&label=90]:0.008779,('Dendronephthya_gigantea_XP_028415928.1_SIR7_BOVIN':0.04022,'Xenia_sp._Carnegie-2017_XP_046855444.1_SIR7_BOVIN':0.059137)[&label=100]:0.096648)[&label=100]:0.071129,(('Actinia_tenebrosa_XP_031555893.1_SIR7_BOVIN':0.07815,'Exaiptasia_diaphana_KXJ28567.1_SIR7_BOVIN':0.088287)[&label=100]:0.085452,'Nematostella_vectensis_EDO29747.1_SIR7_BOVIN':0.076131)[&label=97]:0.035524)[&label=100]:0.086517,'Aurelia_coerulea_XLOC_058355_TCONS_00081668_Seg5923.2.p1_SIR7_BOVIN':0.334234)[&label=61]:0.014703,('Orbicella_faveolata_XP_020607353.1_SIR7_BOVIN':0.02283,('Pocillopora_damicornis_XP_027058842.1_SIR7_BOVIN':0.012486,'Stylophora_pistillata_PFX22126.1_SIR7_BOVIN':0.058156)[&label=100]:0.048088)[&label=97]:0.024436)[&label=100]:0.083886,'Acropora_millepora_XP_029180011.2_SIR7_BOVIN':2.0E-6);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=861;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
