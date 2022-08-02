@@ -1,7 +1,9 @@
-# Search NCBI with Homo NAPMPT (UniProtKB ID: P43490) and Saccharomyces PNC1 (UniProtKB ID: P53184).
+# Search NCBI with Homo NAMPT (UniProtKB ID: P43490) and Saccharomyces PNC1 (UniProtKB ID: P53184).
 	# BLASTP, animals (taxid:33208) ; and exclude: vertebrates (taxid:7742) 
 	# Search performed 7/18/2021
-	
+	# Note: the following taxa were added to this study during the revision process, so NAMPT/PNC1 searches were performed separately on BLASTp server
+		# Ectocarpus siliculosus; Fistulifera solaris; Chara braunii; Volvox carteri; Amoeboaphelidium occidentale; Amoeboaphelidium protococcarum; Chiloscyllium punctatum
+
 # concatenate files
 cat 0_NCBI_NAMPT_Seqs.txt 0_NCBI_PNC1_Seqs.txt > 1_NCBI_Seqs.fasta
 	# Names reformatted in BBEdit using grep
